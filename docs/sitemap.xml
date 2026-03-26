@@ -2,44 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://butteredhusbandph.github.io/butteredhusbandph.github.io/categories/</loc>
+    <loc>https://butteredhusbandph.github.io/categories/</loc>
     
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="https://butteredhusbandph.github.io/butteredhusbandph.github.io/categories/"/>
+               href="https://butteredhusbandph.github.io/categories/"/>
   </url>
   <url>
-    <loc>https://butteredhusbandph.github.io/butteredhusbandph.github.io/</loc>
+    <loc>https://butteredhusbandph.github.io/</loc>
     
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="https://butteredhusbandph.github.io/butteredhusbandph.github.io/"/>
+               href="https://butteredhusbandph.github.io/"/>
   </url>
   <url>
-    <loc>https://butteredhusbandph.github.io/butteredhusbandph.github.io/posts/</loc>
+    <loc>https://butteredhusbandph.github.io/posts/</loc>
     
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="https://butteredhusbandph.github.io/butteredhusbandph.github.io/posts/"/>
+               href="https://butteredhusbandph.github.io/posts/"/>
   </url>
   <url>
-    <loc>https://butteredhusbandph.github.io/butteredhusbandph.github.io/tags/</loc>
+    <loc>https://butteredhusbandph.github.io/tags/</loc>
     
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="https://butteredhusbandph.github.io/butteredhusbandph.github.io/tags/"/>
+               href="https://butteredhusbandph.github.io/tags/"/>
   </url>
   
 </urlset>
