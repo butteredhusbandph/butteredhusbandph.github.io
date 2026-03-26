@@ -2,44 +2,64 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://butteredhusbandph.github.io/categories/</loc>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-    <xhtml:link
-               rel="alternate"
-               hreflang="en"
-               href="https://butteredhusbandph.github.io/categories/"/>
-  </url>
-  <url>
-    <loc>https://butteredhusbandph.github.io/</loc>
-    
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-03-26T13:50:26+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="https://butteredhusbandph.github.io/"/>
+               href="http://localhost:1313/"/>
   </url>
   <url>
-    <loc>https://butteredhusbandph.github.io/posts/</loc>
-    
+    <loc>http://localhost:1313/posts/my-new-post/</loc>
+    <lastmod>2026-03-26T13:50:26+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="http://localhost:1313/posts/my-new-post/"/>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-03-26T13:50:26+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="https://butteredhusbandph.github.io/posts/"/>
+               href="http://localhost:1313/posts/"/>
   </url>
   <url>
-    <loc>https://butteredhusbandph.github.io/tags/</loc>
+    <loc>http://localhost:1313/posts/my_first/</loc>
+    <lastmod>2026-03-26T13:32:26+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="http://localhost:1313/posts/my_first/"/>
+  </url>
+  <url>
+    <loc>http://localhost:1313/categories/</loc>
     
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="https://butteredhusbandph.github.io/tags/"/>
+               href="http://localhost:1313/categories/"/>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tags/</loc>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="http://localhost:1313/tags/"/>
   </url>
   
 </urlset>

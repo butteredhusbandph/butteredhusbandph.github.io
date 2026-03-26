@@ -2,10 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on My New Hugo Project</title>
-    <link>https://butteredhusbandph.github.io/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on My New Hugo Project</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://butteredhusbandph.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Mar 2026 13:50:26 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My New Post</title>
+      <link>http://localhost:1313/posts/my-new-post/</link>
+      <pubDate>Thu, 26 Mar 2026 13:50:26 +0800</pubDate>
+      <guid>http://localhost:1313/posts/my-new-post/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>My_first</title>
+      <link>http://localhost:1313/posts/my_first/</link>
+      <pubDate>Thu, 26 Mar 2026 13:32:26 +0800</pubDate>
+      <guid>http://localhost:1313/posts/my_first/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
