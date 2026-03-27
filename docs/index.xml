@@ -6,21 +6,14 @@
     <description>Recent content on My New Hugo Project</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Mar 2026 13:50:26 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 26 Mar 2026 20:30:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My New Post</title>
-      <link>http://localhost:1313/posts/my-new-post/</link>
-      <pubDate>Thu, 26 Mar 2026 13:50:26 +0800</pubDate>
-      <guid>http://localhost:1313/posts/my-new-post/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>My_first</title>
-      <link>http://localhost:1313/posts/my_first/</link>
-      <pubDate>Thu, 26 Mar 2026 13:32:26 +0800</pubDate>
-      <guid>http://localhost:1313/posts/my_first/</guid>
-      <description></description>
+      <title>Homelab</title>
+      <link>http://localhost:1313/posts/homelab/</link>
+      <pubDate>Thu, 26 Mar 2026 20:30:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/homelab/</guid>
+      <description>&lt;p&gt;#My homelab setup&lt;/p&gt;&#xA;&lt;p&gt;As part of my ongoing review for Redhat Certifications. I need to have a lab environment that i can deploy, destroy and redeploy.&lt;/p&gt;&#xA;&lt;p&gt;My requirements for the lab are:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Easy deployment, destroy and redeploy&lt;/li&gt;&#xA;&lt;li&gt;Configuration like ssh keys, packages requirements and OS updated&lt;/li&gt;&#xA;&lt;li&gt;1 VM will have additional disk&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;#Lab Diagram&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;classDiagram&#xA;      Animal &amp;lt;|-- Duck&#xA;      Animal &amp;lt;|-- Fish&#xA;      Animal &amp;lt;|-- Zebra&#xA;      Animal : +int age&#xA;      Animal : +String gender&#xA;      Animal: +isMammal()&#xA;      Animal: +mate()&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;laptop-spec&#34;&gt;Laptop spec&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Processor:&#xA;Disk:&#xA;Memory: 32Gb&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
   </channel>
 </rss>
