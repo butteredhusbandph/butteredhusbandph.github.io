@@ -2,6 +2,7 @@
 date = '2026-04-17T18:17:45+08:00'
 draft = false
 title = 'Aap Private Automationhub'
+
 +++
 
 # Ansible Automation Platform Private Automation Hub
@@ -15,7 +16,6 @@ version: 3
 dependencies:
   python_interpreter:
     package_system: "python311"
-    python_path: "/usr/bin/python3.11"
   ansible_core:
     package_pip: ansible-core
   galaxy:

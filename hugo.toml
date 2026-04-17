@@ -1,6 +1,6 @@
 baseURL = 'https://butteredhusbandph.github.io/'
 locale = 'en-us'
-title = 'My New Hugo Project'
-theme = 'archie'
+title = '@butteredhusbandph'
+theme = 'mana'
 
 publishDir = "docs"
