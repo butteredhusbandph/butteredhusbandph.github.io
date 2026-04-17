@@ -1,4 +1,4 @@
-baseURL = "https://butteredhusbandph.github.io/"
+baseURL = "."
 locale = 'en-us'
 title = '@butteredhusbandph'
 theme = 'mana'
