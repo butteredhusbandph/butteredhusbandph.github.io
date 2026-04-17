@@ -11,4 +11,12 @@ Installing EasyRSA
 ```
 sudo apt update
 sudo apt install easy-rsa
+mkdir ~/easy-rsa
+ln - /usr/share/easy-rsa/* ~/easy-rsa/
+```
+
+Initialize  PKI  
+```
+cd ~/easy-rsa
+./easyrsa init-pki
 ```

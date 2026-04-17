@@ -6,8 +6,15 @@
     <description>Recent content in Linux on @butteredhusbandph</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Apr 2026 20:56:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 18 Apr 2026 06:56:11 +0800</lastBuildDate>
     <atom:link href="//localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ansible Automation Platform Remote Contents</title>
+      <link>//localhost:1313/posts/aap-remotes/</link>
+      <pubDate>Sat, 18 Apr 2026 06:56:11 +0800</pubDate>
+      <guid>//localhost:1313/posts/aap-remotes/</guid>
+      <description>&lt;p&gt;In this sample, we will configure Redhat &lt;code&gt;validated&lt;/code&gt; content from Automation Hub&lt;/p&gt;&#xA;&lt;p&gt;First create your token. Login to &lt;a href=&#34;https://console.redhat.com/ansible/automation-hub/token&#34;&gt;console.redhat.com&lt;/a&gt; and click &lt;code&gt;Load token&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;//localhost:1313/rhub-console-token.png&#34; alt=&#34;Redhat Console Token&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Go to &lt;code&gt;Server URL&lt;/code&gt; and copy &lt;code&gt;validated URL&lt;/code&gt; and &lt;code&gt;SSO URL&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;//localhost:1313/rhub-validated-url.png&#34; alt=&#34;Server URL&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;In your AAP Automation Content portal click &lt;code&gt;Remotes &amp;gt; Create Remote&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Name: rh-validated&#xA;URL: &lt;code&gt;validated URL&lt;/code&gt; from console.redhat.com Automation hub&#xA;Token:  &lt;code&gt;token&lt;/code&gt; from console.redhat.com Automation hub&#xA;SSO URL: &lt;code&gt;SSO URL&lt;/code&gt; from console.redhat.com Automation hub&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Local Lab Docker Squid</title>
       <link>//localhost:1313/posts/local-lab-squid/</link>
