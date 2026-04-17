@@ -1,11 +1,9 @@
 +++
 date = '2026-04-17T18:17:45+08:00'
 draft = false
-title = 'Aap Private Automationhub'
+title = 'Ansible Automation Platform Private Automation Hub'
 
 +++
-
-# Ansible Automation Platform Private Automation Hub
 
 ## Uploading Content Collections to Private Automation Hub  
 

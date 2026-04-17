@@ -1,6 +1,6 @@
-baseURL = 'https://butteredhusbandph.github.io/'
+baseURL = "."
 locale = 'en-us'
 title = '@butteredhusbandph'
-theme = 'mana'
+theme = 'archie2'
 
 publishDir = "docs"

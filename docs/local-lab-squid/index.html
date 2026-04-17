@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Local Lab Squid | @butteredhusbandph</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Local Lab Squid
+My local lab is currently hosted on a laptop running Virtualbox. I&rsquo;ve chose to use Host-only network on my VMs so that i can bring my lab with me anywhere. The issue with this is that i can only access the VMs webservers on the laptop itself. Now if i want to use another workstation for my lab and remotely connect via SSH, i wont have access on the VMs hosted services like http, etc.">
+    <meta name="generator" content="Hugo 0.160.1">
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+
+    
+
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="//localhost:1313/local-lab-squid/">
+    
+
+    
+    
+    <meta property="og:url" content="//localhost:1313/local-lab-squid/">
+  <meta property="og:site_name" content="@butteredhusbandph">
+  <meta property="og:title" content="Local Lab Squid">
+  <meta property="og:description" content="Local Lab Squid My local lab is currently hosted on a laptop running Virtualbox. I’ve chose to use Host-only network on my VMs so that i can bring my lab with me anywhere. The issue with this is that i can only access the VMs webservers on the laptop itself. Now if i want to use another workstation for my lab and remotely connect via SSH, i wont have access on the VMs hosted services like http, etc.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2026-04-17T20:56:00+08:00">
+    <meta property="article:modified_time" content="2026-04-17T20:56:00+08:00">
+
+  <meta itemprop="name" content="Local Lab Squid">
+  <meta itemprop="description" content="Local Lab Squid My local lab is currently hosted on a laptop running Virtualbox. I’ve chose to use Host-only network on my VMs so that i can bring my lab with me anywhere. The issue with this is that i can only access the VMs webservers on the laptop itself. Now if i want to use another workstation for my lab and remotely connect via SSH, i wont have access on the VMs hosted services like http, etc.">
+  <meta itemprop="datePublished" content="2026-04-17T20:56:00+08:00">
+  <meta itemprop="dateModified" content="2026-04-17T20:56:00+08:00">
+  <meta itemprop="wordCount" content="262">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Local Lab Squid">
+  <meta name="twitter:description" content="Local Lab Squid My local lab is currently hosted on a laptop running Virtualbox. I’ve chose to use Host-only network on my VMs so that i can bring my lab with me anywhere. The issue with this is that i can only access the VMs webservers on the laptop itself. Now if i want to use another workstation for my lab and remotely connect via SSH, i wont have access on the VMs hosted services like http, etc.">
+
+	
+  </head><body class="ma0 avenir bg-near-white development is-page is-page page-local-lab-squid">
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        @butteredhusbandph
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+
+  <article class="page-local-lab-squid flex-l mw7 center ph3 flex-wrap justify-between">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        @butteredhusbandph
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1">Local Lab Squid</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2026-04-17T20:56:00+08:00">April 17, 2026</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-100-l"><h1 id="local-lab-squid">Local Lab Squid</h1>
+<p>My local lab is currently hosted on a laptop running Virtualbox. I&rsquo;ve chose to use <code>Host-only</code> network on my VMs so that i can bring my lab with me anywhere. The issue with this is that i can only access the VMs webservers on the laptop itself. Now if i want to use another workstation for my lab and remotely connect via SSH, i wont have access on the VMs hosted services like http, etc.</p>
+<p>One solution that i come with was to install Docker hosted squid
+\</p>
+<p>~/Labs/docker/squid/docker-compose.yml
+\</p>
+<pre tabindex="0"><code>services:
+  squid:
+    image: ubuntu/squid
+    ports:
+      - &#34;3128:3128&#34;
+    volumes:
+      - ./squid.conf:/etc/squid/squid.conf
+      - ./cache:/var/spool/squid
+      #- ./logs:/var/log/squid
+      - /tmp:/var/log/squid
+      - ./whitelist.txt:/etc/squid/whitelist.txt
+    extra_hosts:
+      - &#34;control.lab.local:192.168.56.111&#34;
+      - &#34;hub.lab.local:192.168.56.112&#34;
+      - &#34;gate.lab.local:192.168.56.113&#34;
+    restart: always
+</code></pre><p><br>
+~/Labs/docker/squid/squid.conf
+\</p>
+<pre tabindex="0"><code># Define your local network
+acl localnet src 192.168.50.0/24
+
+# Define safe ports (Standard web traffic)
+acl Safe_ports port 80          # http
+acl Safe_ports port 443         # https
+acl CONNECT method CONNECT
+
+dns_nameservers 192.168.50.200
+# Recommended minimum Access Control configuration
+# Deny requests to certain unsafe ports
+http_access deny !Safe_ports
+
+# Deny CONNECT to other than secure SSL ports
+#http_access deny CONNECT !SSL_ports
+
+# Allow localnet and localhost access
+http_access allow localnet
+http_access allow localhost
+
+acl allowed_http_sites dstdomain &#34;/etc/squid/whitelist.txt&#34;
+http_access allow localnet allowed_http_sites
+
+
+# Finally deny all other access to this proxy
+http_access deny all
+
+# Squid normally listens to port 3128
+http_port 3128
+</code></pre><p><br>
+~/Labs/docker/squid/whitelist.txt<br>
+\</p>
+<pre tabindex="0"><code>192.168.56.*
+192.168.50.*
+.lab.local
+</code></pre><p><br>
+Bring the docker-squid up using <code>docker compose</code> command<br>
+\</p>
+<pre tabindex="0"><code>╭─chris@mint ~/Labs/docker/squid ‹main●›
+╰─$ docker compose up -d
+[+] up 2/2
+ ✔ Network squid_default   Created                                                                                                              0.0s
+ ✔ Container squid-squid-1 Started
+</code></pre><p>#squid #linux</p>
+<ul class="pa0">
+  
+</ul>
+
+      
+    </div></article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="//localhost:1313/" >
+    &copy;  @butteredhusbandph 2026 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
