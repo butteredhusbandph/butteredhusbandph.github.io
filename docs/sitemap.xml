@@ -112,26 +112,6 @@
                href="//localhost:1313/tags/redhat/"/>
   </url>
   <url>
-    <loc>//localhost:1313/posts/easy-rsa/</loc>
-    <lastmod>2026-04-17T17:51:45+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link
-               rel="alternate"
-               hreflang="en"
-               href="//localhost:1313/posts/easy-rsa/"/>
-  </url>
-  <url>
-    <loc>//localhost:1313/posts/pihole/</loc>
-    <lastmod>2026-04-12T19:31:29+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link
-               rel="alternate"
-               hreflang="en"
-               href="//localhost:1313/posts/pihole/"/>
-  </url>
-  <url>
     <loc>//localhost:1313/categories/</loc>
     
     <changefreq>monthly</changefreq>

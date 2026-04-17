@@ -13,7 +13,7 @@
       <link>//localhost:1313/posts/local-lab-squid/</link>
       <pubDate>Fri, 17 Apr 2026 20:56:00 +0800</pubDate>
       <guid>//localhost:1313/posts/local-lab-squid/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;//localhost:1313/static/squid.png&#34; alt=&#34;Squid Proxy&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;My local lab is currently hosted on a laptop running Virtualbox. I&amp;rsquo;ve chose to use &lt;code&gt;Host-only&lt;/code&gt; network on my VMs so that i can bring my lab with me anywhere. The issue with this is that i can only access the VMs webservers on the laptop itself. Now if i want to use another workstation for my lab and remotely connect via SSH, i wont have access on the VMs hosted services like http, etc.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;//localhost:1313/squid.png&#34; alt=&#34;Squid Proxy&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;My local lab is currently hosted on a laptop running Virtualbox. I&amp;rsquo;ve chose to use &lt;code&gt;Host-only&lt;/code&gt; network on my VMs so that i can bring my lab with me anywhere. The issue with this is that i can only access the VMs webservers on the laptop itself. Now if i want to use another workstation for my lab and remotely connect via SSH, i wont have access on the VMs hosted services like http, etc.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -5,6 +5,12 @@ theme = 'mana'
 
 publishDir = "docs"
 
+[params.avatar]
+  [params.avatar.home]
+    assetPath = "/logo.png"
+  [params.avatar.about]
+    assetPath = "/logo.png"
+
 [taxonomies]
    tag = "tags"
    category = "categories"
