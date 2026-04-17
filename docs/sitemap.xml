@@ -12,6 +12,26 @@
                href="http://localhost:1313/"/>
   </url>
   <url>
+    <loc>http://localhost:1313/tags/docker/</loc>
+    <lastmod>2026-04-17T20:56:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="http://localhost:1313/tags/docker/"/>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tags/linux/</loc>
+    <lastmod>2026-04-17T20:56:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="http://localhost:1313/tags/linux/"/>
+  </url>
+  <url>
     <loc>http://localhost:1313/posts/local-lab-squid/</loc>
     <lastmod>2026-04-17T20:56:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -32,6 +52,36 @@
                href="http://localhost:1313/posts/"/>
   </url>
   <url>
+    <loc>http://localhost:1313/tags/squid/</loc>
+    <lastmod>2026-04-17T20:56:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="http://localhost:1313/tags/squid/"/>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-04-17T20:56:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="http://localhost:1313/tags/"/>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tags/ansible/</loc>
+    <lastmod>2026-04-17T18:17:45+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="http://localhost:1313/tags/ansible/"/>
+  </url>
+  <url>
     <loc>http://localhost:1313/posts/aap-private-automationhub/</loc>
     <lastmod>2026-04-17T18:17:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -40,6 +90,26 @@
                rel="alternate"
                hreflang="en"
                href="http://localhost:1313/posts/aap-private-automationhub/"/>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tags/ansibleautomationplatform/</loc>
+    <lastmod>2026-04-17T18:17:45+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="http://localhost:1313/tags/ansibleautomationplatform/"/>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tags/redhat/</loc>
+    <lastmod>2026-04-17T18:17:45+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="http://localhost:1313/tags/redhat/"/>
   </url>
   <url>
     <loc>http://localhost:1313/posts/easy-rsa/</loc>
@@ -62,16 +132,6 @@
                href="http://localhost:1313/posts/pihole/"/>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/homelab/</loc>
-    <lastmod>2026-03-26T20:30:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link
-               rel="alternate"
-               hreflang="en"
-               href="http://localhost:1313/posts/homelab/"/>
-  </url>
-  <url>
     <loc>http://localhost:1313/categories/</loc>
     
     <changefreq>monthly</changefreq>
@@ -80,16 +140,6 @@
                rel="alternate"
                hreflang="en"
                href="http://localhost:1313/categories/"/>
-  </url>
-  <url>
-    <loc>http://localhost:1313/tags/</loc>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-    <xhtml:link
-               rel="alternate"
-               hreflang="en"
-               href="http://localhost:1313/tags/"/>
   </url>
   
 </urlset>

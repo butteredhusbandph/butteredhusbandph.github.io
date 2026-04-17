@@ -2,8 +2,10 @@
 date = '2026-04-17T20:56:00+08:00'
 draft = false
 title = 'Local Lab Docker Squid'
-
+tags = ['squid', 'docker', 'linux']
 +++
+
+![Squid Proxy](/assets/images/squid.png)
 
 
 My local lab is currently hosted on a laptop running Virtualbox. I've chose to use `Host-only` network on my VMs so that i can bring my lab with me anywhere. The issue with this is that i can only access the VMs webservers on the laptop itself. Now if i want to use another workstation for my lab and remotely connect via SSH, i wont have access on the VMs hosted services like http, etc. 

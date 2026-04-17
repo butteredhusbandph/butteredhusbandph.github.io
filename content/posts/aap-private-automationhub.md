@@ -2,7 +2,7 @@
 date = '2026-04-17T18:17:45+08:00'
 draft = false
 title = 'Ansible Automation Platform Private Automation Hub'
-
+tags = ['ansible', 'ansibleautomationplatform', 'redhat', 'linux']
 +++
 
 ## Uploading Content Collections to Private Automation Hub  

@@ -13,7 +13,7 @@
       <link>http://localhost:1313/posts/local-lab-squid/</link>
       <pubDate>Fri, 17 Apr 2026 20:56:00 +0800</pubDate>
       <guid>http://localhost:1313/posts/local-lab-squid/</guid>
-      <description>&lt;p&gt;My local lab is currently hosted on a laptop running Virtualbox. I&amp;rsquo;ve chose to use &lt;code&gt;Host-only&lt;/code&gt; network on my VMs so that i can bring my lab with me anywhere. The issue with this is that i can only access the VMs webservers on the laptop itself. Now if i want to use another workstation for my lab and remotely connect via SSH, i wont have access on the VMs hosted services like http, etc.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/squid.png&#34; alt=&#34;Squid Proxy&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;My local lab is currently hosted on a laptop running Virtualbox. I&amp;rsquo;ve chose to use &lt;code&gt;Host-only&lt;/code&gt; network on my VMs so that i can bring my lab with me anywhere. The issue with this is that i can only access the VMs webservers on the laptop itself. Now if i want to use another workstation for my lab and remotely connect via SSH, i wont have access on the VMs hosted services like http, etc.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ansible Automation Platform Private Automation Hub</title>
@@ -35,13 +35,6 @@
       <pubDate>Sun, 12 Apr 2026 19:31:29 +0800</pubDate>
       <guid>http://localhost:1313/posts/pihole/</guid>
       <description></description>
-    </item>
-    <item>
-      <title>Homelab</title>
-      <link>http://localhost:1313/posts/homelab/</link>
-      <pubDate>Thu, 26 Mar 2026 20:30:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/homelab/</guid>
-      <description>&lt;p&gt;#My homelab setup&lt;/p&gt;&#xA;&lt;p&gt;As part of my ongoing review for Redhat Certifications. I need to have a lab environment that i can deploy, destroy and redeploy.&lt;/p&gt;&#xA;&lt;p&gt;My requirements for the lab are:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Easy deployment, destroy and redeploy&lt;/li&gt;&#xA;&lt;li&gt;Configuration like ssh keys, packages requirements and OS updated&lt;/li&gt;&#xA;&lt;li&gt;1 VM will have additional disk&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;#Lab Diagram&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;classDiagram&#xA;      Animal &amp;lt;|-- Duck&#xA;      Animal &amp;lt;|-- Fish&#xA;      Animal &amp;lt;|-- Zebra&#xA;      Animal : +int age&#xA;      Animal : +String gender&#xA;      Animal: +isMammal()&#xA;      Animal: +mate()&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;laptop-spec&#34;&gt;Laptop spec&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Processor:&#xA;Disk:&#xA;Memory: 32Gb&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
   </channel>
 </rss>
