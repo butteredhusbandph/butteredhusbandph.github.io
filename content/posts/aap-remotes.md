@@ -17,11 +17,12 @@ Go to `Server URL` and copy `validated URL` and `SSO URL`
 
 In your AAP Automation Content portal click `Remotes > Create Remote`
 
-Name: rh-validated
-URL: `validated URL` from console.redhat.com Automation hub
-Token:  `token` from console.redhat.com Automation hub
-SSO URL: `SSO URL` from console.redhat.com Automation hub
-
+**Name:** rh-validated  
+**URL:**  `validated URL` from console.redhat.com Automation hub  
+**Token:**  `token` from console.redhat.com Automation hub  
+**SSO URL:** `SSO URL` from console.redhat.com Automation hub  
+  
+  
 Under Requirements file, i just want to test remote sync and dont want to sync all collections:
 ```
 collections:
@@ -32,8 +33,8 @@ collections:
 
 Go to `Repositories > Create repository`
 
-Name: rh-validated-remote
-Remote: rh-validated
+**Name:** rh-validated-remote  
+**Remote:** rh-validated  
 
 ![AAP validated remote](/rh-validated-app2.png)
 
