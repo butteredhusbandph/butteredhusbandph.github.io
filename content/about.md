@@ -4,4 +4,6 @@ draft = true
 title = 'About'
 +++
 
+![Redhat Certified Engineer](/red-hat-certified-engineer-rhce.png)
+
 ...to be continued...
