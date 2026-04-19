@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ansible Automation Platform on @butteredhusbandph</title>
+    <link>//localhost:1313/tags/ansible-automation-platform/</link>
+    <description>Recent content in Ansible Automation Platform on @butteredhusbandph</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Apr 2026 21:44:48 +0800</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/ansible-automation-platform/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ansible Automation Platform Installation in Virtualbox</title>
+      <link>//localhost:1313/posts/ansible/ansible-automation-platform/</link>
+      <pubDate>Sun, 19 Apr 2026 21:44:48 +0800</pubDate>
+      <guid>//localhost:1313/posts/ansible/ansible-automation-platform/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;//localhost:1313/ansible/rh-app.png&#34; alt=&#34;Redhat Ansible Automation Platform&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I’ve put together my notes on deploying Ansible Automation Platform (AAP) 2.5 on VirtualBox. This setup runs entirely on a single host using VirtualBox networking.&lt;/p&gt;&#xA;&lt;h2 id=&#34;host-computer-spec&#34;&gt;Host Computer Spec:&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;CPU:&lt;/strong&gt;  &lt;br&gt;&#xA;&lt;strong&gt;RAM:&lt;/strong&gt;  32 Gb&lt;br&gt;&#xA;&lt;strong&gt;DISK:&lt;/strong&gt; 250 Gb&lt;br&gt;&#xA;&lt;strong&gt;OS:&lt;/strong&gt; Redhat Enterprise Linux 9.x&lt;br&gt;&#xA;&lt;strong&gt;Network:&lt;/strong&gt; Virtualbox Host-Only 192.168.56.0/24&lt;/p&gt;&#xA;&lt;h2 id=&#34;dns-server&#34;&gt;DNS server&lt;/h2&gt;&#xA;&lt;p&gt;For DNS resolution inside the lab, I’m using my existing Pi‑hole instance as the authoritative local DNS. Under&#xA;Pi-hole → Settings → Local DNS Settings, I added:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>//localhost:1313/</loc>
-    <lastmod>2026-04-18T06:56:11+08:00</lastmod>
+    <lastmod>2026-04-19T21:44:48+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link
@@ -13,7 +13,7 @@
   </url>
   <url>
     <loc>//localhost:1313/tags/ansible/</loc>
-    <lastmod>2026-04-18T06:56:11+08:00</lastmod>
+    <lastmod>2026-04-19T21:44:48+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
     <xhtml:link
@@ -22,18 +22,18 @@
                href="//localhost:1313/tags/ansible/"/>
   </url>
   <url>
-    <loc>//localhost:1313/posts/aap-remotes/</loc>
-    <lastmod>2026-04-18T06:56:11+08:00</lastmod>
+    <loc>//localhost:1313/posts/ansible/ansible-automation-platform/</loc>
+    <lastmod>2026-04-19T21:44:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="//localhost:1313/posts/aap-remotes/"/>
+               href="//localhost:1313/posts/ansible/ansible-automation-platform/"/>
   </url>
   <url>
     <loc>//localhost:1313/tags/ansibleautomationplatform/</loc>
-    <lastmod>2026-04-18T06:56:11+08:00</lastmod>
+    <lastmod>2026-04-19T21:44:48+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
     <xhtml:link
@@ -43,7 +43,7 @@
   </url>
   <url>
     <loc>//localhost:1313/tags/linux/</loc>
-    <lastmod>2026-04-18T06:56:11+08:00</lastmod>
+    <lastmod>2026-04-19T21:44:48+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
     <xhtml:link
@@ -53,7 +53,7 @@
   </url>
   <url>
     <loc>//localhost:1313/posts/</loc>
-    <lastmod>2026-04-18T06:56:11+08:00</lastmod>
+    <lastmod>2026-04-19T21:44:48+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -63,7 +63,7 @@
   </url>
   <url>
     <loc>//localhost:1313/tags/redhat/</loc>
-    <lastmod>2026-04-18T06:56:11+08:00</lastmod>
+    <lastmod>2026-04-19T21:44:48+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
     <xhtml:link
@@ -73,13 +73,23 @@
   </url>
   <url>
     <loc>//localhost:1313/tags/</loc>
-    <lastmod>2026-04-18T06:56:11+08:00</lastmod>
+    <lastmod>2026-04-19T21:44:48+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
     <xhtml:link
                rel="alternate"
                hreflang="en"
                href="//localhost:1313/tags/"/>
+  </url>
+  <url>
+    <loc>//localhost:1313/posts/ansible/aap-remotes/</loc>
+    <lastmod>2026-04-18T06:56:11+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="//localhost:1313/posts/ansible/aap-remotes/"/>
   </url>
   <url>
     <loc>//localhost:1313/tags/docker/</loc>
@@ -112,14 +122,14 @@
                href="//localhost:1313/tags/squid/"/>
   </url>
   <url>
-    <loc>//localhost:1313/posts/aap-private-automationhub/</loc>
+    <loc>//localhost:1313/posts/ansible/aap-private-automationhub/</loc>
     <lastmod>2026-04-17T18:17:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="//localhost:1313/posts/aap-private-automationhub/"/>
+               href="//localhost:1313/posts/ansible/aap-private-automationhub/"/>
   </url>
   <url>
     <loc>//localhost:1313/categories/</loc>

@@ -83,7 +83,7 @@ My home lab currently runs on a laptop using VirtualBox, with all my VMs configu
 
   
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","email":"your.email@example.com","name":"@butteredhusbandph","sameAs":["https://github.com/penoycentral"]},"dateModified":"2026-04-17T20:56:00+08:00","datePublished":"2026-04-17T20:56:00+08:00","description":"\nMy home lab currently runs on a laptop using VirtualBox, with all my VMs configured on a host‑only network so I can take the entire environment with me. The …","headline":"Local Lab Docker Squid","image":"//localhost:1313/logo.png","inLanguage":"en-us","keywords":["squid","docker","linux"],"mainEntityOfPage":{"@id":"//localhost:1313/posts/local-lab-squid/","@type":"WebPage"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"//localhost:1313/logo.png"},"name":"@butteredhusbandph","url":"//localhost:1313/"},"timeRequired":"PT2M","url":"//localhost:1313/posts/local-lab-squid/","wordCount":253}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","email":"butteredhusbandph@gmail.com","name":"@butteredhusbandph","sameAs":["https://github.com/penoycentral"]},"dateModified":"2026-04-17T20:56:00+08:00","datePublished":"2026-04-17T20:56:00+08:00","description":"\nMy home lab currently runs on a laptop using VirtualBox, with all my VMs configured on a host‑only network so I can take the entire environment with me. The …","headline":"Local Lab Docker Squid","image":"//localhost:1313/logo.png","inLanguage":"en-us","keywords":["squid","docker","linux"],"mainEntityOfPage":{"@id":"//localhost:1313/posts/local-lab-squid/","@type":"WebPage"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"//localhost:1313/logo.png"},"name":"@butteredhusbandph","url":"//localhost:1313/"},"timeRequired":"PT2M","url":"//localhost:1313/posts/local-lab-squid/","wordCount":246}</script>
 
 
 
@@ -371,7 +371,7 @@ My home lab currently runs on a laptop using VirtualBox, with all my VMs configu
             stroke-width="2"
             d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
         </svg>
-        253 words
+        246 words
       </span>
     
 
@@ -407,10 +407,9 @@ My home lab currently runs on a laptop using VirtualBox, with all my VMs configu
 
       <div class="post-content-main">
         <p><img src="/squid.png" alt="Squid Proxy"></p>
-<p>My home lab currently runs on a laptop using VirtualBox, with all my VMs configured on a host‑only network so I can take the entire environment with me. The downside is that the VMs’ web services are only reachable from the laptop itself. If I want to work from another workstation and connect over SSH, I lose access to anything the VMs expose—HTTP, management interfaces, and so on.
+<p>My home lab currently runs on a laptop using VirtualBox, with all my VMs configured on a <code>host‑only</code> network so I can take the entire environment with me. The downside is that the VMs’ web services are only reachable from the laptop itself. If I want to work from another workstation and connect over SSH, I lose access to anything the VMs expose—HTTP and so on.
 One workaround I explored was running a Docker‑based Squid proxy to bridge that gap</p>
-<p>~/Labs/docker/squid/docker-compose.yml
-\</p>
+<p><em>~/Labs/docker/squid/docker-compose.yml</em></p>
 <pre tabindex="0"><code>services:
   squid:
     image: ubuntu/squid
@@ -419,7 +418,6 @@ One workaround I explored was running a Docker‑based Squid proxy to bridge tha
     volumes:
       - ./squid.conf:/etc/squid/squid.conf
       - ./cache:/var/spool/squid
-      #- ./logs:/var/log/squid
       - /tmp:/var/log/squid
       - ./whitelist.txt:/etc/squid/whitelist.txt
     extra_hosts:
@@ -427,9 +425,8 @@ One workaround I explored was running a Docker‑based Squid proxy to bridge tha
       - &#34;hub.lab.local:192.168.56.112&#34;
       - &#34;gate.lab.local:192.168.56.113&#34;
     restart: always
-</code></pre><p><br>
-~/Labs/docker/squid/squid.conf
-\</p>
+</code></pre><!-- raw HTML omitted -->
+<p><em>~/Labs/docker/squid/squid.conf</em></p>
 <pre tabindex="0"><code># Define your local network
 acl localnet src 192.168.50.0/24
 
@@ -438,7 +435,7 @@ acl Safe_ports port 80          # http
 acl Safe_ports port 443         # https
 acl CONNECT method CONNECT
 
-dns_nameservers 192.168.50.200
+dns_nameservers 192.168.50.200 #local Pi-hole dns server
 # Recommended minimum Access Control configuration
 # Deny requests to certain unsafe ports
 http_access deny !Safe_ports
@@ -459,22 +456,19 @@ http_access deny all
 
 # Squid normally listens to port 3128
 http_port 3128
-</code></pre><p><br>
-~/Labs/docker/squid/whitelist.txt<br>
-\</p>
+</code></pre><!-- raw HTML omitted -->
+<p><em>whitelist.txt</em></p>
 <pre tabindex="0"><code>192.168.56.*
 192.168.50.*
 .lab.local
-</code></pre><p><br>
-Bring the docker-squid up using <code>docker compose</code> command<br>
-\</p>
+</code></pre><!-- raw HTML omitted -->
+<p>Bring docker-squid up using <code>docker compose</code> command</p>
 <pre tabindex="0"><code>╭─chris@mint ~/Labs/docker/squid ‹main●›
 ╰─$ docker compose up -d
 [+] up 2/2
  ✔ Network squid_default   Created                                                                                                              0.0s
  ✔ Container squid-squid-1 Started
-</code></pre><p>#squid #linux</p>
-
+</code></pre>
       </div>
 
       
@@ -500,7 +494,7 @@ Bring the docker-squid up using <code>docker compose</code> command<br>
   <ul class="related-posts-list">
     
     <li class="related-post-item">
-      <a href="/posts/aap-private-automationhub/" class="related-post-link">
+      <a href="/posts/ansible/aap-private-automationhub/" class="related-post-link">
         <strong>Ansible Automation Platform Private Automation Hub</strong>
         <span>Uploading Content Collections to Private Automation Hub ~/ansible/ee/execution-environment.yml
 version: 3 dependencies: …</span>
@@ -515,7 +509,7 @@ version: 3 dependencies: …</span>
       <nav class="post-navigation" aria-label="Post navigation">
         
           <a
-            href="/posts/aap-private-automationhub/"
+            href="/posts/ansible/aap-private-automationhub/"
             class="nav-link nav-prev"
             aria-label="Previous post: Ansible Automation Platform Private Automation Hub">
             <span class="nav-label">Previous</span>
@@ -525,7 +519,7 @@ version: 3 dependencies: …</span>
 
         
           <a
-            href="/posts/aap-remotes/"
+            href="/posts/ansible/aap-remotes/"
             class="nav-link nav-next"
             aria-label="Next post: Ansible Automation Platform Remote Contents">
             <span class="nav-label">Next</span>
@@ -620,7 +614,7 @@ version: 3 dependencies: …</span>
   
 
   
-    <a href="mailto:your.email@example.com" class="social-link" aria-label="Email">
+    <a href="mailto:butteredhusbandph@gmail.com" class="social-link" aria-label="Email">
       <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
         <path
           stroke-linecap="round"
