@@ -5,7 +5,7 @@ title = 'Certificate Authority Server using EasyRSA'
 +++
 
 One of the prerequisite of my Ansible Automation Platform 2.5/2.6 lab environment was to configure a `local` Certificate Authority.  
-I've used my workstation running on LinuxMint to setup my CA server  
+I've used my workstation running on LinuxMint to configure my Certificate Authority.   
 
 Installing EasyRSA  
 ```
@@ -19,4 +19,34 @@ Initialize  PKI
 ```
 cd ~/easy-rsa
 ./easyrsa init-pki
+./easyrsa build-ca
 ```
+
+Copy CA certificate the clients
+```
+sudo cp /tmp/ca.crt /etc/pki/ca-trust/source/anchors/
+sudo update-ca-trust
+```
+
+## Creating Signing and Certificate Requests
+```
+openssl genrsa -out $(hostname).key
+openssl req -new -key $(hostname).key -out $(hostname).req
+
+scp $(hostname).req <user>@ca_server_ip:/tmp
+
+```
+
+Signing a CSR
+```
+cd ~/easy-rsa
+./easyrsa import-req /tmp/<client-hostname>.req <client-hostname>
+./easyrsa sign-req server <client-hostname>
+
+scp pki/issued/<client-hostname>.crt user@client_ip:/tmp
+```
+
+
+
+Referrence:
+https://www.digitalocean.com/community/tutorials/how-to-set-up-and-configure-a-certificate-authority-on-ubuntu-22-04

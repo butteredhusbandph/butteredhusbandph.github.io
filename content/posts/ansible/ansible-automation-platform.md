@@ -12,8 +12,10 @@ I’ve put together my notes on deploying Ansible Automation Platform (AAP) 2.5(
 
 ## Lab Prerequisites
 
-- Local [Squid proxy](../../local-lab-squid)
-- Local Certificate Authority and client certificates <..still brewing>
+- [Squid proxy](../../local-lab-squid)
+- [Certificate Authority and client certificates](easy-rsa)
+
+<br>
 
 ## Host Computer Spec:
 **CPU:**  Intel(R) Core(TM) i7-8665U CPU @ 1.90GHz   
@@ -33,15 +35,29 @@ control.lab.local  192.168.56.111
   
 ## Virtual Machines Overview
 ### Ansible Automation Hub 
-`hub.lab.local`  
-  
+`hub.lab.local` 
+```
+vCPU: 2
+RAM: 8Gb  
+Disk: 40Gb
+```
+
 ### Ansible Automation Gateway  
 `gate.lab.local`
+```
+vCPU: 2  
+RAM: 8Gb  
+Disk: 20Gb  
+```
 
-### Ansible Automation  Controller
-`gate.lab.local`
+### Ansible Automation  Controller and Database server
+`control.lab.local`  
+```
+vCPU: 2  
+RAM: 8Gb  
+Disk: 20Gb  
+```
 
-### AAP Database Server  
   
 ### Downloading AAP 2.5
 Create a Red Hat Developer account and download the AAP 2.5 bundle:
@@ -78,6 +94,13 @@ Test your host and VMs connection
 ```
 ansible all -m ping
 ```
+
+I've created playbook.yml to further configure my VMs
+
+```
+playbook.yml here
+```
+
  <br>
 Extract the bundle:  
 ```
@@ -86,7 +109,7 @@ cd ansible-automation-platform-setup-bundle-2.5-1-x86_64
 ```
 
 ## Certificate Authority Setup
-Configure your local Certificate Authorithy so AAP components can trust each other.
+[Configure your local Certificate Authority](easy-rsa) so AAP components can trust each other. 
 
 ## Inventory Configuration
 Edit your inventory file to define the Hub, Controller, and Database hosts:
@@ -138,12 +161,6 @@ automationgateway_pg_port=5432
 automationgateway_pg_database=gateway
 automationgateway_pg_username=gateway
 automationgateway_pg_password='******'
-
-#automationedacontroller_admin_password=secret
-#automationedacontroller_pg_host=control.lab.local
-#automationedacontroller_pg_database=5432
-#automationedacontroller_pg_username=eventdriven
-#automationedacontroller_pg_password=eventdriven
 ```
 
 ## Running the Installer
@@ -155,8 +172,27 @@ Execute the setup script:
 
 ## Configure SSL certificates
 
-Once installation completes, copy ssl key and crt to `hub.lab.local` and `gate.lab.local`
+Once installation completes, copy ssl key and crt
+
+*hub.lab.local*
+```
+here
+```
+
+*gate.lab.local*
+```
+here
+
+```
+
+
 
 Access the AAP web interface via `gate.lab.local` and register your deployment using your Red Hat Developer account.
 
 ![Redhat Ansible Automation Platform](/ansible/rh-app-ui.png)
+
+Referrence:
+
+https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.5/html/rpm_installation/appendix-inventory-files-vars
+
+https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.6/html/rpm_installation/appendix-inventory-files-vars

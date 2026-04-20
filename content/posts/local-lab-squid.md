@@ -22,15 +22,17 @@ services:
       - "3128:3128"
     volumes:
       - ./squid.conf:/etc/squid/squid.conf
-      - ./cache:/var/spool/squid
-      - /tmp:/var/log/squid
+      - cache:/var/spool/squid
+      - logs:/var/log/squid
       - ./whitelist.txt:/etc/squid/whitelist.txt
     extra_hosts:
       - "control.lab.local:192.168.56.111"
       - "hub.lab.local:192.168.56.112"
       - "gate.lab.local:192.168.56.113"
     restart: always
-```
+volumes:
+  cache:
+  logs:
 
 <br>
     
