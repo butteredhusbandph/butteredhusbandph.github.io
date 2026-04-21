@@ -33,6 +33,7 @@ services:
 volumes:
   cache:
   logs:
+```
 
 <br>
     
