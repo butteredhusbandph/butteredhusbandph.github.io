@@ -6,8 +6,15 @@
     <description>Recent content in Linux on @butteredhusbandph</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Apr 2026 21:44:48 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 22 Apr 2026 16:41:54 +0800</lastBuildDate>
     <atom:link href="//localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ansible Automation Platform Execution</title>
+      <link>//localhost:1313/posts/ansible/ansible-automation-platform-execution/</link>
+      <pubDate>Wed, 22 Apr 2026 16:41:54 +0800</pubDate>
+      <guid>//localhost:1313/posts/ansible/ansible-automation-platform-execution/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Disclaimer:&lt;/em&gt; This is just my mental notes for Ansible Automation Platform. It is not intended to be a howto documentation. However, am hoping that will help you in some other ways or give you idea on AAP.&lt;/p&gt;&#xA;&lt;h2 id=&#34;configure-credentials&#34;&gt;Configure Credentials&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;Automation Controller &amp;gt; Infrastructure &amp;gt; Credentials&lt;/em&gt;&#xA;&lt;img src=&#34;//localhost:1313/ansible/rh-aap-execution10.png&#34; alt=&#34;Redhat Ansible Automation Platform&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;creating-a-project-using-git&#34;&gt;Creating a Project using GIT&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;Automation Controller &amp;gt; Projects &amp;gt; Create Project&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;//localhost:1313/ansible/rh-aap-execution1.png&#34; alt=&#34;Redhat Ansible Automation Platform&#34;&gt;&#xA;Git UrL: &lt;a href=&#34;https://github.com/penoycentral/ex467-lab&#34;&gt;https://github.com/penoycentral/ex467-lab&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;creating-job-templates&#34;&gt;Creating Job Templates&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;Automation Controller &amp;gt; Templates &amp;gt; Create Template &amp;gt; Create Job Template&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Ansible Automation Platform Installation in Virtualbox</title>
       <link>//localhost:1313/posts/ansible/ansible-automation-platform/</link>
