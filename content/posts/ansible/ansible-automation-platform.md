@@ -6,6 +6,8 @@ tags = ['ansible', 'ansibleautomationplatform', 'redhat', 'linux']
 
 +++
 
+*Disclaimer:* These notes reflect my personal understanding and working thoughts on Ansible Automation Platform. They are not intended to serve as formal documentation or a step-by-step guide. That said, I hope they offer useful insights, spark ideas, or provide some value as you explore AAP on your own.
+
 ![Redhat Ansible Automation Platform](/ansible/rh-app.png)
 
 I’ve put together my notes on deploying Ansible Automation Platform (AAP) 2.5(can work on v2.6 too) on VirtualBox. This setup runs entirely on a single host using VirtualBox.

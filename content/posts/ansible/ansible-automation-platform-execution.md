@@ -5,7 +5,7 @@ title = 'Ansible Automation Platform Execution'
 tags = ['ansible', 'ansibleautomationplatform', 'redhat', 'linux']
 +++
 
-*Disclaimer:* This is just my mental notes for Ansible Automation Platform. It is not intended to be a howto documentation. However, am hoping that will help you in some other ways or give you idea on AAP.
+*Disclaimer:* These notes reflect my personal understanding and working thoughts on Ansible Automation Platform. They are not intended to serve as formal documentation or a step-by-step guide. That said, I hope they offer useful insights, spark ideas, or provide some value as you explore AAP on your own.
 
 ## Configure Credentials
 *Automation Controller > Infrastructure > Credentials*

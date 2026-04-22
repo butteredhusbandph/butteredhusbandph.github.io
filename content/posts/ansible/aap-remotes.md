@@ -5,6 +5,8 @@ title = 'Ansible Automation Platform Remote Contents'
 tags = ['ansible', 'ansibleautomationplatform', 'redhat', 'linux']
 +++
 
+*Disclaimer:* These notes reflect my personal understanding and working thoughts on Ansible Automation Platform. They are not intended to serve as formal documentation or a step-by-step guide. That said, I hope they offer useful insights, spark ideas, or provide some value as you explore AAP on your own.
+
 In this sample, we will configure Redhat `validated` content from Automation Hub  
 
 First create your token. Login to [console.redhat.com](https://console.redhat.com/ansible/automation-hub/token) and click `Load token`

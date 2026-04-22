@@ -26,6 +26,7 @@ dependencies:
     - pkgconf-pkg-config
     - gcc
     - python3.11-devel
+    - python3-dnf
 
 build_arg_defaults:
   ANSIBLE_GALAXY_CLI_COLLECTION_OPTS: '-c'
@@ -55,7 +56,7 @@ Login to AAP private automation hub and build the Execution Environment
 [chris@mgmt ee]$ ansible-builder create
 Complete! The build context can be found at: /home/chris/ansible/ee/context
 
-[chris@mgmt ee]$ podman build -f context/Containerfile context/ -t gateway.lab.local/lab/ee-lab-rhel9:latest
+[chris@mgmt ee]$ podman build -f context/Containerfile context/ -t gate.lab.local/lab/ee-lab-rhel8:latest
 
 [chris@mgmt ee]$ podman images
 REPOSITORY                             TAG         IMAGE ID      CREATED         SIZE
@@ -71,5 +72,3 @@ Copying blob 4b636d67cf3a done   |
 Copying blob 6f7354abfe11 skipped: already exists
 
 ```
-
-\#ansibleautomationplatform \#ansible \#linux
