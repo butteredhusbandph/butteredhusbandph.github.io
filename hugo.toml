@@ -3,7 +3,8 @@ locale = 'en-us'
 title = '@butteredhusbandph'
 theme = 'mana'
 
-publishDir = "docs"
+#publishDir = "docs"
+publishDir = "public"
 
 [params.avatar]
   [params.avatar.home]

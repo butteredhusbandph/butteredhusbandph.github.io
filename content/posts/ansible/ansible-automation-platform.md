@@ -13,7 +13,7 @@ I’ve put together my notes on deploying Ansible Automation Platform (AAP) 2.5(
 ## Lab Prerequisites
 
 - [Squid proxy](../../local-lab-squid)
-- [Certificate Authority and client certificates](easy-rsa)
+- [Certificate Authority and client certificates](../easy-rsa)
 - Register your VMs to RHN
 
 <br>

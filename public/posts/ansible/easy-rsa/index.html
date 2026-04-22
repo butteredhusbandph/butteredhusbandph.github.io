@@ -21,41 +21,44 @@
   
   window.MANA_LANG_PREFIXES = ['en'];
 </script>
-<title>Ansible Automation Platform Mesh | @butteredhusbandph</title>
+<title>Certificate Authority Server using EasyRSA | @butteredhusbandph</title>
 <meta
   name="description"
   content="
-    Why Automation Mesh Challenges on automation across different platforms and location Ensuring automation executes consistently while managing centrally Automate …
+    One of the prerequisite of my Ansible Automation Platform 2.5/2.6 lab environment was to configure a local Certificate Authority.
+I&rsquo;ve used my workstation …
   
   ">
 
 
-  <meta name="keywords" content="ansible, ansibleautomationplatform, redhat, linux">
+  <meta name="keywords" content="ansibleautomationplatform, redhat, linux">
 
 
 
 
 
-<link rel="canonical" href="//localhost:1313/posts/ansible/ansible-automation-platform-mesh/">
+<link rel="canonical" href="//localhost:1313/posts/ansible/easy-rsa/">
 
 
-<link rel="alternate" hreflang="en-us" href="//localhost:1313/posts/ansible/ansible-automation-platform-mesh/"><link rel="alternate" hreflang="x-default" href="//localhost:1313/posts/ansible/ansible-automation-platform-mesh/">
+<link rel="alternate" hreflang="en-us" href="//localhost:1313/posts/ansible/easy-rsa/"><link rel="alternate" hreflang="x-default" href="//localhost:1313/posts/ansible/easy-rsa/">
 
 
 <meta name="robots" content="index, follow">
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_us">
-<meta property="og:title" content="Ansible Automation Platform Mesh | @butteredhusbandph">
-<meta property="og:description" content="Why Automation Mesh Challenges on automation across different platforms and location Ensuring automation executes consistently while managing centrally Automate …">
-<meta property="og:url" content="//localhost:1313/posts/ansible/ansible-automation-platform-mesh/">
-<meta property="og:site_name" content="@butteredhusbandph"><meta property="article:published_time" content="2026-04-20T15:26:26&#43;08:00">
+<meta property="og:title" content="Certificate Authority Server using EasyRSA | @butteredhusbandph">
+<meta property="og:description" content="One of the prerequisite of my Ansible Automation Platform 2.5/2.6 lab environment was to configure a local Certificate Authority.
+I&rsquo;ve used my workstation …">
+<meta property="og:url" content="//localhost:1313/posts/ansible/easy-rsa/">
+<meta property="og:site_name" content="@butteredhusbandph"><meta property="article:published_time" content="2026-04-17T17:51:45&#43;08:00">
   <meta
     property="article:modified_time"
-    content="2026-04-20T15:26:26&#43;08:00"><meta property="article:section" content="ansible"><meta property="article:tag" content="ansible"><meta property="article:tag" content="ansibleautomationplatform"><meta property="article:tag" content="redhat"><meta property="article:tag" content="linux">
+    content="2026-04-17T17:51:45&#43;08:00"><meta property="article:section" content="ansibleautomationplatform"><meta property="article:tag" content="ansibleautomationplatform"><meta property="article:tag" content="redhat"><meta property="article:tag" content="linux">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Ansible Automation Platform Mesh | @butteredhusbandph">
-<meta name="twitter:description" content="Why Automation Mesh Challenges on automation across different platforms and location Ensuring automation executes consistently while managing centrally Automate …">
+<meta name="twitter:title" content="Certificate Authority Server using EasyRSA | @butteredhusbandph">
+<meta name="twitter:description" content="One of the prerequisite of my Ansible Automation Platform 2.5/2.6 lab environment was to configure a local Certificate Authority.
+I&rsquo;ve used my workstation …">
 
 
 
@@ -80,7 +83,7 @@
 
   
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","email":"butteredhusbandph@gmail.com","name":"@butteredhusbandph","sameAs":["https://github.com/penoycentral"]},"dateModified":"2026-04-20T15:26:26+08:00","datePublished":"2026-04-20T15:26:26+08:00","description":"Why Automation Mesh Challenges on automation across different platforms and location Ensuring automation executes consistently while managing centrally Automate …","headline":"Ansible Automation Platform Mesh","image":"//localhost:1313/logo.png","inLanguage":"en-us","keywords":["ansible","ansibleautomationplatform","redhat","linux"],"mainEntityOfPage":{"@id":"//localhost:1313/posts/ansible/ansible-automation-platform-mesh/","@type":"WebPage"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"//localhost:1313/logo.png"},"name":"@butteredhusbandph","url":"//localhost:1313/"},"timeRequired":"PT1M","url":"//localhost:1313/posts/ansible/ansible-automation-platform-mesh/","wordCount":36}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","email":"butteredhusbandph@gmail.com","name":"@butteredhusbandph","sameAs":["https://github.com/penoycentral"]},"dateModified":"2026-04-17T17:51:45+08:00","datePublished":"2026-04-17T17:51:45+08:00","description":"One of the prerequisite of my Ansible Automation Platform 2.5/2.6 lab environment was to configure a local Certificate Authority.\nI\u0026rsquo;ve used my workstation …","headline":"Certificate Authority Server using EasyRSA","image":"//localhost:1313/logo.png","inLanguage":"en-us","keywords":["ansibleautomationplatform","redhat","linux"],"mainEntityOfPage":{"@id":"//localhost:1313/posts/ansible/easy-rsa/","@type":"WebPage"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"//localhost:1313/logo.png"},"name":"@butteredhusbandph","url":"//localhost:1313/"},"timeRequired":"PT1M","url":"//localhost:1313/posts/ansible/easy-rsa/","wordCount":102}</script>
 
 
 
@@ -90,7 +93,7 @@
     
   
   
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"//localhost:1313/","name":"Home","position":1},{"@type":"ListItem","item":"//localhost:1313/posts/","name":"Posts","position":2},{"@type":"ListItem","item":"//localhost:1313/posts/ansible/ansible-automation-platform-mesh/","name":"Ansible Automation Platform Mesh","position":3}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"//localhost:1313/","name":"Home","position":1},{"@type":"ListItem","item":"//localhost:1313/posts/","name":"Posts","position":2},{"@type":"ListItem","item":"//localhost:1313/posts/ansible/easy-rsa/","name":"Certificate Authority Server using EasyRSA","position":3}]}</script>
 
 
 
@@ -333,20 +336,20 @@
     </li>
     
     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-      <span itemprop="name" class="breadcrumb-current">Ansible Automation Platform Mesh</span>
+      <span itemprop="name" class="breadcrumb-current">Certificate Authority Server using EasyRSA</span>
       <meta itemprop="position" content="3" />
     </li>
   </ol>
 </nav>
 
 
-        <h1 class="post-title-main">Ansible Automation Platform Mesh</h1>
+        <h1 class="post-title-main">Certificate Authority Server using EasyRSA</h1>
 
         
 
         <div class="post-meta">
   <div class="post-meta-info">
-    <time datetime="2026-04-20T15:26:26&#43;08:00" class="post-date">
+    <time datetime="2026-04-17T17:51:45&#43;08:00" class="post-date">
       <svg class="meta-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path
           stroke-linecap="round"
@@ -354,7 +357,7 @@
           stroke-width="2"
           d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
       </svg>
-      April 20, 2026
+      April 17, 2026
     </time>
 
     <span class="meta-separator">•</span>
@@ -368,7 +371,7 @@
             stroke-width="2"
             d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
         </svg>
-        36 words
+        102 words
       </span>
     
 
@@ -390,8 +393,6 @@
   
     <div class="post-tags">
       
-        <a href="/tags/ansible" class="post-tag">ansible</a>
-      
         <a href="/tags/ansibleautomationplatform" class="post-tag">ansibleautomationplatform</a>
       
         <a href="/tags/redhat" class="post-tag">redhat</a>
@@ -405,24 +406,33 @@
       </header>
 
       <div class="post-content-main">
-        <h2 id="why-automation-mesh">Why Automation Mesh</h2>
-<ul>
-<li>Challenges on automation across different platforms and location</li>
-<li>Ensuring automation executes consistently while managing centrally</li>
-<li>Automate remote areas with limited connectivity</li>
-</ul>
-<pre tabindex="0"><code>[automationcontroller]
-control.lab.local
+        <p>One of the prerequisite of my Ansible Automation Platform 2.5/2.6 lab environment was to configure a <code>local</code> Certificate Authority.<br>
+I&rsquo;ve used my workstation running on LinuxMint to configure my Certificate Authority.</p>
+<p>Installing EasyRSA</p>
+<pre tabindex="0"><code>sudo apt update
+sudo apt install easy-rsa
+mkdir ~/easy-rsa
+ln - /usr/share/easy-rsa/* ~/easy-rsa/
+</code></pre><p>Initialize  PKI</p>
+<pre tabindex="0"><code>cd ~/easy-rsa
+./easyrsa init-pki
+./easyrsa build-ca
+</code></pre><p>Copy CA certificate the clients</p>
+<pre tabindex="0"><code>sudo cp /tmp/ca.crt /etc/pki/ca-trust/source/anchors/
+sudo update-ca-trust
+</code></pre><h2 id="creating-signing-and-certificate-requests">Creating Signing and Certificate Requests</h2>
+<pre tabindex="0"><code>openssl genrsa -out $(hostname).key
+openssl req -new -key $(hostname).key -out $(hostname).req
 
-[automationcontroller:vars]
-node_type=control
-peers=execution_nodes
+scp $(hostname).req &lt;user&gt;@ca_server_ip:/tmp
+</code></pre><p>Signing a CSR</p>
+<pre tabindex="0"><code>cd ~/easy-rsa
+./easyrsa import-req /tmp/&lt;client-hostname&gt;.req &lt;client-hostname&gt;
+./easyrsa sign-req server &lt;client-hostname&gt;
 
-[execution_nodes]
-enode1.lab.local peers=enode2.lab.local
-enode2.lab.local
-</code></pre><p>Further reads:
-<a href="https://www.redhat.com/en/blog/whats-new-in-ansible-automation-platform-2.1-automation-mesh">https://www.redhat.com/en/blog/whats-new-in-ansible-automation-platform-2.1-automation-mesh</a></p>
+scp pki/issued/&lt;client-hostname&gt;.crt user@client_ip:/tmp
+</code></pre><p>Referrence:
+<a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-and-configure-a-certificate-authority-on-ubuntu-22-04">https://www.digitalocean.com/community/tutorials/how-to-set-up-and-configure-a-certificate-authority-on-ubuntu-22-04</a></p>
 
       </div>
 
@@ -430,8 +440,6 @@ enode2.lab.local
         <footer class="post-footer">
           <div class="post-tags-footer">
             <span class="tags-label">Tags:</span>
-            
-              <a href="/tags/ansible" class="post-tag">ansible</a>
             
               <a href="/tags/ansibleautomationplatform" class="post-tag">ansibleautomationplatform</a>
             
@@ -446,58 +454,18 @@ enode2.lab.local
       
 
 
-<section class="related-posts" aria-label="Related Posts">
-  <h2 class="related-posts-title">Related Posts</h2>
-  <ul class="related-posts-list">
-    
-    <li class="related-post-item">
-      <a href="/posts/ansible/ansible-automation-platform-access-management/" class="related-post-link">
-        <strong>Ansible Automation Platform Access Management</strong>
-        <span>Access Management Documentation
-Managing Instance Groups
-Organizations An organization is a logical collection of users, …</span>
-      </a>
-    </li>
-    
-    <li class="related-post-item">
-      <a href="/posts/ansible/ansible-automation-platform/" class="related-post-link">
-        <strong>Ansible Automation Platform Installation in Virtualbox</strong>
-        <span>
-I’ve put together my notes on deploying Ansible Automation Platform (AAP) 2.5(can work on v2.6 too) on VirtualBox. This …</span>
-      </a>
-    </li>
-    
-    <li class="related-post-item">
-      <a href="/posts/ansible/aap-remotes/" class="related-post-link">
-        <strong>Ansible Automation Platform Remote Contents</strong>
-        <span>In this sample, we will configure Redhat validated content from Automation Hub
-First create your token. Login to …</span>
-      </a>
-    </li>
-    
-  </ul>
-</section>
-
 
 
       <nav class="post-navigation" aria-label="Post navigation">
         
-          <a
-            href="/posts/ansible/ansible-automation-platform-access-management/"
-            class="nav-link nav-prev"
-            aria-label="Previous post: Ansible Automation Platform Access Management">
-            <span class="nav-label">Previous</span>
-            <span class="nav-title">Ansible Automation Platform Access Management</span>
-          </a>
-        
 
         
           <a
-            href="/posts/ansible/ansible-automation-platform-programmatically/"
+            href="/posts/ansible/aap-private-automationhub/"
             class="nav-link nav-next"
-            aria-label="Next post: Ansible Automation Platform Programmatically">
+            aria-label="Next post: Ansible Automation Platform Private Automation Hub">
             <span class="nav-label">Next</span>
-            <span class="nav-title">Ansible Automation Platform Programmatically</span>
+            <span class="nav-title">Ansible Automation Platform Private Automation Hub</span>
           </a>
         
       </nav>
@@ -541,7 +509,7 @@ First create your token. Login to …</span>
       <nav class="toc-nav" aria-label="Table of Contents">
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#why-automation-mesh">Why Automation Mesh</a></li>
+    <li><a href="#creating-signing-and-certificate-requests">Creating Signing and Certificate Requests</a></li>
   </ul>
 </nav>
       </nav>
