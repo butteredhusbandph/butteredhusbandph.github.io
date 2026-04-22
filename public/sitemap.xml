@@ -2,154 +2,154 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>./</loc>
+    <loc>//localhost:1313/</loc>
     <lastmod>2026-04-19T21:44:48+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="./"/>
+               href="//localhost:1313/"/>
   </url>
   <url>
-    <loc>./tags/ansible/</loc>
+    <loc>//localhost:1313/tags/ansible/</loc>
     <lastmod>2026-04-19T21:44:48+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="./tags/ansible/"/>
+               href="//localhost:1313/tags/ansible/"/>
   </url>
   <url>
-    <loc>./posts/ansible/ansible-automation-platform/</loc>
+    <loc>//localhost:1313/posts/ansible/ansible-automation-platform/</loc>
     <lastmod>2026-04-19T21:44:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="./posts/ansible/ansible-automation-platform/"/>
+               href="//localhost:1313/posts/ansible/ansible-automation-platform/"/>
   </url>
   <url>
-    <loc>./tags/ansibleautomationplatform/</loc>
+    <loc>//localhost:1313/tags/ansibleautomationplatform/</loc>
     <lastmod>2026-04-19T21:44:48+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="./tags/ansibleautomationplatform/"/>
+               href="//localhost:1313/tags/ansibleautomationplatform/"/>
   </url>
   <url>
-    <loc>./tags/linux/</loc>
+    <loc>//localhost:1313/tags/linux/</loc>
     <lastmod>2026-04-19T21:44:48+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="./tags/linux/"/>
+               href="//localhost:1313/tags/linux/"/>
   </url>
   <url>
-    <loc>./posts/</loc>
+    <loc>//localhost:1313/posts/</loc>
     <lastmod>2026-04-19T21:44:48+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="./posts/"/>
+               href="//localhost:1313/posts/"/>
   </url>
   <url>
-    <loc>./tags/redhat/</loc>
+    <loc>//localhost:1313/tags/redhat/</loc>
     <lastmod>2026-04-19T21:44:48+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="./tags/redhat/"/>
+               href="//localhost:1313/tags/redhat/"/>
   </url>
   <url>
-    <loc>./tags/</loc>
+    <loc>//localhost:1313/tags/</loc>
     <lastmod>2026-04-19T21:44:48+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="./tags/"/>
+               href="//localhost:1313/tags/"/>
   </url>
   <url>
-    <loc>./posts/ansible/aap-remotes/</loc>
+    <loc>//localhost:1313/posts/ansible/aap-remotes/</loc>
     <lastmod>2026-04-18T06:56:11+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="./posts/ansible/aap-remotes/"/>
+               href="//localhost:1313/posts/ansible/aap-remotes/"/>
   </url>
   <url>
-    <loc>./tags/docker/</loc>
+    <loc>//localhost:1313/tags/docker/</loc>
     <lastmod>2026-04-17T20:56:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="./tags/docker/"/>
+               href="//localhost:1313/tags/docker/"/>
   </url>
   <url>
-    <loc>./posts/local-lab-squid/</loc>
+    <loc>//localhost:1313/posts/local-lab-squid/</loc>
     <lastmod>2026-04-17T20:56:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="./posts/local-lab-squid/"/>
+               href="//localhost:1313/posts/local-lab-squid/"/>
   </url>
   <url>
-    <loc>./tags/squid/</loc>
+    <loc>//localhost:1313/tags/squid/</loc>
     <lastmod>2026-04-17T20:56:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="./tags/squid/"/>
+               href="//localhost:1313/tags/squid/"/>
   </url>
   <url>
-    <loc>./posts/ansible/aap-private-automationhub/</loc>
+    <loc>//localhost:1313/posts/ansible/aap-private-automationhub/</loc>
     <lastmod>2026-04-17T18:17:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="./posts/ansible/aap-private-automationhub/"/>
+               href="//localhost:1313/posts/ansible/aap-private-automationhub/"/>
   </url>
   <url>
-    <loc>./posts/ansible/easy-rsa/</loc>
+    <loc>//localhost:1313/posts/ansible/easy-rsa/</loc>
     <lastmod>2026-04-17T17:51:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="./posts/ansible/easy-rsa/"/>
+               href="//localhost:1313/posts/ansible/easy-rsa/"/>
   </url>
   <url>
-    <loc>./categories/</loc>
+    <loc>//localhost:1313/categories/</loc>
     
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="./categories/"/>
+               href="//localhost:1313/categories/"/>
   </url>
   
 </urlset>
