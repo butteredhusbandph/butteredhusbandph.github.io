@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>//localhost:1313/</loc>
-    <lastmod>2026-04-19T21:44:48+08:00</lastmod>
+    <lastmod>2026-04-22T16:41:54+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link
@@ -12,14 +12,144 @@
                href="//localhost:1313/"/>
   </url>
   <url>
+    <loc>//localhost:1313/posts/ansible/ansible-automation-platform-execution/</loc>
+    <lastmod>2026-04-22T16:41:54+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="//localhost:1313/posts/ansible/ansible-automation-platform-execution/"/>
+  </url>
+  <url>
+    <loc>//localhost:1313/posts/</loc>
+    <lastmod>2026-04-22T16:41:54+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="//localhost:1313/posts/"/>
+  </url>
+  <url>
+    <loc>//localhost:1313/posts/ansible/ansible-automation-platform-inventories/</loc>
+    <lastmod>2026-04-22T05:27:28+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="//localhost:1313/posts/ansible/ansible-automation-platform-inventories/"/>
+  </url>
+  <url>
+    <loc>//localhost:1313/posts/llm/ollama-models-external/</loc>
+    <lastmod>2026-04-21T16:55:36+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="//localhost:1313/posts/llm/ollama-models-external/"/>
+  </url>
+  <url>
+    <loc>//localhost:1313/posts/ansible/ansible-automation-platform-scaling/</loc>
+    <lastmod>2026-04-21T16:27:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="//localhost:1313/posts/ansible/ansible-automation-platform-scaling/"/>
+  </url>
+  <url>
+    <loc>//localhost:1313/posts/ansible/ansible-automation-platform-maintenance/</loc>
+    <lastmod>2026-04-21T16:27:15+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="//localhost:1313/posts/ansible/ansible-automation-platform-maintenance/"/>
+  </url>
+  <url>
+    <loc>//localhost:1313/posts/ansible/ansible-automation-platform-programmatically/</loc>
+    <lastmod>2026-04-21T16:27:01+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="//localhost:1313/posts/ansible/ansible-automation-platform-programmatically/"/>
+  </url>
+  <url>
     <loc>//localhost:1313/tags/ansible/</loc>
-    <lastmod>2026-04-19T21:44:48+08:00</lastmod>
+    <lastmod>2026-04-20T15:26:26+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
     <xhtml:link
                rel="alternate"
                hreflang="en"
                href="//localhost:1313/tags/ansible/"/>
+  </url>
+  <url>
+    <loc>//localhost:1313/posts/ansible/ansible-automation-platform-mesh/</loc>
+    <lastmod>2026-04-20T15:26:26+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="//localhost:1313/posts/ansible/ansible-automation-platform-mesh/"/>
+  </url>
+  <url>
+    <loc>//localhost:1313/tags/ansibleautomationplatform/</loc>
+    <lastmod>2026-04-20T15:26:26+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="//localhost:1313/tags/ansibleautomationplatform/"/>
+  </url>
+  <url>
+    <loc>//localhost:1313/tags/linux/</loc>
+    <lastmod>2026-04-20T15:26:26+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="//localhost:1313/tags/linux/"/>
+  </url>
+  <url>
+    <loc>//localhost:1313/tags/redhat/</loc>
+    <lastmod>2026-04-20T15:26:26+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="//localhost:1313/tags/redhat/"/>
+  </url>
+  <url>
+    <loc>//localhost:1313/tags/</loc>
+    <lastmod>2026-04-20T15:26:26+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="//localhost:1313/tags/"/>
+  </url>
+  <url>
+    <loc>//localhost:1313/posts/ansible/ansible-automation-platform-access-management/</loc>
+    <lastmod>2026-04-20T05:36:28+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="//localhost:1313/posts/ansible/ansible-automation-platform-access-management/"/>
   </url>
   <url>
     <loc>//localhost:1313/posts/ansible/ansible-automation-platform/</loc>
@@ -32,54 +162,14 @@
                href="//localhost:1313/posts/ansible/ansible-automation-platform/"/>
   </url>
   <url>
-    <loc>//localhost:1313/tags/ansibleautomationplatform/</loc>
-    <lastmod>2026-04-19T21:44:48+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <loc>//localhost:1313/about/</loc>
+    <lastmod>2026-04-18T10:53:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="//localhost:1313/tags/ansibleautomationplatform/"/>
-  </url>
-  <url>
-    <loc>//localhost:1313/tags/linux/</loc>
-    <lastmod>2026-04-19T21:44:48+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-    <xhtml:link
-               rel="alternate"
-               hreflang="en"
-               href="//localhost:1313/tags/linux/"/>
-  </url>
-  <url>
-    <loc>//localhost:1313/posts/</loc>
-    <lastmod>2026-04-19T21:44:48+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-               rel="alternate"
-               hreflang="en"
-               href="//localhost:1313/posts/"/>
-  </url>
-  <url>
-    <loc>//localhost:1313/tags/redhat/</loc>
-    <lastmod>2026-04-19T21:44:48+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-    <xhtml:link
-               rel="alternate"
-               hreflang="en"
-               href="//localhost:1313/tags/redhat/"/>
-  </url>
-  <url>
-    <loc>//localhost:1313/tags/</loc>
-    <lastmod>2026-04-19T21:44:48+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-    <xhtml:link
-               rel="alternate"
-               hreflang="en"
-               href="//localhost:1313/tags/"/>
+               href="//localhost:1313/about/"/>
   </url>
   <url>
     <loc>//localhost:1313/posts/ansible/aap-remotes/</loc>
@@ -142,14 +232,14 @@
                href="//localhost:1313/posts/ansible/easy-rsa/"/>
   </url>
   <url>
-    <loc>//localhost:1313/ansible/</loc>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/posts/pihole/</loc>
+    <lastmod>2026-04-12T19:31:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="//localhost:1313/ansible/"/>
+               href="//localhost:1313/posts/pihole/"/>
   </url>
   <url>
     <loc>//localhost:1313/categories/</loc>

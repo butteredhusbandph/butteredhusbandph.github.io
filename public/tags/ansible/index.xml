@@ -6,8 +6,22 @@
     <description>Recent content in Ansible on @butteredhusbandph</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Apr 2026 21:44:48 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 20 Apr 2026 15:26:26 +0800</lastBuildDate>
     <atom:link href="//localhost:1313/tags/ansible/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ansible Automation Platform Mesh</title>
+      <link>//localhost:1313/posts/ansible/ansible-automation-platform-mesh/</link>
+      <pubDate>Mon, 20 Apr 2026 15:26:26 +0800</pubDate>
+      <guid>//localhost:1313/posts/ansible/ansible-automation-platform-mesh/</guid>
+      <description>&lt;h2 id=&#34;why-automation-mesh&#34;&gt;Why Automation Mesh&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Challenges on automation across different platforms and location&lt;/li&gt;&#xA;&lt;li&gt;Ensuring automation executes consistently while managing centrally&lt;/li&gt;&#xA;&lt;li&gt;Automate remote areas with limited connectivity&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[automationcontroller]&#xA;control.lab.local&#xA;&#xA;[automationcontroller:vars]&#xA;node_type=control&#xA;peers=execution_nodes&#xA;&#xA;[execution_nodes]&#xA;enode1.lab.local peers=enode2.lab.local&#xA;enode2.lab.local&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Further reads:&#xA;&lt;a href=&#34;https://www.redhat.com/en/blog/whats-new-in-ansible-automation-platform-2.1-automation-mesh&#34;&gt;https://www.redhat.com/en/blog/whats-new-in-ansible-automation-platform-2.1-automation-mesh&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ansible Automation Platform Access Management</title>
+      <link>//localhost:1313/posts/ansible/ansible-automation-platform-access-management/</link>
+      <pubDate>Mon, 20 Apr 2026 05:36:28 +0800</pubDate>
+      <guid>//localhost:1313/posts/ansible/ansible-automation-platform-access-management/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.5/html-single/access_management_and_authentication/index&#34;&gt;Access Management Documentation&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.4/html/automation_controller_user_guide/controller-instance-groups&#34;&gt;Managing Instance Groups&lt;/a&gt;&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;h3 id=&#34;organizations&#34;&gt;Organizations&lt;/h3&gt;&#xA;&lt;p&gt;An organization is a logical collection of users, teams, and resources. It is the highest level object in the Ansible Automation Platform object hierarchy.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Instance Groups&lt;/strong&gt; Collections of nodes (VMs or instances) that can execute jobs.&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Purpose&lt;/strong&gt;: They allow administrators to assign job templates to specific groups of nodes for dedicated capacity or workload isolation.&lt;/li&gt;&#xA;&lt;li&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;h3 id=&#34;user-type&#34;&gt;User Type&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Ansible Automation Platform Administrator&#xA;Has full access to services and can manage other users&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Automation Execution Administrator&lt;/li&gt;&#xA;&lt;li&gt;Automation Decision Administrator&lt;/li&gt;&#xA;&lt;li&gt;Automation Content Administrator&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Ansible Automation Platform Auditor&#xA;Has view-only permissions on all objects&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Ansible Automation Platform Installation in Virtualbox</title>
       <link>//localhost:1313/posts/ansible/ansible-automation-platform/</link>

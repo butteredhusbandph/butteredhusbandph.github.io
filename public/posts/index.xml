@@ -6,8 +6,64 @@
     <description>Recent content in Posts on @butteredhusbandph</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Apr 2026 21:44:48 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 22 Apr 2026 16:41:54 +0800</lastBuildDate>
     <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ansible Automation Platform Execution</title>
+      <link>//localhost:1313/posts/ansible/ansible-automation-platform-execution/</link>
+      <pubDate>Wed, 22 Apr 2026 16:41:54 +0800</pubDate>
+      <guid>//localhost:1313/posts/ansible/ansible-automation-platform-execution/</guid>
+      <description>&lt;h2 id=&#34;creating-a-project&#34;&gt;Creating a Project&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;Automation Controller &amp;gt; Projects &amp;gt; Create Project&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;//localhost:1313/ansible/rh-app-execution1.png&#34; alt=&#34;Redhat Ansible Automation Platform&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ansible Automation Platform Inventories</title>
+      <link>//localhost:1313/posts/ansible/ansible-automation-platform-inventories/</link>
+      <pubDate>Wed, 22 Apr 2026 05:27:28 +0800</pubDate>
+      <guid>//localhost:1313/posts/ansible/ansible-automation-platform-inventories/</guid>
+      <description>&lt;p&gt;This is just my notes on my lab AAP Inventories&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Inventories&#xA;&lt;ul&gt;&#xA;&lt;li&gt;User Access&lt;/li&gt;&#xA;&lt;li&gt;Team Access&lt;/li&gt;&#xA;&lt;li&gt;Groups&#xA;&lt;ul&gt;&#xA;&lt;li&gt;webservers&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Related Groups&lt;/li&gt;&#xA;&lt;li&gt;Hosts&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Hosts&lt;/li&gt;&#xA;&lt;li&gt;Sources&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Vmware Vcenter&lt;/li&gt;&#xA;&lt;li&gt;Amazon EC2&lt;/li&gt;&#xA;&lt;li&gt;Redhat Satellite 6&lt;/li&gt;&#xA;&lt;li&gt;etc&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Jobs&#xA;&lt;ul&gt;&#xA;&lt;li&gt;adhoc jobs runs&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Job Templates&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Ollama Models External</title>
+      <link>//localhost:1313/posts/llm/ollama-models-external/</link>
+      <pubDate>Tue, 21 Apr 2026 16:55:36 +0800</pubDate>
+      <guid>//localhost:1313/posts/llm/ollama-models-external/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ansible Automation Platform Scaling</title>
+      <link>//localhost:1313/posts/ansible/ansible-automation-platform-scaling/</link>
+      <pubDate>Tue, 21 Apr 2026 16:27:25 +0800</pubDate>
+      <guid>//localhost:1313/posts/ansible/ansible-automation-platform-scaling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ansible Automation Platform Maintenance</title>
+      <link>//localhost:1313/posts/ansible/ansible-automation-platform-maintenance/</link>
+      <pubDate>Tue, 21 Apr 2026 16:27:15 +0800</pubDate>
+      <guid>//localhost:1313/posts/ansible/ansible-automation-platform-maintenance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ansible Automation Platform Programmatically</title>
+      <link>//localhost:1313/posts/ansible/ansible-automation-platform-programmatically/</link>
+      <pubDate>Tue, 21 Apr 2026 16:27:01 +0800</pubDate>
+      <guid>//localhost:1313/posts/ansible/ansible-automation-platform-programmatically/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ansible Automation Platform Mesh</title>
+      <link>//localhost:1313/posts/ansible/ansible-automation-platform-mesh/</link>
+      <pubDate>Mon, 20 Apr 2026 15:26:26 +0800</pubDate>
+      <guid>//localhost:1313/posts/ansible/ansible-automation-platform-mesh/</guid>
+      <description>&lt;h2 id=&#34;why-automation-mesh&#34;&gt;Why Automation Mesh&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Challenges on automation across different platforms and location&lt;/li&gt;&#xA;&lt;li&gt;Ensuring automation executes consistently while managing centrally&lt;/li&gt;&#xA;&lt;li&gt;Automate remote areas with limited connectivity&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[automationcontroller]&#xA;control.lab.local&#xA;&#xA;[automationcontroller:vars]&#xA;node_type=control&#xA;peers=execution_nodes&#xA;&#xA;[execution_nodes]&#xA;enode1.lab.local peers=enode2.lab.local&#xA;enode2.lab.local&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Further reads:&#xA;&lt;a href=&#34;https://www.redhat.com/en/blog/whats-new-in-ansible-automation-platform-2.1-automation-mesh&#34;&gt;https://www.redhat.com/en/blog/whats-new-in-ansible-automation-platform-2.1-automation-mesh&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ansible Automation Platform Access Management</title>
+      <link>//localhost:1313/posts/ansible/ansible-automation-platform-access-management/</link>
+      <pubDate>Mon, 20 Apr 2026 05:36:28 +0800</pubDate>
+      <guid>//localhost:1313/posts/ansible/ansible-automation-platform-access-management/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.5/html-single/access_management_and_authentication/index&#34;&gt;Access Management Documentation&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.4/html/automation_controller_user_guide/controller-instance-groups&#34;&gt;Managing Instance Groups&lt;/a&gt;&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;h3 id=&#34;organizations&#34;&gt;Organizations&lt;/h3&gt;&#xA;&lt;p&gt;An organization is a logical collection of users, teams, and resources. It is the highest level object in the Ansible Automation Platform object hierarchy.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Instance Groups&lt;/strong&gt; Collections of nodes (VMs or instances) that can execute jobs.&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Purpose&lt;/strong&gt;: They allow administrators to assign job templates to specific groups of nodes for dedicated capacity or workload isolation.&lt;/li&gt;&#xA;&lt;li&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;h3 id=&#34;user-type&#34;&gt;User Type&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Ansible Automation Platform Administrator&#xA;Has full access to services and can manage other users&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Automation Execution Administrator&lt;/li&gt;&#xA;&lt;li&gt;Automation Decision Administrator&lt;/li&gt;&#xA;&lt;li&gt;Automation Content Administrator&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Ansible Automation Platform Auditor&#xA;Has view-only permissions on all objects&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Ansible Automation Platform Installation in Virtualbox</title>
       <link>//localhost:1313/posts/ansible/ansible-automation-platform/</link>
@@ -42,6 +98,13 @@
       <pubDate>Fri, 17 Apr 2026 17:51:45 +0800</pubDate>
       <guid>//localhost:1313/posts/ansible/easy-rsa/</guid>
       <description>&lt;p&gt;One of the prerequisite of my Ansible Automation Platform 2.5/2.6 lab environment was to configure a &lt;code&gt;local&lt;/code&gt; Certificate Authority.&lt;br&gt;&#xA;I&amp;rsquo;ve used my workstation running on LinuxMint to configure my Certificate Authority.&lt;/p&gt;&#xA;&lt;p&gt;Installing EasyRSA&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt update&#xA;sudo apt install easy-rsa&#xA;mkdir ~/easy-rsa&#xA;ln - /usr/share/easy-rsa/* ~/easy-rsa/&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Initialize  PKI&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cd ~/easy-rsa&#xA;./easyrsa init-pki&#xA;./easyrsa build-ca&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Copy CA certificate the clients&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo cp /tmp/ca.crt /etc/pki/ca-trust/source/anchors/&#xA;sudo update-ca-trust&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;creating-signing-and-certificate-requests&#34;&gt;Creating Signing and Certificate Requests&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;openssl genrsa -out $(hostname).key&#xA;openssl req -new -key $(hostname).key -out $(hostname).req&#xA;&#xA;scp $(hostname).req &amp;lt;user&amp;gt;@ca_server_ip:/tmp&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Signing a CSR&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pihole</title>
+      <link>//localhost:1313/posts/pihole/</link>
+      <pubDate>Sun, 12 Apr 2026 19:31:29 +0800</pubDate>
+      <guid>//localhost:1313/posts/pihole/</guid>
+      <description>&lt;p&gt;I had a spare &lt;code&gt;Raspberry Pi 4&lt;/code&gt; sitting around, so I decided to repurpose it as a &lt;a href=&#34;https://pi-hole.net/&#34;&gt;Pihole&lt;/a&gt;. My router already supports DNS forwarding to services like AdGuard and ControlD, but I wanted a setup that blocks unwanted DNS queries before they even leave my network.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;//localhost:1313/pihole.png&#34; alt=&#34;PiHole&#34;&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
