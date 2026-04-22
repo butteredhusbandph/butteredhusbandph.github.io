@@ -132,14 +132,14 @@
                href="//localhost:1313/posts/ansible/aap-private-automationhub/"/>
   </url>
   <url>
-    <loc>//localhost:1313/ansible/</loc>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/posts/ansible/easy-rsa/</loc>
+    <lastmod>2026-04-17T17:51:45+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="//localhost:1313/ansible/"/>
+               href="//localhost:1313/posts/ansible/easy-rsa/"/>
   </url>
   <url>
     <loc>//localhost:1313/categories/</loc>

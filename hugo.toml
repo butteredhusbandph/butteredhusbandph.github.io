@@ -4,7 +4,7 @@ title = '@butteredhusbandph'
 theme = 'mana'
 
 #publishDir = "docs"
-publishDir = "public"
+publishDir = "docs"
 
 [params.avatar]
   [params.avatar.home]
