@@ -14,6 +14,7 @@ I’ve put together my notes on deploying Ansible Automation Platform (AAP) 2.5(
 
 - [Squid proxy](../../local-lab-squid)
 - [Certificate Authority and client certificates](easy-rsa)
+- Register your VMs to RHN
 
 <br>
 
@@ -176,13 +177,16 @@ Once installation completes, copy ssl key and crt
 
 *hub.lab.local*
 ```
-here
+cp /tmp/hub.lab.local.crt /etc/pulp/certs/pulp_webserver.crt
+cp /tmp/hub.lab.local.key /etc/pulp/certs/pulp_webserver.key
+reboot
 ```
 
 *gate.lab.local*
 ```
-here
-
+cp /tmp/gate.lab.local.crt /etc/ansible-automation-platform/gateway/gateway.cert
+cp /tmp/gate.lab.local.key /etc/ansible-automation-platform/gateway/gateway.key
+reboot
 ```
 
 
