@@ -5,6 +5,8 @@ title = 'Ansible Automation Platform Programmatically'
 tags = ['ansible', 'ansibleautomationplatform', 'redhat', 'linux']
 +++
 
+*Disclaimer:* These notes reflect my personal understanding and working thoughts on Ansible Automation Platform. They are not intended to serve as formal documentation or a step-by-step guide. That said, I hope they offer useful insights, spark ideas, or provide some value as you explore AAP on your own.
+
 ## API URL
 ```
 https://gate.lab.local/api/controller/v2/
