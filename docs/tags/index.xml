@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on @butteredhusbandph</title>
-    <link>//localhost:36075/tags/</link>
+    <link>//localhost:1313/tags/</link>
     <description>Recent content in Tags on @butteredhusbandph</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 22 Apr 2026 16:41:54 +0800</lastBuildDate>
-    <atom:link href="//localhost:36075/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ansible</title>
-      <link>//localhost:36075/tags/ansible/</link>
+      <link>//localhost:1313/tags/ansible/</link>
       <pubDate>Wed, 22 Apr 2026 16:41:54 +0800</pubDate>
-      <guid>//localhost:36075/tags/ansible/</guid>
+      <guid>//localhost:1313/tags/ansible/</guid>
       <description></description>
     </item>
     <item>
       <title>Ansibleautomationplatform</title>
-      <link>//localhost:36075/tags/ansibleautomationplatform/</link>
+      <link>//localhost:1313/tags/ansibleautomationplatform/</link>
       <pubDate>Wed, 22 Apr 2026 16:41:54 +0800</pubDate>
-      <guid>//localhost:36075/tags/ansibleautomationplatform/</guid>
+      <guid>//localhost:1313/tags/ansibleautomationplatform/</guid>
       <description></description>
     </item>
     <item>
       <title>Linux</title>
-      <link>//localhost:36075/tags/linux/</link>
+      <link>//localhost:1313/tags/linux/</link>
       <pubDate>Wed, 22 Apr 2026 16:41:54 +0800</pubDate>
-      <guid>//localhost:36075/tags/linux/</guid>
+      <guid>//localhost:1313/tags/linux/</guid>
       <description></description>
     </item>
     <item>
       <title>Redhat</title>
-      <link>//localhost:36075/tags/redhat/</link>
+      <link>//localhost:1313/tags/redhat/</link>
       <pubDate>Wed, 22 Apr 2026 16:41:54 +0800</pubDate>
-      <guid>//localhost:36075/tags/redhat/</guid>
+      <guid>//localhost:1313/tags/redhat/</guid>
       <description></description>
     </item>
     <item>
       <title>Docker</title>
-      <link>//localhost:36075/tags/docker/</link>
+      <link>//localhost:1313/tags/docker/</link>
       <pubDate>Fri, 17 Apr 2026 20:56:00 +0800</pubDate>
-      <guid>//localhost:36075/tags/docker/</guid>
+      <guid>//localhost:1313/tags/docker/</guid>
       <description></description>
     </item>
     <item>
       <title>Squid</title>
-      <link>//localhost:36075/tags/squid/</link>
+      <link>//localhost:1313/tags/squid/</link>
       <pubDate>Fri, 17 Apr 2026 20:56:00 +0800</pubDate>
-      <guid>//localhost:36075/tags/squid/</guid>
+      <guid>//localhost:1313/tags/squid/</guid>
       <description></description>
     </item>
   </channel>

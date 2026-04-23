@@ -25,10 +25,12 @@
 <meta
   name="description"
   content="
-    
+    API URL https://gate.lab.local/api/controller/v2/ Commands curl -X GET https://gate.lab.local/api/controller/v2/ | jq Getting Job Templates curl -X GET …
   
   ">
 
+
+  <meta name="keywords" content="ansible, ansibleautomationplatform, redhat, linux">
 
 
 
@@ -45,15 +47,15 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_us">
 <meta property="og:title" content="Ansible Automation Platform Programmatically | @butteredhusbandph">
-<meta property="og:description" content="">
+<meta property="og:description" content="API URL https://gate.lab.local/api/controller/v2/ Commands curl -X GET https://gate.lab.local/api/controller/v2/ | jq Getting Job Templates curl -X GET …">
 <meta property="og:url" content="//localhost:1313/posts/ansible/ansible-automation-platform-programmatically/">
 <meta property="og:site_name" content="@butteredhusbandph"><meta property="article:published_time" content="2026-04-21T16:27:01&#43;08:00">
   <meta
     property="article:modified_time"
-    content="2026-04-21T16:27:01&#43;08:00">
+    content="2026-04-21T16:27:01&#43;08:00"><meta property="article:section" content="ansible"><meta property="article:tag" content="ansible"><meta property="article:tag" content="ansibleautomationplatform"><meta property="article:tag" content="redhat"><meta property="article:tag" content="linux">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Ansible Automation Platform Programmatically | @butteredhusbandph">
-<meta name="twitter:description" content="">
+<meta name="twitter:description" content="API URL https://gate.lab.local/api/controller/v2/ Commands curl -X GET https://gate.lab.local/api/controller/v2/ | jq Getting Job Templates curl -X GET …">
 
 
 
@@ -76,7 +78,9 @@
   
 
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","email":"butteredhusbandph@gmail.com","name":"@butteredhusbandph","sameAs":["https://github.com/penoycentral"]},"dateModified":"2026-04-21T16:27:01+08:00","datePublished":"2026-04-21T16:27:01+08:00","description":"","headline":"Ansible Automation Platform Programmatically","image":"//localhost:1313/logo.png","inLanguage":"en-us","mainEntityOfPage":{"@id":"//localhost:1313/posts/ansible/ansible-automation-platform-programmatically/","@type":"WebPage"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"//localhost:1313/logo.png"},"name":"@butteredhusbandph","url":"//localhost:1313/"},"timeRequired":"PT0M","url":"//localhost:1313/posts/ansible/ansible-automation-platform-programmatically/","wordCount":0}</script>
+  
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","email":"butteredhusbandph@gmail.com","name":"@butteredhusbandph","sameAs":["https://github.com/penoycentral"]},"dateModified":"2026-04-21T16:27:01+08:00","datePublished":"2026-04-21T16:27:01+08:00","description":"API URL https://gate.lab.local/api/controller/v2/ Commands curl -X GET https://gate.lab.local/api/controller/v2/ | jq Getting Job Templates curl -X GET …","headline":"Ansible Automation Platform Programmatically","image":"//localhost:1313/logo.png","inLanguage":"en-us","keywords":["ansible","ansibleautomationplatform","redhat","linux"],"mainEntityOfPage":{"@id":"//localhost:1313/posts/ansible/ansible-automation-platform-programmatically/","@type":"WebPage"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"//localhost:1313/logo.png"},"name":"@butteredhusbandph","url":"//localhost:1313/"},"timeRequired":"PT1M","url":"//localhost:1313/posts/ansible/ansible-automation-platform-programmatically/","wordCount":50}</script>
 
 
 
@@ -356,44 +360,134 @@
     <span class="meta-separator">•</span>
 
     
+      <span class="post-word-count">
+        <svg class="meta-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+        </svg>
+        50 words
+      </span>
+    
 
+    
+      <span class="meta-separator">•</span>
+      <span class="post-reading-time">
+        <svg class="meta-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        1 min
+      </span>
     
   </div>
 
+  
+    <div class="post-tags">
+      
+        <a href="/tags/ansible" class="post-tag">ansible</a>
+      
+        <a href="/tags/ansibleautomationplatform" class="post-tag">ansibleautomationplatform</a>
+      
+        <a href="/tags/redhat" class="post-tag">redhat</a>
+      
+        <a href="/tags/linux" class="post-tag">linux</a>
+      
+    </div>
   
 </div>
 
       </header>
 
       <div class="post-content-main">
-        
+        <h2 id="api-url">API URL</h2>
+<pre tabindex="0"><code>https://gate.lab.local/api/controller/v2/
+</code></pre><h2 id="commands">Commands</h2>
+<pre tabindex="0"><code>curl -X GET https://gate.lab.local/api/controller/v2/ | jq
+</code></pre><h3 id="getting-job-templates">Getting Job Templates</h3>
+<pre tabindex="0"><code>curl -X GET https://gate.lab.local/api/controller/v2/job_templates/ --user user1:&lt;password&gt;|jq
+</code></pre><h3 id="launching-a-job">Launching a Job</h3>
+<pre tabindex="0"><code>curl -X POST https://gate.lab.local/api/controller/v2/job_templates/13/launch --user user1:&lt;password&gt;|jq
+</code></pre><h3 id="getting-workflow-job-templates">Getting Workflow Job Templates</h3>
+<pre tabindex="0"><code>curl -X GET https://gate.lab.local/api/controller/v2/workflow_job_templates/ --user user1:secret |jq
+</code></pre><h3 id="launching-workflow-job-templates">Launching Workflow Job templates</h3>
+<pre tabindex="0"><code>curl -X POST https://gate.lab.local/api/controller/v2/workflow_job_templates/15/launch/ --user user1:secret |jq
+</code></pre>
       </div>
 
       
+        <footer class="post-footer">
+          <div class="post-tags-footer">
+            <span class="tags-label">Tags:</span>
+            
+              <a href="/tags/ansible" class="post-tag">ansible</a>
+            
+              <a href="/tags/ansibleautomationplatform" class="post-tag">ansibleautomationplatform</a>
+            
+              <a href="/tags/redhat" class="post-tag">redhat</a>
+            
+              <a href="/tags/linux" class="post-tag">linux</a>
+            
+          </div>
+        </footer>
+      
 
       
 
+
+<section class="related-posts" aria-label="Related Posts">
+  <h2 class="related-posts-title">Related Posts</h2>
+  <ul class="related-posts-list">
+    
+    <li class="related-post-item">
+      <a href="/posts/ansible/ansible-automation-platform-access-management/" class="related-post-link">
+        <strong>Ansible Automation Platform Access Management</strong>
+        <span>Disclaimer: These notes reflect my personal understanding and working thoughts on Ansible Automation Platform. They are …</span>
+      </a>
+    </li>
+    
+    <li class="related-post-item">
+      <a href="/posts/ansible/ansible-automation-platform/" class="related-post-link">
+        <strong>Ansible Automation Platform Installation in Virtualbox</strong>
+        <span>Disclaimer: These notes reflect my personal understanding and working thoughts on Ansible Automation Platform. They are …</span>
+      </a>
+    </li>
+    
+    <li class="related-post-item">
+      <a href="/posts/ansible/aap-remotes/" class="related-post-link">
+        <strong>Ansible Automation Platform Remote Contents</strong>
+        <span>Disclaimer: These notes reflect my personal understanding and working thoughts on Ansible Automation Platform. They are …</span>
+      </a>
+    </li>
+    
+  </ul>
+</section>
 
 
 
       <nav class="post-navigation" aria-label="Post navigation">
         
           <a
-            href="/posts/ansible/ansible-automation-platform-mesh/"
+            href="/posts/ansible/ansible-automation-platform-access-management/"
             class="nav-link nav-prev"
-            aria-label="Previous post: Ansible Automation Platform Mesh">
+            aria-label="Previous post: Ansible Automation Platform Access Management">
             <span class="nav-label">Previous</span>
-            <span class="nav-title">Ansible Automation Platform Mesh</span>
+            <span class="nav-title">Ansible Automation Platform Access Management</span>
           </a>
         
 
         
           <a
-            href="/posts/ansible/ansible-automation-platform-maintenance/"
+            href="/posts/ansible/ansible-automation-platform-execution/"
             class="nav-link nav-next"
-            aria-label="Next post: Ansible Automation Platform Maintenance">
+            aria-label="Next post: Ansible Automation Platform Execution">
             <span class="nav-label">Next</span>
-            <span class="nav-title">Ansible Automation Platform Maintenance</span>
+            <span class="nav-title">Ansible Automation Platform Execution</span>
           </a>
         
       </nav>
@@ -435,7 +529,19 @@
     </button>
     <div class="toc-content" id="toc-content">
       <nav class="toc-nav" aria-label="Table of Contents">
-        <nav id="TableOfContents"></nav>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#api-url">API URL</a></li>
+    <li><a href="#commands">Commands</a>
+      <ul>
+        <li><a href="#getting-job-templates">Getting Job Templates</a></li>
+        <li><a href="#launching-a-job">Launching a Job</a></li>
+        <li><a href="#getting-workflow-job-templates">Getting Workflow Job Templates</a></li>
+        <li><a href="#launching-workflow-job-templates">Launching Workflow Job templates</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
       </nav>
     </div>
   </aside>
