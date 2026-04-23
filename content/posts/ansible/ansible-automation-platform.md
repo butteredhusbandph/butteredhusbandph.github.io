@@ -16,7 +16,7 @@ I’ve put together my notes on deploying Ansible Automation Platform (AAP) 2.5(
 
 - [Squid proxy](../../local-lab-squid)
 - [Certificate Authority and client certificates](../easy-rsa)
-- Register your VMs to RHN
+- Register your VMs via `subsbription-manager`
 
 <br>
 
@@ -34,6 +34,8 @@ Pi-hole → Settings → Local DNS Settings, I added:
 hub.lab.local      192.168.56.112
 gate.lab.local     192.168.56.113
 control.lab.local  192.168.56.111
+node1.lab.local    192.168.56.51
+node2.lab.local    192.168.56.52
 ```
   
 ## Virtual Machines Overview
@@ -196,6 +198,8 @@ reboot
 Access the AAP web interface via `gate.lab.local` and register your deployment using your Red Hat Developer account.
 
 ![Redhat Ansible Automation Platform](/ansible/rh-app-ui.png)
+
+*Note:* After AAP installation, i've downgraded `gate.lab.local` and `control.lab.local` memory from 8Gb to 4Gb. So far i havent got issues when doing labs on AAP. 
 
 Referrence:
 
