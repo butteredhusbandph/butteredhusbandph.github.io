@@ -64,7 +64,7 @@ Disk: 20Gb
 ```
 
   
-### Downloading AAP 2.5
+## Downloading AAP 2.5
 Create a Red Hat Developer account and download the AAP 2.5 bundle:
 
  - https://developers.redhat.com/
@@ -73,7 +73,7 @@ Create a Red Hat Developer account and download the AAP 2.5 bundle:
 
 Ensure that SSH key‑based authentication and sudo access is already configured between your host and all VMs.  
 
-### Host Ansible Config
+## Host Ansible Config
 `inventory`
 ```
 hub
@@ -98,12 +98,6 @@ become_user=root
 Test your host and VMs connection
 ```
 ansible all -m ping
-```
-
-I've created playbook.yml to further configure my VMs
-
-```
-playbook.yml here
 ```
 
  <br>
@@ -169,6 +163,17 @@ automationgateway_pg_password='******'
 ```
 
 ## Running the Installer
+
+Installation issue due to python3.12
+```
+
+TASK [ansible.automation_platform_installer.automationhub : Set __pulpcore_version to the RPM that was installed] ***
+fatal: [hub.lab.local]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'dict object' has no attribute 'python3.11-pulpcore'. 'dict object' has no attribute 'python3.11-pulpcore'\n\nThe error appears to be in '/home/chris/Labs/redhat/ex467/2.5/ansible-automation-platform-setup-bundle-2.5-1-x86_64/collections/ansible_collections/ansible/automation_platform_installer/roles/automationhub/tasks/install_packages.yml': line 38, column 3, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n- name: Set __pulpcore_version to the RPM that was installed\n  ^ here\n"}
+
+```
+
+Install python3.11 in `hub.lab.local`. For some reason, AAP installer will install python3.12 and will break the installation process.  
+
 Execute the setup script:
 
 ```
@@ -197,7 +202,11 @@ reboot
 
 Access the AAP web interface via `gate.lab.local` and register your deployment using your Red Hat Developer account.
 
+
+![Redhat Ansible Automation Platform](/ansible/aap-fresh-install.png)
+
 ![Redhat Ansible Automation Platform](/ansible/rh-app-ui.png)
+
 
 *Note:* After AAP installation, i've downgraded `gate.lab.local` and `control.lab.local` memory from 8Gb to 4Gb. So far i havent got issues when doing labs on AAP. 
 

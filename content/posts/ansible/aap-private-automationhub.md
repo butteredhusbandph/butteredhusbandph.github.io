@@ -74,3 +74,8 @@ Copying blob 4b636d67cf3a done   |
 Copying blob 6f7354abfe11 skipped: already exists
 
 ```
+
+Use the newly created `execution enviroment` in the controller
+
+*Automation Content > Execution Enviroments*
+![Redhat Ansible Automation Platform](/ansible/rh-ee-controller.png)
