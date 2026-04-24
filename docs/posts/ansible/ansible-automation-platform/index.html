@@ -80,7 +80,7 @@
 
   
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","email":"butteredhusbandph@gmail.com","name":"@butteredhusbandph","sameAs":["https://github.com/penoycentral"]},"dateModified":"2026-04-19T21:44:48+08:00","datePublished":"2026-04-19T21:44:48+08:00","description":"Disclaimer: These notes reflect my personal understanding and working thoughts on Ansible Automation Platform. They are not intended to serve as formal …","headline":"Ansible Automation Platform Installation in Virtualbox","image":"//localhost:1313/logo.png","inLanguage":"en-us","keywords":["ansible","ansibleautomationplatform","redhat","linux"],"mainEntityOfPage":{"@id":"//localhost:1313/posts/ansible/ansible-automation-platform/","@type":"WebPage"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"//localhost:1313/logo.png"},"name":"@butteredhusbandph","url":"//localhost:1313/"},"timeRequired":"PT2M","url":"//localhost:1313/posts/ansible/ansible-automation-platform/","wordCount":384}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","email":"butteredhusbandph@gmail.com","name":"@butteredhusbandph","sameAs":["https://github.com/penoycentral"]},"dateModified":"2026-04-19T21:44:48+08:00","datePublished":"2026-04-19T21:44:48+08:00","description":"Disclaimer: These notes reflect my personal understanding and working thoughts on Ansible Automation Platform. They are not intended to serve as formal …","headline":"Ansible Automation Platform Installation in Virtualbox","image":"//localhost:1313/logo.png","inLanguage":"en-us","keywords":["ansible","ansibleautomationplatform","redhat","linux"],"mainEntityOfPage":{"@id":"//localhost:1313/posts/ansible/ansible-automation-platform/","@type":"WebPage"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"//localhost:1313/logo.png"},"name":"@butteredhusbandph","url":"//localhost:1313/"},"timeRequired":"PT2M","url":"//localhost:1313/posts/ansible/ansible-automation-platform/","wordCount":413}</script>
 
 
 
@@ -368,7 +368,7 @@
             stroke-width="2"
             d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
         </svg>
-        384 words
+        413 words
       </span>
     
 
@@ -412,7 +412,7 @@
 <ul>
 <li><a href="../../local-lab-squid">Squid proxy</a></li>
 <li><a href="../easy-rsa">Certificate Authority and client certificates</a></li>
-<li>Register your VMs to RHN</li>
+<li>Register your VMs via <code>subsbription-manager</code></li>
 </ul>
 <!-- raw HTML omitted -->
 <h2 id="host-computer-spec">Host Computer Spec:</h2>
@@ -427,6 +427,8 @@ Pi-hole → Settings → Local DNS Settings, I added:</p>
 <pre tabindex="0"><code>hub.lab.local      192.168.56.112
 gate.lab.local     192.168.56.113
 control.lab.local  192.168.56.111
+node1.lab.local    192.168.56.51
+node2.lab.local    192.168.56.52
 </code></pre><h2 id="virtual-machines-overview">Virtual Machines Overview</h2>
 <h3 id="ansible-automation-hub">Ansible Automation Hub</h3>
 <p><code>hub.lab.local</code></p>
@@ -539,6 +541,7 @@ cp /tmp/gate.lab.local.key /etc/ansible-automation-platform/gateway/gateway.key
 reboot
 </code></pre><p>Access the AAP web interface via <code>gate.lab.local</code> and register your deployment using your Red Hat Developer account.</p>
 <p><img src="/ansible/rh-app-ui.png" alt="Redhat Ansible Automation Platform"></p>
+<p><em>Note:</em> After AAP installation, i&rsquo;ve downgraded <code>gate.lab.local</code> and <code>control.lab.local</code> memory from 8Gb to 4Gb. So far i havent got issues when doing labs on AAP.</p>
 <p>Referrence:</p>
 <p><a href="https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.5/html/rpm_installation/appendix-inventory-files-vars">https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.5/html/rpm_installation/appendix-inventory-files-vars</a></p>
 <p><a href="https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.6/html/rpm_installation/appendix-inventory-files-vars">https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.6/html/rpm_installation/appendix-inventory-files-vars</a></p>
