@@ -41,7 +41,7 @@
       <link>//localhost:1313/posts/ansible/aap-remotes/</link>
       <pubDate>Sat, 18 Apr 2026 06:56:11 +0800</pubDate>
       <guid>//localhost:1313/posts/ansible/aap-remotes/</guid>
-      <description>&lt;p&gt;&lt;em&gt;Disclaimer:&lt;/em&gt; These notes reflect my personal understanding and working thoughts on Ansible Automation Platform. They are not intended to serve as formal documentation or a step-by-step guide. That said, I hope they offer useful insights, spark ideas, or provide some value as you explore AAP on your own.&lt;/p&gt;&#xA;&lt;p&gt;In this sample, we will configure Redhat &lt;code&gt;validated&lt;/code&gt; content from Automation Hub&lt;/p&gt;&#xA;&lt;p&gt;First create your token. Login to &lt;a href=&#34;https://console.redhat.com/ansible/automation-hub/token&#34;&gt;console.redhat.com&lt;/a&gt; and click &lt;code&gt;Load token&lt;/code&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;em&gt;Disclaimer:&lt;/em&gt; These notes reflect my personal understanding and working thoughts on Ansible Automation Platform. They are not intended to serve as formal documentation or a step-by-step guide. That said, I hope they offer useful insights, spark ideas, or provide some value as you explore AAP on your own.&lt;/p&gt;&#xA;&lt;h2 id=&#34;redhat-repository&#34;&gt;Redhat Repository&lt;/h2&gt;&#xA;&lt;p&gt;In this sample, we will configure Redhat &lt;code&gt;validated&lt;/code&gt; content from Automation Hub&lt;/p&gt;&#xA;&lt;p&gt;First create your token. Login to &lt;a href=&#34;https://console.redhat.com/ansible/automation-hub/token&#34;&gt;console.redhat.com&lt;/a&gt; and click &lt;code&gt;Load token&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Local Lab Docker Squid</title>
