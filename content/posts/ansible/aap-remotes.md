@@ -49,4 +49,5 @@ Check your Collectios under `Automation Content > Collections`
 
 ## Ansible Galaxy Remote Repository
 
-*Automation Content > Repositories*
+*Automation Content > Remotes*
+![AAP Ansible Galaxy Remote Repository](/ansible/rh-aap-repo1.png)
