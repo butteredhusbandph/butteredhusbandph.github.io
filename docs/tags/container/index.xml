@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Container on @butteredhusbandph</title>
+    <link>//localhost:1313/tags/container/</link>
+    <description>Recent content in Container on @butteredhusbandph</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 25 Apr 2026 21:32:11 +0800</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/container/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Podman Notes</title>
+      <link>//localhost:1313/posts/linux/podman-notes/</link>
+      <pubDate>Sat, 25 Apr 2026 21:32:11 +0800</pubDate>
+      <guid>//localhost:1313/posts/linux/podman-notes/</guid>
+      <description>&lt;p&gt;Create the container&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;podman create --name my-container -it &amp;lt;image&amp;gt; /bin/bash&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Verify if exists&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;podman ps -a&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Starting the container&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;podman start -ai my-container&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>

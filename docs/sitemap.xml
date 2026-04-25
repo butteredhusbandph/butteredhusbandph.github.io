@@ -3,13 +3,73 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>//localhost:1313/</loc>
-    <lastmod>2026-04-22T16:41:54+08:00</lastmod>
+    <lastmod>2026-04-25T21:32:11+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link
                rel="alternate"
                hreflang="en"
                href="//localhost:1313/"/>
+  </url>
+  <url>
+    <loc>//localhost:1313/tags/container/</loc>
+    <lastmod>2026-04-25T21:32:11+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="//localhost:1313/tags/container/"/>
+  </url>
+  <url>
+    <loc>//localhost:1313/tags/linux/</loc>
+    <lastmod>2026-04-25T21:32:11+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="//localhost:1313/tags/linux/"/>
+  </url>
+  <url>
+    <loc>//localhost:1313/tags/podman/</loc>
+    <lastmod>2026-04-25T21:32:11+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="//localhost:1313/tags/podman/"/>
+  </url>
+  <url>
+    <loc>//localhost:1313/posts/linux/podman-notes/</loc>
+    <lastmod>2026-04-25T21:32:11+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="//localhost:1313/posts/linux/podman-notes/"/>
+  </url>
+  <url>
+    <loc>//localhost:1313/posts/</loc>
+    <lastmod>2026-04-25T21:32:11+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="//localhost:1313/posts/"/>
+  </url>
+  <url>
+    <loc>//localhost:1313/tags/</loc>
+    <lastmod>2026-04-25T21:32:11+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="//localhost:1313/tags/"/>
   </url>
   <url>
     <loc>//localhost:1313/tags/ansible/</loc>
@@ -42,26 +102,6 @@
                href="//localhost:1313/tags/ansibleautomationplatform/"/>
   </url>
   <url>
-    <loc>//localhost:1313/tags/linux/</loc>
-    <lastmod>2026-04-22T16:41:54+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-    <xhtml:link
-               rel="alternate"
-               hreflang="en"
-               href="//localhost:1313/tags/linux/"/>
-  </url>
-  <url>
-    <loc>//localhost:1313/posts/</loc>
-    <lastmod>2026-04-22T16:41:54+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-               rel="alternate"
-               hreflang="en"
-               href="//localhost:1313/posts/"/>
-  </url>
-  <url>
     <loc>//localhost:1313/tags/redhat/</loc>
     <lastmod>2026-04-22T16:41:54+08:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -70,16 +110,6 @@
                rel="alternate"
                hreflang="en"
                href="//localhost:1313/tags/redhat/"/>
-  </url>
-  <url>
-    <loc>//localhost:1313/tags/</loc>
-    <lastmod>2026-04-22T16:41:54+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-    <xhtml:link
-               rel="alternate"
-               hreflang="en"
-               href="//localhost:1313/tags/"/>
   </url>
   <url>
     <loc>//localhost:1313/posts/ansible/ansible-automation-platform-programmatically/</loc>
