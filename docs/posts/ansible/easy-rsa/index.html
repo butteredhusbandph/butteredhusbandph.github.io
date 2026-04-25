@@ -83,7 +83,7 @@ I&rsquo;ve used my workstation …">
 
   
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","email":"butteredhusbandph@gmail.com","name":"@butteredhusbandph","sameAs":["https://github.com/penoycentral"]},"dateModified":"2026-04-17T17:51:45+08:00","datePublished":"2026-04-17T17:51:45+08:00","description":"One of the prerequisite of my Ansible Automation Platform 2.5/2.6 lab environment was to configure a local Certificate Authority.\nI\u0026rsquo;ve used my workstation …","headline":"Certificate Authority Server using EasyRSA","image":"//localhost:1313/logo.png","inLanguage":"en-us","keywords":["ansibleautomationplatform","redhat","linux"],"mainEntityOfPage":{"@id":"//localhost:1313/posts/ansible/easy-rsa/","@type":"WebPage"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"//localhost:1313/logo.png"},"name":"@butteredhusbandph","url":"//localhost:1313/"},"timeRequired":"PT1M","url":"//localhost:1313/posts/ansible/easy-rsa/","wordCount":102}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","email":"butteredhusbandph@gmail.com","name":"@butteredhusbandph","sameAs":["https://github.com/penoycentral"]},"dateModified":"2026-04-17T17:51:45+08:00","datePublished":"2026-04-17T17:51:45+08:00","description":"One of the prerequisite of my Ansible Automation Platform 2.5/2.6 lab environment was to configure a local Certificate Authority.\nI\u0026rsquo;ve used my workstation …","headline":"Certificate Authority Server using EasyRSA","image":"//localhost:1313/logo.png","inLanguage":"en-us","keywords":["ansibleautomationplatform","redhat","linux"],"mainEntityOfPage":{"@id":"//localhost:1313/posts/ansible/easy-rsa/","@type":"WebPage"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"//localhost:1313/logo.png"},"name":"@butteredhusbandph","url":"//localhost:1313/"},"timeRequired":"PT1M","url":"//localhost:1313/posts/ansible/easy-rsa/","wordCount":115}</script>
 
 
 
@@ -371,7 +371,7 @@ I&rsquo;ve used my workstation …">
             stroke-width="2"
             d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
         </svg>
-        102 words
+        115 words
       </span>
     
 
@@ -408,24 +408,26 @@ I&rsquo;ve used my workstation …">
       <div class="post-content-main">
         <p>One of the prerequisite of my Ansible Automation Platform 2.5/2.6 lab environment was to configure a <code>local</code> Certificate Authority.<br>
 I&rsquo;ve used my workstation running on LinuxMint to configure my Certificate Authority.</p>
-<p>Installing EasyRSA</p>
+<h2 id="installing-easyrsa">Installing EasyRSA</h2>
 <pre tabindex="0"><code>sudo apt update
 sudo apt install easy-rsa
 mkdir ~/easy-rsa
 ln - /usr/share/easy-rsa/* ~/easy-rsa/
-</code></pre><p>Initialize  PKI</p>
-<pre tabindex="0"><code>cd ~/easy-rsa
+cd ~/easy-rsa
 ./easyrsa init-pki
 ./easyrsa build-ca
-</code></pre><p>Copy CA certificate the clients</p>
+</code></pre><h2 id="copy-ca-certificate-to-the-clients">Copy CA certificate to the clients</h2>
+<p>RHEL:</p>
 <pre tabindex="0"><code>sudo cp /tmp/ca.crt /etc/pki/ca-trust/source/anchors/
 sudo update-ca-trust
 </code></pre><h2 id="creating-signing-and-certificate-requests">Creating Signing and Certificate Requests</h2>
+<p>To be done on the clients</p>
 <pre tabindex="0"><code>openssl genrsa -out $(hostname).key
 openssl req -new -key $(hostname).key -out $(hostname).req
 
 scp $(hostname).req &lt;user&gt;@ca_server_ip:/tmp
-</code></pre><p>Signing a CSR</p>
+</code></pre><h2 id="signing-a-csr">Signing a CSR</h2>
+<p>To be done on the CA server</p>
 <pre tabindex="0"><code>cd ~/easy-rsa
 ./easyrsa import-req /tmp/&lt;client-hostname&gt;.req &lt;client-hostname&gt;
 ./easyrsa sign-req server &lt;client-hostname&gt;
@@ -509,7 +511,10 @@ scp pki/issued/&lt;client-hostname&gt;.crt user@client_ip:/tmp
       <nav class="toc-nav" aria-label="Table of Contents">
         <nav id="TableOfContents">
   <ul>
+    <li><a href="#installing-easyrsa">Installing EasyRSA</a></li>
+    <li><a href="#copy-ca-certificate-to-the-clients">Copy CA certificate to the clients</a></li>
     <li><a href="#creating-signing-and-certificate-requests">Creating Signing and Certificate Requests</a></li>
+    <li><a href="#signing-a-csr">Signing a CSR</a></li>
   </ul>
 </nav>
       </nav>
