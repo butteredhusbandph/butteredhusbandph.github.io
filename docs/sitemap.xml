@@ -182,14 +182,14 @@
                href="//localhost:1313/tags/squid/"/>
   </url>
   <url>
-    <loc>//localhost:1313/posts/ansible/aap-private-automationhub/</loc>
+    <loc>//localhost:1313/posts/ansible/aap-private-execution-environment/</loc>
     <lastmod>2026-04-17T18:17:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="//localhost:1313/posts/ansible/aap-private-automationhub/"/>
+               href="//localhost:1313/posts/ansible/aap-private-execution-environment/"/>
   </url>
   <url>
     <loc>//localhost:1313/posts/ansible/easy-rsa/</loc>

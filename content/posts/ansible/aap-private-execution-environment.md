@@ -1,7 +1,7 @@
 +++
 date = '2026-04-17T18:17:45+08:00'
 draft = false
-title = 'Ansible Automation Platform Private Automation Hub'
+title = 'Ansible Automation Platform Execution Environment'
 tags = ['ansible', 'ansibleautomationplatform', 'redhat', 'linux']
 +++
 
@@ -43,6 +43,9 @@ gate.lab.local/ee-minimal-rhel8
 gate.lab.local/ee-supported-rhel8
 gate.lab.local/rhoso-operators/ee-openstack-ansible-ee-rhel9
 ```
+
+Use execution environment in Controller
+![Use in Controller](/ansible/rh-aap-execution11.png)
 
 ## Uploading Content Collections to Private Automation Hub  
 
