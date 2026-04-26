@@ -142,14 +142,14 @@
                href="//localhost:1313/posts/ansible/ansible-automation-platform/"/>
   </url>
   <url>
-    <loc>//localhost:1313/posts/ansible/aap-remotes/</loc>
+    <loc>//localhost:1313/posts/ansible/ansible-automation-contents/</loc>
     <lastmod>2026-04-18T06:56:11+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="//localhost:1313/posts/ansible/aap-remotes/"/>
+               href="//localhost:1313/posts/ansible/ansible-automation-contents/"/>
   </url>
   <url>
     <loc>//localhost:1313/tags/docker/</loc>

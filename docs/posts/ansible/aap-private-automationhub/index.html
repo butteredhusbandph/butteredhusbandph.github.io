@@ -80,7 +80,7 @@
 
   
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","email":"butteredhusbandph@gmail.com","name":"@butteredhusbandph","sameAs":["https://github.com/penoycentral"]},"dateModified":"2026-04-17T18:17:45+08:00","datePublished":"2026-04-17T18:17:45+08:00","description":"Disclaimer: These notes reflect my personal understanding and working thoughts on Ansible Automation Platform. They are not intended to serve as formal …","headline":"Ansible Automation Platform Private Automation Hub","image":"//localhost:1313/logo.png","inLanguage":"en-us","keywords":["ansible","ansibleautomationplatform","redhat","linux"],"mainEntityOfPage":{"@id":"//localhost:1313/posts/ansible/aap-private-automationhub/","@type":"WebPage"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"//localhost:1313/logo.png"},"name":"@butteredhusbandph","url":"//localhost:1313/"},"timeRequired":"PT2M","url":"//localhost:1313/posts/ansible/aap-private-automationhub/","wordCount":229}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","email":"butteredhusbandph@gmail.com","name":"@butteredhusbandph","sameAs":["https://github.com/penoycentral"]},"dateModified":"2026-04-17T18:17:45+08:00","datePublished":"2026-04-17T18:17:45+08:00","description":"Disclaimer: These notes reflect my personal understanding and working thoughts on Ansible Automation Platform. They are not intended to serve as formal …","headline":"Ansible Automation Platform Private Automation Hub","image":"//localhost:1313/logo.png","inLanguage":"en-us","keywords":["ansible","ansibleautomationplatform","redhat","linux"],"mainEntityOfPage":{"@id":"//localhost:1313/posts/ansible/aap-private-automationhub/","@type":"WebPage"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"//localhost:1313/logo.png"},"name":"@butteredhusbandph","url":"//localhost:1313/"},"timeRequired":"PT2M","url":"//localhost:1313/posts/ansible/aap-private-automationhub/","wordCount":312}</script>
 
 
 
@@ -368,7 +368,7 @@
             stroke-width="2"
             d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
         </svg>
-        229 words
+        312 words
       </span>
     
 
@@ -406,7 +406,38 @@
 
       <div class="post-content-main">
         <p><em>Disclaimer:</em> These notes reflect my personal understanding and working thoughts on Ansible Automation Platform. They are not intended to serve as formal documentation or a step-by-step guide. That said, I hope they offer useful insights, spark ideas, or provide some value as you explore AAP on your own.</p>
-<h2 id="uploading-content-collections-to-private-automation-hub">Uploading Content Collections to Private Automation Hub</h2>
+<h2 id="adding-remote-registry">Adding Remote Registry</h2>
+<p><em>Automation Hub &gt; Remote Registries</em>
+<img src="/ansible/rh-remote-registry1.png" alt="Remote Registry">
+URL: <a href="https://registry.redhat.io/ansible-automation-platform-25/">https://registry.redhat.io/ansible-automation-platform-25/</a></p>
+<p>Click <code>Sync Remote Registry</code> then <code>Index execution environments</code>
+<img src="/ansible/rh-remote-registry2.png" alt="Remote Registry"></p>
+<p>Go to <em>Automation Hub &gt; Execution Environments</em> it will show Execution Environments from registry.redhat.io</p>
+<p>To further check, login to podmn</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>[chris@mgmt ~]$ podman login gate.lab.local
+</span></span><span style="display:flex;"><span>Authenticating with existing credentials for gate.lab.local
+</span></span><span style="display:flex;"><span>Existing credentials are valid. Already logged in to gate.lab.local
+</span></span><span style="display:flex;"><span>[chris@mgmt ~]$ podman search gate.lab.local/
+</span></span><span style="display:flex;"><span>NAME                                                              DESCRIPTION
+</span></span><span style="display:flex;"><span>gate.lab.local/ansible-automation-platform-24/ee-minimal-rhel8
+</span></span><span style="display:flex;"><span>gate.lab.local/ansible-automation-platform-24/ee-minimal-rhel9
+</span></span><span style="display:flex;"><span>gate.lab.local/ansible-automation-platform-24/ee-supported-rhel8
+</span></span><span style="display:flex;"><span>gate.lab.local/ansible-automation-platform-24/ee-supported-rhel9
+</span></span><span style="display:flex;"><span>gate.lab.local/ansible-automation-platform-25/ee-minimal-rhel8
+</span></span><span style="display:flex;"><span>gate.lab.local/ansible-automation-platform-25/ee-minimal-rhel9
+</span></span><span style="display:flex;"><span>gate.lab.local/ansible-automation-platform-25/ee-supported-rhel8
+</span></span><span style="display:flex;"><span>gate.lab.local/ansible-automation-platform-25/ee-supported-rhel9
+</span></span><span style="display:flex;"><span>gate.lab.local/ansible-automation-platform-26/ee-minimal-rhel9
+</span></span><span style="display:flex;"><span>gate.lab.local/ansible-automation-platform-26/ee-supported-rhel9
+</span></span><span style="display:flex;"><span>gate.lab.local/ansible-automation-platform/ee-minimal-rhel8
+</span></span><span style="display:flex;"><span>gate.lab.local/ansible-automation-platform/ee-minimal-rhel9
+</span></span><span style="display:flex;"><span>gate.lab.local/ansible-builder-rhel8
+</span></span><span style="display:flex;"><span>gate.lab.local/de-minimal-rhel8
+</span></span><span style="display:flex;"><span>gate.lab.local/de-supported-rhel8
+</span></span><span style="display:flex;"><span>gate.lab.local/ee-minimal-rhel8
+</span></span><span style="display:flex;"><span>gate.lab.local/ee-supported-rhel8
+</span></span><span style="display:flex;"><span>gate.lab.local/rhoso-operators/ee-openstack-ansible-ee-rhel9
+</span></span></code></pre></div><h2 id="uploading-content-collections-to-private-automation-hub">Uploading Content Collections to Private Automation Hub</h2>
 <p>~/ansible/ee/execution-environment.yml</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">version</span>: <span style="color:#ae81ff">3</span>
 </span></span><span style="display:flex;"><span>
@@ -568,6 +599,7 @@
       <nav class="toc-nav" aria-label="Table of Contents">
         <nav id="TableOfContents">
   <ul>
+    <li><a href="#adding-remote-registry">Adding Remote Registry</a></li>
     <li><a href="#uploading-content-collections-to-private-automation-hub">Uploading Content Collections to Private Automation Hub</a></li>
   </ul>
 </nav>

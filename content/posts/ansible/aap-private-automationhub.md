@@ -7,6 +7,43 @@ tags = ['ansible', 'ansibleautomationplatform', 'redhat', 'linux']
 
 *Disclaimer:* These notes reflect my personal understanding and working thoughts on Ansible Automation Platform. They are not intended to serve as formal documentation or a step-by-step guide. That said, I hope they offer useful insights, spark ideas, or provide some value as you explore AAP on your own.
 
+## Adding Remote Registry
+*Automation Hub > Remote Registries*
+![Remote Registry](/ansible/rh-remote-registry1.png)
+URL: https://registry.redhat.io/ansible-automation-platform-25/
+
+Click `Sync Remote Registry` then `Index execution environments` 
+![Remote Registry](/ansible/rh-remote-registry2.png)
+
+Go to *Automation Hub > Execution Environments* it will show Execution Environments from registry.redhat.io
+
+To further check, login to podmn
+```console
+[chris@mgmt ~]$ podman login gate.lab.local
+Authenticating with existing credentials for gate.lab.local
+Existing credentials are valid. Already logged in to gate.lab.local
+[chris@mgmt ~]$ podman search gate.lab.local/
+NAME                                                              DESCRIPTION
+gate.lab.local/ansible-automation-platform-24/ee-minimal-rhel8
+gate.lab.local/ansible-automation-platform-24/ee-minimal-rhel9
+gate.lab.local/ansible-automation-platform-24/ee-supported-rhel8
+gate.lab.local/ansible-automation-platform-24/ee-supported-rhel9
+gate.lab.local/ansible-automation-platform-25/ee-minimal-rhel8
+gate.lab.local/ansible-automation-platform-25/ee-minimal-rhel9
+gate.lab.local/ansible-automation-platform-25/ee-supported-rhel8
+gate.lab.local/ansible-automation-platform-25/ee-supported-rhel9
+gate.lab.local/ansible-automation-platform-26/ee-minimal-rhel9
+gate.lab.local/ansible-automation-platform-26/ee-supported-rhel9
+gate.lab.local/ansible-automation-platform/ee-minimal-rhel8
+gate.lab.local/ansible-automation-platform/ee-minimal-rhel9
+gate.lab.local/ansible-builder-rhel8
+gate.lab.local/de-minimal-rhel8
+gate.lab.local/de-supported-rhel8
+gate.lab.local/ee-minimal-rhel8
+gate.lab.local/ee-supported-rhel8
+gate.lab.local/rhoso-operators/ee-openstack-ansible-ee-rhel9
+```
+
 ## Uploading Content Collections to Private Automation Hub  
 
 ~/ansible/ee/execution-environment.yml
