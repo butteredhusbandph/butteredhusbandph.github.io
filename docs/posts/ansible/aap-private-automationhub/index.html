@@ -446,26 +446,26 @@
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">prepend_base</span>:
 </span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">COPY _build/configs/ansible.cfg /etc/ansible/ansible.cfg</span>
 </span></span></code></pre></div><p>Login to AAP private automation hub and build the Execution Environment</p>
-<pre tabindex="0"><code>[chris@mgmt ee]$ podman login gate.lab.local
-
-[chris@mgmt ee]$ ansible-builder create
-Complete! The build context can be found at: /home/chris/ansible/ee/context
-
-[chris@mgmt ee]$ podman build -f context/Containerfile context/ -t gate.lab.local/lab/ee-lab-rhel8:latest
-
-[chris@mgmt ee]$ podman images
-REPOSITORY                             TAG         IMAGE ID      CREATED         SIZE
-gate.lab.local/lab/ee-supported-rhel8  latest      b82d0e3de7fe  21 minutes ago  2.8 GB
-&lt;none&gt;                                 &lt;none&gt;      5b705cf59ced  24 minutes ago  2.84 GB
-&lt;none&gt;                                 &lt;none&gt;      f4088cb2e257  26 minutes ago  2.25 GB
-gate.lab.local/ee-supported-rhel8      latest      db463e612f08  18 months ago   2.24 GB
-
-[chris@mgmt ee]$ podman push gate.lab.local/lab/ee-supported-rhel8:latest
-Getting image source signatures
-Copying blob 4ee656bd17fa done   |
-Copying blob 4b636d67cf3a done   |
-Copying blob 6f7354abfe11 skipped: already exists
-</code></pre><p>Use the newly created <code>execution enviroment</code> in the controller</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>[chris@mgmt ee]$ podman login gate.lab.local
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span>[chris@mgmt ee]$ ansible-builder create
+</span></span><span style="display:flex;"><span>Complete! The build context can be found at: /home/chris/ansible/ee/context
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span>[chris@mgmt ee]$ podman build -f context/Containerfile context/ -t gate.lab.local/lab/ee-lab-rhel8:latest
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span>[chris@mgmt ee]$ podman images
+</span></span><span style="display:flex;"><span>REPOSITORY                             TAG         IMAGE ID      CREATED         SIZE
+</span></span><span style="display:flex;"><span>gate.lab.local/lab/ee-supported-rhel8  latest      b82d0e3de7fe  21 minutes ago  2.8 GB
+</span></span><span style="display:flex;"><span>&lt;none&gt;                                 &lt;none&gt;      5b705cf59ced  24 minutes ago  2.84 GB
+</span></span><span style="display:flex;"><span>&lt;none&gt;                                 &lt;none&gt;      f4088cb2e257  26 minutes ago  2.25 GB
+</span></span><span style="display:flex;"><span>gate.lab.local/ee-supported-rhel8      latest      db463e612f08  18 months ago   2.24 GB
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span>[chris@mgmt ee]$ podman push gate.lab.local/lab/ee-supported-rhel8:latest
+</span></span><span style="display:flex;"><span>Getting image source signatures
+</span></span><span style="display:flex;"><span>Copying blob 4ee656bd17fa done   |
+</span></span><span style="display:flex;"><span>Copying blob 4b636d67cf3a done   |
+</span></span><span style="display:flex;"><span>Copying blob 6f7354abfe11 skipped: already exists
+</span></span></code></pre></div><p>Use the newly created <code>execution enviroment</code> in the controller</p>
 <p><em>Automation Content &gt; Execution Enviroments</em>
 <img src="/ansible/rh-ee-controller.png" alt="Redhat Ansible Automation Platform"></p>
 

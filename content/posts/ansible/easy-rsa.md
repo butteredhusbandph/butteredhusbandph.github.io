@@ -9,7 +9,7 @@ One of the prerequisite of my Ansible Automation Platform 2.5/2.6 lab environmen
 I've used my workstation running on LinuxMint to configure my Certificate Authority.   
 
 ## Installing EasyRSA  
-```
+```console
 sudo apt update
 sudo apt install easy-rsa
 mkdir ~/easy-rsa
@@ -21,14 +21,14 @@ cd ~/easy-rsa
 
 ## Copy CA certificate to the clients  
 RHEL:  
-```
+```console
 sudo cp /tmp/ca.crt /etc/pki/ca-trust/source/anchors/
 sudo update-ca-trust
 ```
 
 ## Creating Signing and Certificate Requests
 To be done on the clients  
-```
+```console
 openssl genrsa -out $(hostname).key
 openssl req -new -key $(hostname).key -out $(hostname).req
 
@@ -38,7 +38,7 @@ scp $(hostname).req <user>@ca_server_ip:/tmp
 
 ## Signing a CSR
 To be done on the CA server
-```
+```console
 cd ~/easy-rsa
 ./easyrsa import-req /tmp/<client-hostname>.req <client-hostname>
 ./easyrsa sign-req server <client-hostname>

@@ -409,31 +409,31 @@ I&rsquo;ve used my workstation …">
         <p>One of the prerequisite of my Ansible Automation Platform 2.5/2.6 lab environment was to configure a <code>local</code> Certificate Authority.<br>
 I&rsquo;ve used my workstation running on LinuxMint to configure my Certificate Authority.</p>
 <h2 id="installing-easyrsa">Installing EasyRSA</h2>
-<pre tabindex="0"><code>sudo apt update
-sudo apt install easy-rsa
-mkdir ~/easy-rsa
-ln - /usr/share/easy-rsa/* ~/easy-rsa/
-cd ~/easy-rsa
-./easyrsa init-pki
-./easyrsa build-ca
-</code></pre><h2 id="copy-ca-certificate-to-the-clients">Copy CA certificate to the clients</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>sudo apt update
+</span></span><span style="display:flex;"><span>sudo apt install easy-rsa
+</span></span><span style="display:flex;"><span>mkdir ~/easy-rsa
+</span></span><span style="display:flex;"><span>ln - /usr/share/easy-rsa/* ~/easy-rsa/
+</span></span><span style="display:flex;"><span>cd ~/easy-rsa
+</span></span><span style="display:flex;"><span>./easyrsa init-pki
+</span></span><span style="display:flex;"><span>./easyrsa build-ca
+</span></span></code></pre></div><h2 id="copy-ca-certificate-to-the-clients">Copy CA certificate to the clients</h2>
 <p>RHEL:</p>
-<pre tabindex="0"><code>sudo cp /tmp/ca.crt /etc/pki/ca-trust/source/anchors/
-sudo update-ca-trust
-</code></pre><h2 id="creating-signing-and-certificate-requests">Creating Signing and Certificate Requests</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>sudo cp /tmp/ca.crt /etc/pki/ca-trust/source/anchors/
+</span></span><span style="display:flex;"><span>sudo update-ca-trust
+</span></span></code></pre></div><h2 id="creating-signing-and-certificate-requests">Creating Signing and Certificate Requests</h2>
 <p>To be done on the clients</p>
-<pre tabindex="0"><code>openssl genrsa -out $(hostname).key
-openssl req -new -key $(hostname).key -out $(hostname).req
-
-scp $(hostname).req &lt;user&gt;@ca_server_ip:/tmp
-</code></pre><h2 id="signing-a-csr">Signing a CSR</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>openssl genrsa -out $(hostname).key
+</span></span><span style="display:flex;"><span>openssl req -new -key $(hostname).key -out $(hostname).req
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span>scp $(hostname).req &lt;user&gt;@ca_server_ip:/tmp
+</span></span></code></pre></div><h2 id="signing-a-csr">Signing a CSR</h2>
 <p>To be done on the CA server</p>
-<pre tabindex="0"><code>cd ~/easy-rsa
-./easyrsa import-req /tmp/&lt;client-hostname&gt;.req &lt;client-hostname&gt;
-./easyrsa sign-req server &lt;client-hostname&gt;
-
-scp pki/issued/&lt;client-hostname&gt;.crt user@client_ip:/tmp
-</code></pre><p>Referrence:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>cd ~/easy-rsa
+</span></span><span style="display:flex;"><span>./easyrsa import-req /tmp/&lt;client-hostname&gt;.req &lt;client-hostname&gt;
+</span></span><span style="display:flex;"><span>./easyrsa sign-req server &lt;client-hostname&gt;
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span>scp pki/issued/&lt;client-hostname&gt;.crt user@client_ip:/tmp
+</span></span></code></pre></div><p>Referrence:
 <a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-and-configure-a-certificate-authority-on-ubuntu-22-04">https://www.digitalocean.com/community/tutorials/how-to-set-up-and-configure-a-certificate-authority-on-ubuntu-22-04</a></p>
 
       </div>

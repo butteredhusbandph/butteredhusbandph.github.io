@@ -526,10 +526,10 @@ automationgateway_pg_username=gateway
 automationgateway_pg_password=&#39;******&#39;
 </code></pre><h2 id="running-the-installer">Running the Installer</h2>
 <p>Installation issue due to python3.12</p>
-<pre tabindex="0"><code>
-TASK [ansible.automation_platform_installer.automationhub : Set __pulpcore_version to the RPM that was installed] ***
-fatal: [hub.lab.local]: FAILED! =&gt; {&#34;msg&#34;: &#34;The task includes an option with an undefined variable. The error was: &#39;dict object&#39; has no attribute &#39;python3.11-pulpcore&#39;. &#39;dict object&#39; has no attribute &#39;python3.11-pulpcore&#39;\n\nThe error appears to be in &#39;/home/chris/Labs/redhat/ex467/2.5/ansible-automation-platform-setup-bundle-2.5-1-x86_64/collections/ansible_collections/ansible/automation_platform_installer/roles/automationhub/tasks/install_packages.yml&#39;: line 38, column 3, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n- name: Set __pulpcore_version to the RPM that was installed\n  ^ here\n&#34;}
-</code></pre><p>Install python3.11 in <code>hub.lab.local</code>. For some reason, AAP installer will install python3.12 and will break the installation process.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-console" data-lang="console"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span>TASK [ansible.automation_platform_installer.automationhub : Set __pulpcore_version to the RPM that was installed] ***
+</span></span><span style="display:flex;"><span>fatal: [hub.lab.local]: FAILED! =&gt; {&#34;msg&#34;: &#34;The task includes an option with an undefined variable. The error was: &#39;dict object&#39; has no attribute &#39;python3.11-pulpcore&#39;. &#39;dict object&#39; has no attribute &#39;python3.11-pulpcore&#39;\n\nThe error appears to be in &#39;/home/chris/Labs/redhat/ex467/2.5/ansible-automation-platform-setup-bundle-2.5-1-x86_64/collections/ansible_collections/ansible/automation_platform_installer/roles/automationhub/tasks/install_packages.yml&#39;: line 38, column 3, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n- name: Set __pulpcore_version to the RPM that was installed\n  ^ here\n&#34;}
+</span></span></code></pre></div><p>Install python3.11 in <code>hub.lab.local</code>. For some reason, AAP installer will install python3.12 and will break the installation process.</p>
 <p>Execute the setup script:</p>
 <pre tabindex="0"><code>./setup.sh
 </code></pre><h2 id="configure-ssl-certificates">Configure SSL certificates</h2>

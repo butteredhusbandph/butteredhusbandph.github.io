@@ -7,16 +7,16 @@ tags = ['linux', 'podman', 'container']
 
 
 Create the container  
-```
+```console
 podman create --name my-container -it <image> /bin/bash
 ```
 
 Verify if exists  
-```
+```console
 podman ps -a
 ```
 
 Starting the container  
-```
+```console
 podman start -ai my-container
 ```

@@ -52,7 +52,7 @@ additional_build_steps:
 
 
 Login to AAP private automation hub and build the Execution Environment  
-```
+```console
 [chris@mgmt ee]$ podman login gate.lab.local
 
 [chris@mgmt ee]$ ansible-builder create

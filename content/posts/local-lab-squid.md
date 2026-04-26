@@ -87,7 +87,7 @@ http_port 3128
 
 Bring docker-squid up using `docker compose` command  
 
-```
+```console
 ╭─chris@mint ~/Labs/docker/squid ‹main●›
 ╰─$ docker compose up -d
 [+] up 2/2

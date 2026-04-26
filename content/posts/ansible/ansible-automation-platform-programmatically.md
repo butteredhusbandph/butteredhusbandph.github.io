@@ -14,29 +14,29 @@ https://gate.lab.local/api/controller/v2/
 
 ## Commands
 
-```
+```console
 curl -X GET https://gate.lab.local/api/controller/v2/ | jq
 ```
 
 ### Getting Job Templates
-```
+```console
 curl -X GET https://gate.lab.local/api/controller/v2/job_templates/ --user user1:<password>|jq
 ```
 
 
 ### Launching a Job 
 
-```
+```console
 curl -X POST https://gate.lab.local/api/controller/v2/job_templates/13/launch --user user1:<password>|jq
 
 ```
 
 ### Getting Workflow Job Templates
-```
+```console
 curl -X GET https://gate.lab.local/api/controller/v2/workflow_job_templates/ --user user1:<password> |jq
 ```
 
 ### Launching Workflow Job templates
-```
+```console
 curl -X POST https://gate.lab.local/api/controller/v2/workflow_job_templates/15/launch/ --user user1:<password> |jq
 ```

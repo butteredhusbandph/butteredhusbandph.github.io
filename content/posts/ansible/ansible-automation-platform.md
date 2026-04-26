@@ -165,7 +165,7 @@ automationgateway_pg_password='******'
 ## Running the Installer
 
 Installation issue due to python3.12
-```
+```console
 
 TASK [ansible.automation_platform_installer.automationhub : Set __pulpcore_version to the RPM that was installed] ***
 fatal: [hub.lab.local]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'dict object' has no attribute 'python3.11-pulpcore'. 'dict object' has no attribute 'python3.11-pulpcore'\n\nThe error appears to be in '/home/chris/Labs/redhat/ex467/2.5/ansible-automation-platform-setup-bundle-2.5-1-x86_64/collections/ansible_collections/ansible/automation_platform_installer/roles/automationhub/tasks/install_packages.yml': line 38, column 3, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n- name: Set __pulpcore_version to the RPM that was installed\n  ^ here\n"}
