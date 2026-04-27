@@ -59,11 +59,7 @@ In this sample, i want to add my custom collection `lab.webserver` to the execut
 version: 3
 
 dependencies:
-  galaxy:
-    collections:
-      - name: ansible.posix
-      - name: community.general
-      - name: lab.webserver
+  galaxy: requirements.txt
 
 images:
   base_image:
@@ -80,6 +76,15 @@ additional_build_steps:
     - COPY _build/configs/ansible.cfg /etc/ansible/ansible.cfg
     - COPY _build/configs/ca.crt /etc/pki/ca-trust/source/anchors/
     - RUN update-ca-trust extract
+```
+
+requirements.txt
+```
+---
+collections:
+  - name: ansible.posix
+  - name: community.general
+  - name: lab.webserver
 ```
 
 files/ansible.cfg
@@ -100,15 +105,19 @@ Login to AAP private automation hub and build the Execution Environment
 ```console
 [chris@mgmt ee]$ podman login gate.lab.local
 
-[chris@mgmt ee]$ ansible-builder create
+[chris@mgmt ee]$ ansible-builder build -t gate.lab.local/lab/ee-minimal-rhel9:latest
+Running command:
+  podman build -f context/Containerfile -t gate.lab.local/lab/ee-minimal-rhel9:latest context
+
 Complete! The build context can be found at: /home/chris/ansible/ee/context
-
-[chris@mgmt ee]$ podman build -f context/Containerfile -t gate.lab.local/lab/ee-minimal-rhel9:latest
-
+[chris@mgmt ee]$
 [chris@mgmt ee]$ podman images
-REPOSITORY                                                      TAG         IMAGE ID      CREATED         SIZE
-gate.lab.local/lab/ee-minimal-rhel9                             latest      beb5b1bb303f  2 minutes ago   349 MB
-
+REPOSITORY                                                      TAG         IMAGE ID      CREATED             SIZE
+gate.lab.local/lab/ee-minimal-rhel9                             latest      49eade8d5f49  11 seconds ago      349 MB
+<none>                                                          <none>      4a1c5fa1e598  About a minute ago  333 MB
+<none>                                                          <none>      a32810498baf  25 hours ago        352 MB
+<none>                                                          <none>      3202fc7b1023  25 hours ago        333 MB
+gate.lab.local/ansible-automation-platform-25/ee-minimal-rhel9  latest      8db324dbaa70  5 weeks ago         309 MB
 
 [chris@mgmt ee]$ podman push gate.lab.local/lab/ee-minimal-rhel9:latest 
 Getting image source signatures

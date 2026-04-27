@@ -80,7 +80,7 @@
 
   
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","email":"butteredhusbandph@gmail.com","name":"@butteredhusbandph","sameAs":["https://github.com/penoycentral"]},"dateModified":"2026-04-17T18:17:45+08:00","datePublished":"2026-04-17T18:17:45+08:00","description":"Disclaimer: These notes reflect my personal understanding and working thoughts on Ansible Automation Platform. They are not intended to serve as formal …","headline":"Ansible Automation Platform Execution Environment","image":"//localhost:1313/logo.png","inLanguage":"en-us","keywords":["ansible","ansibleautomationplatform","redhat","linux"],"mainEntityOfPage":{"@id":"//localhost:1313/posts/ansible/aap-private-execution-environment/","@type":"WebPage"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"//localhost:1313/logo.png"},"name":"@butteredhusbandph","url":"//localhost:1313/"},"timeRequired":"PT2M","url":"//localhost:1313/posts/ansible/aap-private-execution-environment/","wordCount":313}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","email":"butteredhusbandph@gmail.com","name":"@butteredhusbandph","sameAs":["https://github.com/penoycentral"]},"dateModified":"2026-04-17T18:17:45+08:00","datePublished":"2026-04-17T18:17:45+08:00","description":"Disclaimer: These notes reflect my personal understanding and working thoughts on Ansible Automation Platform. They are not intended to serve as formal …","headline":"Ansible Automation Platform Execution Environment","image":"//localhost:1313/logo.png","inLanguage":"en-us","keywords":["ansible","ansibleautomationplatform","redhat","linux"],"mainEntityOfPage":{"@id":"//localhost:1313/posts/ansible/aap-private-execution-environment/","@type":"WebPage"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"//localhost:1313/logo.png"},"name":"@butteredhusbandph","url":"//localhost:1313/"},"timeRequired":"PT2M","url":"//localhost:1313/posts/ansible/aap-private-execution-environment/","wordCount":354}</script>
 
 
 
@@ -368,7 +368,7 @@
             stroke-width="2"
             d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
         </svg>
-        313 words
+        354 words
       </span>
     
 
@@ -447,11 +447,7 @@ URL: <a href="https://registry.redhat.io/ansible-automation-platform-25/">https:
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">version</span>: <span style="color:#ae81ff">3</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">dependencies</span>:
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">galaxy</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">collections</span>:
-</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">ansible.posix</span>
-</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">community.general</span>
-</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">lab.webserver</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">galaxy</span>: <span style="color:#ae81ff">requirements.txt</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">images</span>:
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">base_image</span>:
@@ -468,7 +464,13 @@ URL: <a href="https://registry.redhat.io/ansible-automation-platform-25/">https:
 </span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">COPY _build/configs/ansible.cfg /etc/ansible/ansible.cfg</span>
 </span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">COPY _build/configs/ca.crt /etc/pki/ca-trust/source/anchors/</span>
 </span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">RUN update-ca-trust extract</span>
-</span></span></code></pre></div><p>files/ansible.cfg</p>
+</span></span></code></pre></div><p>requirements.txt</p>
+<pre tabindex="0"><code>---
+collections:
+  - name: ansible.posix
+  - name: community.general
+  - name: lab.webserver
+</code></pre><p>files/ansible.cfg</p>
 <pre tabindex="0"><code>[galaxy]
 server_list = validated, community
 
@@ -482,16 +484,20 @@ token=&lt;ansible hub token here&gt;
 </code></pre><p>Login to AAP private automation hub and build the Execution Environment</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>[chris@mgmt ee]$ podman login gate.lab.local
 </span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span>[chris@mgmt ee]$ ansible-builder create
-</span></span><span style="display:flex;"><span>Complete! The build context can be found at: /home/chris/ansible/ee/context
+</span></span></span><span style="display:flex;"><span>[chris@mgmt ee]$ ansible-builder build -t gate.lab.local/lab/ee-minimal-rhel9:latest
+</span></span><span style="display:flex;"><span>Running command:
+</span></span><span style="display:flex;"><span>  podman build -f context/Containerfile -t gate.lab.local/lab/ee-minimal-rhel9:latest context
 </span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span>[chris@mgmt ee]$ podman build -f context/Containerfile -t gate.lab.local/lab/ee-minimal-rhel9:latest
+</span></span></span><span style="display:flex;"><span>Complete! The build context can be found at: /home/chris/ansible/ee/context
+</span></span><span style="display:flex;"><span>[chris@mgmt ee]$
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>chris@mgmt ee<span style="color:#f92672">]</span>$ podman images
+</span></span><span style="display:flex;"><span>REPOSITORY                                                      TAG         IMAGE ID      CREATED             SIZE
+</span></span><span style="display:flex;"><span>gate.lab.local/lab/ee-minimal-rhel9                             latest      49eade8d5f49  11 seconds ago      349 MB
+</span></span><span style="display:flex;"><span>&lt;none&gt;                                                          &lt;none&gt;      4a1c5fa1e598  About a minute ago  333 MB
+</span></span><span style="display:flex;"><span>&lt;none&gt;                                                          &lt;none&gt;      a32810498baf  25 hours ago        352 MB
+</span></span><span style="display:flex;"><span>&lt;none&gt;                                                          &lt;none&gt;      3202fc7b1023  25 hours ago        333 MB
+</span></span><span style="display:flex;"><span>gate.lab.local/ansible-automation-platform-25/ee-minimal-rhel9  latest      8db324dbaa70  5 weeks ago         309 MB
 </span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span>[chris@mgmt ee]$ podman images
-</span></span><span style="display:flex;"><span>REPOSITORY                                                      TAG         IMAGE ID      CREATED         SIZE
-</span></span><span style="display:flex;"><span>gate.lab.local/lab/ee-minimal-rhel9                             latest      beb5b1bb303f  2 minutes ago   349 MB
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
 </span></span></span><span style="display:flex;"><span>[chris@mgmt ee]$ podman push gate.lab.local/lab/ee-minimal-rhel9:latest 
 </span></span><span style="display:flex;"><span>Getting image source signatures
 </span></span><span style="display:flex;"><span>Copying blob 236a7d5e0ec4 done   | 
