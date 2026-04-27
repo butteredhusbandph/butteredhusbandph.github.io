@@ -1,6 +1,6 @@
 +++
 date = '2026-04-22T05:27:28+08:00'
-draft = true
+draft = false
 title = 'Ansible Automation Platform Inventories and Credentials'
 +++
 

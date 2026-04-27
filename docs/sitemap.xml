@@ -112,6 +112,16 @@
                href="//localhost:1313/tags/redhat/"/>
   </url>
   <url>
+    <loc>//localhost:1313/posts/ansible/ansible-automation-platform-inventories/</loc>
+    <lastmod>2026-04-22T05:27:28+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="//localhost:1313/posts/ansible/ansible-automation-platform-inventories/"/>
+  </url>
+  <url>
     <loc>//localhost:1313/posts/ansible/ansible-automation-platform-programmatically/</loc>
     <lastmod>2026-04-21T16:27:01+08:00</lastmod>
     <changefreq>weekly</changefreq>
