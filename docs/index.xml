@@ -6,8 +6,15 @@
     <description>Recent content on @butteredhusbandph</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 Apr 2026 21:32:11 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 28 Apr 2026 07:17:58 +0800</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ansible Quick Notes</title>
+      <link>//localhost:1313/posts/ansible/ansible-quick-notes/</link>
+      <pubDate>Tue, 28 Apr 2026 07:17:58 +0800</pubDate>
+      <guid>//localhost:1313/posts/ansible/ansible-quick-notes/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://docs.ansible.com/projects/builder/en/stable/definition/#builder-ee-definition&#34;&gt;Execution environment definition&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Podman Notes</title>
       <link>//localhost:1313/posts/linux/podman-notes/</link>

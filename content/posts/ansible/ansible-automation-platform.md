@@ -127,7 +127,7 @@ hub.lab.local
 control.lab.local
 
 [all:vars]
-admin_password='secret'
+admin_password='*****'
 redis_mode=standalone
 pg_host='control.lab.local'
 pg_port=5432
