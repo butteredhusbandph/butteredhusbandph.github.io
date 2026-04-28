@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Container on @butteredhusbandph</title>
-    <link>//localhost:1313/tags/container/</link>
+    <link>./tags/container/</link>
     <description>Recent content in Container on @butteredhusbandph</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 25 Apr 2026 21:32:11 +0800</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/container/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="./tags/container/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Podman Notes</title>
-      <link>//localhost:1313/posts/linux/podman-notes/</link>
+      <link>./posts/linux/podman-notes/</link>
       <pubDate>Sat, 25 Apr 2026 21:32:11 +0800</pubDate>
-      <guid>//localhost:1313/posts/linux/podman-notes/</guid>
+      <guid>./posts/linux/podman-notes/</guid>
       <description>&lt;p&gt;Create the container&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;podman create --name my-container -it &amp;lt;image&amp;gt; /bin/bash&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Verify if exists&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;podman ps -a&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Starting the container&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;podman start -ai my-container&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
   </channel>
