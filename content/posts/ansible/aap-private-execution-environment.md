@@ -134,3 +134,29 @@ Use the newly created `execution enviroment` in the controller
 Click `Use in Controller`
 
 ![Redhat Ansible Automation Platform](/ansible/rh-aap-execution12.png)
+
+### Optional execution enviroment image check
+```console
+[chris@mgmt ee]$ podman create --name ansible-container -it gate.lab.local/lab/ee-minimal-rhel9:latest /bin/bash
+2bf15e8caca14ec825d5efe76832e0727e178b866641171110792b991a4db8af
+[chris@mgmt ee]$ podman ps -a
+CONTAINER ID  IMAGE                                       COMMAND     CREATED        STATUS      PORTS       NAMES
+2bf15e8caca1  gate.lab.local/lab/ee-minimal-rhel9:latest  /bin/bash   3 seconds ago  Created                 ansible-container
+[chris@mgmt ee]$ podman start -ai ansible-container
+
+bash-5.1$ ansible --version
+ansible [core 2.16.17]
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = ['/runner/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3.12/site-packages/ansible
+
+bash-5.1$ ansible-galaxy collection list
+
+# /usr/share/ansible/collections/ansible_collections
+Collection        Version
+----------------- -------
+ansible.posix     2.1.0
+community.general 12.6.0
+lab.webserver     1.0.0
+
+```

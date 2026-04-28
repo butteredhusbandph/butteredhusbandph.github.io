@@ -1,7 +1,7 @@
 +++
 date = '2026-04-22T16:41:54+08:00'
 draft = false
-title = 'Ansible Automation Platform Execution'
+title = 'Ansible Automation Platform Job and Workflow Template'
 tags = ['ansible', 'ansibleautomationplatform', 'redhat', 'linux']
 +++
 
