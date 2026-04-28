@@ -80,7 +80,7 @@
 
   
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","email":"butteredhusbandph@gmail.com","name":"@butteredhusbandph","sameAs":["https://github.com/penoycentral"]},"dateModified":"2026-04-20T05:36:28+08:00","datePublished":"2026-04-20T05:36:28+08:00","description":"Disclaimer: These notes reflect my personal understanding and working thoughts on Ansible Automation Platform. They are not intended to serve as formal …","headline":"Ansible Automation Platform Access Management","image":"//localhost:1313/logo.png","inLanguage":"en-us","keywords":["ansible","ansibleautomationplatform","redhat","linux"],"mainEntityOfPage":{"@id":"//localhost:1313/posts/ansible/ansible-automation-platform-access-management/","@type":"WebPage"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"//localhost:1313/logo.png"},"name":"@butteredhusbandph","url":"//localhost:1313/"},"timeRequired":"PT2M","url":"//localhost:1313/posts/ansible/ansible-automation-platform-access-management/","wordCount":233}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","email":"butteredhusbandph@gmail.com","name":"@butteredhusbandph","sameAs":["https://github.com/penoycentral"]},"dateModified":"2026-04-20T05:36:28+08:00","datePublished":"2026-04-20T05:36:28+08:00","description":"Disclaimer: These notes reflect my personal understanding and working thoughts on Ansible Automation Platform. They are not intended to serve as formal …","headline":"Ansible Automation Platform Access Management","image":"//localhost:1313/logo.png","inLanguage":"en-us","keywords":["ansible","ansibleautomationplatform","redhat","linux"],"mainEntityOfPage":{"@id":"//localhost:1313/posts/ansible/ansible-automation-platform-access-management/","@type":"WebPage"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"//localhost:1313/logo.png"},"name":"@butteredhusbandph","url":"//localhost:1313/"},"timeRequired":"PT2M","url":"//localhost:1313/posts/ansible/ansible-automation-platform-access-management/","wordCount":232}</script>
 
 
 
@@ -368,7 +368,7 @@
             stroke-width="2"
             d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
         </svg>
-        233 words
+        232 words
       </span>
     
 
@@ -412,11 +412,12 @@
 <h2 id="organizations">Organizations</h2>
 <p>An organization is a logical collection of users, teams, and resources. It is the highest level object in the Ansible Automation Platform object hierarchy.</p>
 <ul>
-<li><strong>Instance Groups</strong> Collections of nodes (VMs or instances) that can execute jobs.
-<ul>
-<li><strong>Purpose</strong>: They allow administrators to assign job templates to specific groups of nodes for dedicated capacity or workload isolation.</li>
-</ul>
-</li>
+<li>Users. List of users</li>
+<li>Administrators</li>
+<li>Teams(see Teams)</li>
+<li>Execution Environments</li>
+<li>Notifications</li>
+<li></li>
 </ul>
 <h3 id="creating-organization">Creating Organization</h3>
 <p><em>Access Management &gt; Organizations</em>
@@ -424,7 +425,16 @@
 <!-- raw HTML omitted -->
 <h2 id="teams">Teams</h2>
 <p>A team is a group of users that can be assigned permissions to resources.</p>
-<h3 id="creating-organization-1">Creating Organization</h3>
+<ul>
+<li>Roles
+<ul>
+<li>Resource(eg. Job/Workflow, Inventory)</li>
+<li>Role (Access Management &gt; Roles) eg. Lab Job Role with permission to just execute job</li>
+<li>Type</li>
+</ul>
+</li>
+</ul>
+<h3 id="creating-teams">Creating Teams</h3>
 <p><em>Access Management &gt; Teams &gt; Create Team</em></p>
 <h2 id="users">Users</h2>
 <h3 id="user-type">User Type</h3>
@@ -575,7 +585,7 @@ Job Workflow Role
     </li>
     <li><a href="#teams">Teams</a>
       <ul>
-        <li><a href="#creating-organization-1">Creating Organization</a></li>
+        <li><a href="#creating-teams">Creating Teams</a></li>
       </ul>
     </li>
     <li><a href="#users">Users</a>

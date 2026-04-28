@@ -17,14 +17,20 @@ ansible-galaxy role init apache
 roles/apache/task/main.yml
 ```yaml
 ---
+---
 # tasks file for apache
 - ansible.builtin.dnf:
-    name: httpd
+    name:
+      - httpd
+      - firewalld
     state: present
 - ansible.builtin.service:
-    name: httpd
+    name: "{{ item }}"
     state: started
     enabled: yes
+  loop:
+    - httpd
+    - firewalld
 - ansible.posix.firewalld:
     service: http
     state: enabled

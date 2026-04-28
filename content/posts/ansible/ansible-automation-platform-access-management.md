@@ -16,8 +16,12 @@ tags = ['ansible', 'ansibleautomationplatform', 'redhat', 'linux']
     
 ## Organizations
 An organization is a logical collection of users, teams, and resources. It is the highest level object in the Ansible Automation Platform object hierarchy. 
-  - **Instance Groups** Collections of nodes (VMs or instances) that can execute jobs.
-    - **Purpose**: They allow administrators to assign job templates to specific groups of nodes for dedicated capacity or workload isolation.
+  - Users. List of users
+  - Administrators
+  - Teams(see Teams)
+  - Execution Environments
+  - Notifications  
+  - 
 ### Creating Organization
 *Access Management > Organizations*
 ![Redhat Ansible Automation Platform](/ansible/rh-aap-org1.png)
@@ -26,7 +30,11 @@ An organization is a logical collection of users, teams, and resources. It is th
     
 ## Teams
 A team is a group of users that can be assigned permissions to resources.
-### Creating Organization
+  - Roles
+    - Resource(eg. Job/Workflow, Inventory)
+    - Role (Access Management > Roles) eg. Lab Job Role with permission to just execute job
+    - Type 
+### Creating Teams
 *Access Management > Teams > Create Team*
     
 ## Users
