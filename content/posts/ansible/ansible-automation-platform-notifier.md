@@ -2,6 +2,8 @@
 date = '2026-04-29T05:52:30+08:00'
 draft = true
 title = 'Ansible Automation Platform Notifier'
+tags = ['ansible', 'ansibleautomationplatform', 'redhat', 'linux']
+
 +++
 *Disclaimer:* These notes reflect my personal understanding and working thoughts on Ansible Automation Platform. They are not intended to serve as formal documentation or a step-by-step guide. That said, I hope they offer useful insights, spark ideas, or provide some value as you explore AAP on your own.
 
@@ -49,3 +51,15 @@ curl http://192.168.50.217:9000/hooks/show-logs
 [Tue Apr 28 21:49:37 UTC 2026] Webhook triggered: ansible playbook triggered
 [Tue Apr 28 21:50:04 UTC 2026] Webhook triggered: ansible playbook triggered
 ```
+  
+  
+    
+**Target URL:** http://192.168.50.217:9000/hooks/show-logs  
+**HTTP Method:** POST
+![Ansible Automation Platform Notifier](/ansible/rh-aap-notifier1.png)
+
+Click the `Bell` icon to test  
+![Ansible Automation Platform Notifier](/ansible/rh-aap-notifier2.png)
+
+Add `Notifier` to `Job Template` or `Job Workflow`
+![Ansible Automation Platform Notifier](/ansible/rh-aap-notifier3.png)
