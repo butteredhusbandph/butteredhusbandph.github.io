@@ -1,6 +1,6 @@
 +++
 date = '2026-04-29T05:52:30+08:00'
-draft = true
+draft = false
 title = 'Ansible Automation Platform Notifier'
 tags = ['ansible', 'ansibleautomationplatform', 'redhat', 'linux']
 
