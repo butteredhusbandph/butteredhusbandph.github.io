@@ -53,7 +53,7 @@ curl http://192.168.50.217:9000/hooks/show-logs
 ```
   
   
-## Ansible Automation Platform Webhook Configuration  
+## Ansible Automation Platform Notifier Configuration  
  
 **Target URL:** http://192.168.50.217:9000/hooks/show-logs  
 **HTTP Method:** POST
