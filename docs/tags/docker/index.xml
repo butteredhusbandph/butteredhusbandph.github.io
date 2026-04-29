@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docker on @butteredhusbandph</title>
-    <link>./tags/docker/</link>
+    <link>//localhost:1313/tags/docker/</link>
     <description>Recent content in Docker on @butteredhusbandph</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 17 Apr 2026 20:56:00 +0800</lastBuildDate>
-    <atom:link href="./tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Local Lab Docker Squid</title>
-      <link>./posts/local-lab-squid/</link>
+      <link>//localhost:1313/posts/local-lab-squid/</link>
       <pubDate>Fri, 17 Apr 2026 20:56:00 +0800</pubDate>
-      <guid>./posts/local-lab-squid/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;./squid.png&#34; alt=&#34;Squid Proxy&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;My home lab currently runs on a laptop using VirtualBox, with all my VMs configured on a &lt;code&gt;host‑only&lt;/code&gt; network so I can take the entire environment with me. The downside is that the VMs’ web services are only reachable from the laptop itself. If I want to work from another workstation and connect over SSH, I lose access to anything the VMs expose—HTTP and so on.&#xA;One workaround I explored was running a Docker‑based Squid proxy to bridge that gap&lt;/p&gt;</description>
+      <guid>//localhost:1313/posts/local-lab-squid/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;//localhost:1313/squid.png&#34; alt=&#34;Squid Proxy&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;My home lab currently runs on a laptop using VirtualBox, with all my VMs configured on a &lt;code&gt;host‑only&lt;/code&gt; network so I can take the entire environment with me. The downside is that the VMs’ web services are only reachable from the laptop itself. If I want to work from another workstation and connect over SSH, I lose access to anything the VMs expose—HTTP and so on.&#xA;One workaround I explored was running a Docker‑based Squid proxy to bridge that gap&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
