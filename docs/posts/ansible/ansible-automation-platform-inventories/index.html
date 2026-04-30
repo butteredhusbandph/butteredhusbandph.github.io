@@ -79,7 +79,7 @@ Inventories User Access Team Access Groups webservers Related Groups Hosts Hosts
   
 
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","email":"butteredhusbandph@gmail.com","name":"@butteredhusbandph","sameAs":["https://github.com/penoycentral"]},"dateModified":"2026-04-22T05:27:28+08:00","datePublished":"2026-04-22T05:27:28+08:00","description":"This is just my notes on my lab AAP Inventories\nInventories User Access Team Access Groups webservers Related Groups Hosts Hosts Sources Vmware Vcenter Amazon …","headline":"Ansible Automation Platform Inventories and Credentials","image":"//localhost:1313/logo.png","inLanguage":"en-us","mainEntityOfPage":{"@id":"//localhost:1313/posts/ansible/ansible-automation-platform-inventories/","@type":"WebPage"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"//localhost:1313/logo.png"},"name":"@butteredhusbandph","url":"//localhost:1313/"},"timeRequired":"PT1M","url":"//localhost:1313/posts/ansible/ansible-automation-platform-inventories/","wordCount":62}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","email":"butteredhusbandph@gmail.com","name":"@butteredhusbandph","sameAs":["https://github.com/penoycentral"]},"dateModified":"2026-04-22T05:27:28+08:00","datePublished":"2026-04-22T05:27:28+08:00","description":"This is just my notes on my lab AAP Inventories\nInventories User Access Team Access Groups webservers Related Groups Hosts Hosts Sources Vmware Vcenter Amazon …","headline":"Ansible Automation Platform Inventories and Credentials","image":"//localhost:1313/logo.png","inLanguage":"en-us","mainEntityOfPage":{"@id":"//localhost:1313/posts/ansible/ansible-automation-platform-inventories/","@type":"WebPage"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"//localhost:1313/logo.png"},"name":"@butteredhusbandph","url":"//localhost:1313/"},"timeRequired":"PT1M","url":"//localhost:1313/posts/ansible/ansible-automation-platform-inventories/","wordCount":106}</script>
 
 
 
@@ -367,7 +367,7 @@ Inventories User Access Team Access Groups webservers Related Groups Hosts Hosts
             stroke-width="2"
             d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
         </svg>
-        62 words
+        106 words
       </span>
     
 
@@ -435,6 +435,20 @@ Inventories User Access Team Access Groups webservers Related Groups Hosts Hosts
 <p><em>Automation Controller &gt; Infrastructure &gt; Hosts</em>
 <img src="/ansible/rh-aap-inventory3.png" alt="AAP Inventory">
 <img src="/ansible/rh-aap-inventory4.png" alt="AAP Inventory"></p>
+<h2 id="adding-inventory-from-project">Adding Inventory from Project</h2>
+<p>Create <code>inventory.ini</code> in your GIT Project and sync your Project</p>
+<pre tabindex="0"><code>[dev]
+node1.lab.local
+
+[webserver]
+node2.lab.local
+</code></pre><p><em>Automation Controller &gt; Infrastructure &gt; Inventories</em>
+Select <code>Sources</code> tab</p>
+<p><img src="/ansible/rh-aap-inventory5.png" alt="AAP Inventory">
+<strong>Source:</strong> Sourced from a Project
+<strong>Project</strong> your Project
+<strong>Inventory file</strong> inventory.ini</p>
+<p>Check <code>Host</code> and <code>Groups</code> under <code>Inventories</code></p>
 
       </div>
 
@@ -509,6 +523,7 @@ Inventories User Access Team Access Groups webservers Related Groups Hosts Hosts
     <li><a href="#create-inventory">Create Inventory</a></li>
     <li><a href="#add-groups-to-inventory">Add Groups to Inventory</a></li>
     <li><a href="#add-host-and-associate-to-host-group">Add Host and associate to Host Group</a></li>
+    <li><a href="#adding-inventory-from-project">Adding Inventory from Project</a></li>
   </ul>
 </nav>
       </nav>
