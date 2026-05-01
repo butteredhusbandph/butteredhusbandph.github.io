@@ -1,13 +1,11 @@
 +++
 date = '2026-04-23T15:50:04+08:00'
-draft = false
+draft = true
 title = 'Ansible Automation Platform Ex467'
 tags = ['ansible', 'ansibleautomationplatform', 'redhat', 'linux']
 
 +++
 
-
-# EX467 Exam Objectives  
 
 ## Manage automation content
   - [Upload a collection to automation hub](/ansible/ansible-automation-contents/#upload-a-collection-to-automation-hub)
