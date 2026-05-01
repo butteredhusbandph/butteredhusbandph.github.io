@@ -80,7 +80,7 @@
 
   
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","email":"butteredhusbandph@gmail.com","name":"@butteredhusbandph","sameAs":["https://github.com/penoycentral"]},"dateModified":"2026-04-20T05:36:28+08:00","datePublished":"2026-04-20T05:36:28+08:00","description":"Disclaimer: These notes reflect my personal understanding and working thoughts on Ansible Automation Platform. They are not intended to serve as formal …","headline":"Ansible Automation Platform Access Management","image":"//localhost:1313/logo.png","inLanguage":"en-us","keywords":["ansible","ansibleautomationplatform","redhat","linux"],"mainEntityOfPage":{"@id":"//localhost:1313/posts/ansible/ansible-automation-platform-access-management/","@type":"WebPage"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"//localhost:1313/logo.png"},"name":"@butteredhusbandph","url":"//localhost:1313/"},"timeRequired":"PT2M","url":"//localhost:1313/posts/ansible/ansible-automation-platform-access-management/","wordCount":232}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","email":"butteredhusbandph@gmail.com","name":"@butteredhusbandph","sameAs":["https://github.com/penoycentral"]},"dateModified":"2026-04-20T05:36:28+08:00","datePublished":"2026-04-20T05:36:28+08:00","description":"Disclaimer: These notes reflect my personal understanding and working thoughts on Ansible Automation Platform. They are not intended to serve as formal …","headline":"Ansible Automation Platform Access Management","image":"//localhost:1313/logo.png","inLanguage":"en-us","keywords":["ansible","ansibleautomationplatform","redhat","linux"],"mainEntityOfPage":{"@id":"//localhost:1313/posts/ansible/ansible-automation-platform-access-management/","@type":"WebPage"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"//localhost:1313/logo.png"},"name":"@butteredhusbandph","url":"//localhost:1313/"},"timeRequired":"PT2M","url":"//localhost:1313/posts/ansible/ansible-automation-platform-access-management/","wordCount":246}</script>
 
 
 
@@ -368,7 +368,7 @@
             stroke-width="2"
             d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
         </svg>
-        232 words
+        246 words
       </span>
     
 
@@ -423,19 +423,6 @@
 <p><em>Access Management &gt; Organizations</em>
 <img src="/ansible/rh-aap-org1.png" alt="Redhat Ansible Automation Platform"></p>
 <!-- raw HTML omitted -->
-<h2 id="teams">Teams</h2>
-<p>A team is a group of users that can be assigned permissions to resources.</p>
-<ul>
-<li>Roles
-<ul>
-<li>Resource(eg. Job/Workflow, Inventory)</li>
-<li>Role (Access Management &gt; Roles) eg. Lab Job Role with permission to just execute job</li>
-<li>Type</li>
-</ul>
-</li>
-</ul>
-<h3 id="creating-teams">Creating Teams</h3>
-<p><em>Access Management &gt; Teams &gt; Create Team</em></p>
 <h2 id="users">Users</h2>
 <h3 id="user-type">User Type</h3>
 <ul>
@@ -453,6 +440,22 @@ Has view-only permissions on all objects</li>
 <h3 id="creating-users">Creating Users</h3>
 <p><em>Access Management &gt; Users &gt; Create Users</em>
 <img src="/ansible/rh-aap-org2.png" alt="Redhat Ansible Automation Platform"></p>
+<h2 id="teams">Teams</h2>
+<p>A team is a group of users that can be assigned permissions to resources.</p>
+<ul>
+<li>Roles
+<ul>
+<li>Resource(eg. Job/Workflow, Inventory)</li>
+<li>Role (Access Management &gt; Roles) eg. Lab Job Role with permission to just execute job</li>
+<li>Type</li>
+</ul>
+</li>
+</ul>
+<h3 id="creating-teams">Creating Teams</h3>
+<p><em>Access Management &gt; Teams &gt; Create Team</em></p>
+<h2 id="associate-users-in-teams">Associate Users in Teams</h2>
+<p><em>Access Management &gt; Teams &gt; Users tab &gt; Add Users</em>
+<img src="/ansible/rh-aap-access1.png" alt="Access Management"></p>
 <h2 id="roles">Roles</h2>
 <p>A role represent set of actions that a team or user may perform on a resource or set of resources</p>
 <h3 id="adding-role">Adding role</h3>
@@ -583,17 +586,18 @@ Job Workflow Role
         <li><a href="#creating-organization">Creating Organization</a></li>
       </ul>
     </li>
-    <li><a href="#teams">Teams</a>
-      <ul>
-        <li><a href="#creating-teams">Creating Teams</a></li>
-      </ul>
-    </li>
     <li><a href="#users">Users</a>
       <ul>
         <li><a href="#user-type">User Type</a></li>
         <li><a href="#creating-users">Creating Users</a></li>
       </ul>
     </li>
+    <li><a href="#teams">Teams</a>
+      <ul>
+        <li><a href="#creating-teams">Creating Teams</a></li>
+      </ul>
+    </li>
+    <li><a href="#associate-users-in-teams">Associate Users in Teams</a></li>
     <li><a href="#roles">Roles</a>
       <ul>
         <li><a href="#adding-role">Adding role</a></li>

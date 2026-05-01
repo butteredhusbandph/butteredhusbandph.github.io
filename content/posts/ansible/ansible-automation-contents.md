@@ -7,7 +7,7 @@ tags = ['ansible', 'ansibleautomationplatform', 'redhat', 'linux']
 
 *Disclaimer:* These notes reflect my personal understanding and working thoughts on Ansible Automation Platform. They are not intended to serve as formal documentation or a step-by-step guide. That said, I hope they offer useful insights, spark ideas, or provide some value as you explore AAP on your own.
 
-## Adding Custom Collection
+## Creating Custom Collection
 Create your custom collection
 ```console
 ansible-galaxy collection init lab.webserver
@@ -56,7 +56,7 @@ Created collection for lab.webserver at /home/chris/ansible/cc/lab/webserver/lab
 [chris@mgmt webserver]$
 ```
 
-Upload custom collection to AAP
+## Upload a collection to automation hub
 *Automation Content > Collections > Upload Collection*
 ![AAP Custom Collection](/ansible/rh-custom-collection1.png)
 

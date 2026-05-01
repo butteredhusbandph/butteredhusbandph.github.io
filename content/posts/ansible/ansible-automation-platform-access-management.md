@@ -27,16 +27,7 @@ An organization is a logical collection of users, teams, and resources. It is th
 ![Redhat Ansible Automation Platform](/ansible/rh-aap-org1.png)
 
 <br>
-    
-## Teams
-A team is a group of users that can be assigned permissions to resources.
-  - Roles
-    - Resource(eg. Job/Workflow, Inventory)
-    - Role (Access Management > Roles) eg. Lab Job Role with permission to just execute job
-    - Type 
-### Creating Teams
-*Access Management > Teams > Create Team*
-    
+
 ## Users
 ### User Type
 - Ansible Automation Platform Administrator
@@ -48,7 +39,23 @@ A team is a group of users that can be assigned permissions to resources.
   Has view-only permissions on all objects
 ### Creating Users
 *Access Management > Users > Create Users*
-![Redhat Ansible Automation Platform](/ansible/rh-aap-org2.png)
+![Redhat Ansible Automation Platform](/ansible/rh-aap-org2.png)  
+
+## Teams
+A team is a group of users that can be assigned permissions to resources.
+  - Roles
+    - Resource(eg. Job/Workflow, Inventory)
+    - Role (Access Management > Roles) eg. Lab Job Role with permission to just execute job
+    - Type 
+### Creating Teams
+*Access Management > Teams > Create Team*
+    
+
+
+## Associate Users in Teams
+*Access Management > Teams > Users tab > Add Users*
+![Access Management](/ansible/rh-aap-access1.png)
+
 
 ## Roles
 A role represent set of actions that a team or user may perform on a resource or set of resources

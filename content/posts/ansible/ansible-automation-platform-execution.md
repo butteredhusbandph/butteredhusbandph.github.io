@@ -49,3 +49,7 @@ On the added `Step` click `Add step and link`
 Launch Workflow Job
 
 ![Redhat Ansible Automation Platform](/ansible/rh-aap-execution8.png)
+
+## Creating Job template Survey
+*Automation Controller > Templates > Survey tab*  
+![Redhat Ansible Automation Platform](/ansible/rh-aap-survey.png)

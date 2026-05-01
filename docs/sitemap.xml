@@ -132,6 +132,16 @@
                href="//localhost:1313/posts/linux/podman-notes/"/>
   </url>
   <url>
+    <loc>//localhost:1313/posts/ansible/ansible-automation-platform-ex467/</loc>
+    <lastmod>2026-04-23T15:50:04+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="//localhost:1313/posts/ansible/ansible-automation-platform-ex467/"/>
+  </url>
+  <url>
     <loc>//localhost:1313/posts/ansible/ansible-automation-platform-execution/</loc>
     <lastmod>2026-04-22T16:41:54+08:00</lastmod>
     <changefreq>weekly</changefreq>

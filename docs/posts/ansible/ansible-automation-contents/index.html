@@ -80,7 +80,7 @@
 
   
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","email":"butteredhusbandph@gmail.com","name":"@butteredhusbandph","sameAs":["https://github.com/penoycentral"]},"dateModified":"2026-04-18T06:56:11+08:00","datePublished":"2026-04-18T06:56:11+08:00","description":"Disclaimer: These notes reflect my personal understanding and working thoughts on Ansible Automation Platform. They are not intended to serve as formal …","headline":"Ansible Automation Platform Contents","image":"//localhost:1313/logo.png","inLanguage":"en-us","keywords":["ansible","ansibleautomationplatform","redhat","linux"],"mainEntityOfPage":{"@id":"//localhost:1313/posts/ansible/ansible-automation-contents/","@type":"WebPage"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"//localhost:1313/logo.png"},"name":"@butteredhusbandph","url":"//localhost:1313/"},"timeRequired":"PT2M","url":"//localhost:1313/posts/ansible/ansible-automation-contents/","wordCount":276}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","email":"butteredhusbandph@gmail.com","name":"@butteredhusbandph","sameAs":["https://github.com/penoycentral"]},"dateModified":"2026-04-18T06:56:11+08:00","datePublished":"2026-04-18T06:56:11+08:00","description":"Disclaimer: These notes reflect my personal understanding and working thoughts on Ansible Automation Platform. They are not intended to serve as formal …","headline":"Ansible Automation Platform Contents","image":"//localhost:1313/logo.png","inLanguage":"en-us","keywords":["ansible","ansibleautomationplatform","redhat","linux"],"mainEntityOfPage":{"@id":"//localhost:1313/posts/ansible/ansible-automation-contents/","@type":"WebPage"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"//localhost:1313/logo.png"},"name":"@butteredhusbandph","url":"//localhost:1313/"},"timeRequired":"PT2M","url":"//localhost:1313/posts/ansible/ansible-automation-contents/","wordCount":277}</script>
 
 
 
@@ -368,7 +368,7 @@
             stroke-width="2"
             d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
         </svg>
-        276 words
+        277 words
       </span>
     
 
@@ -406,7 +406,7 @@
 
       <div class="post-content-main">
         <p><em>Disclaimer:</em> These notes reflect my personal understanding and working thoughts on Ansible Automation Platform. They are not intended to serve as formal documentation or a step-by-step guide. That said, I hope they offer useful insights, spark ideas, or provide some value as you explore AAP on your own.</p>
-<h2 id="adding-custom-collection">Adding Custom Collection</h2>
+<h2 id="creating-custom-collection">Creating Custom Collection</h2>
 <p>Create your custom collection</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>ansible-galaxy collection init lab.webserver
 </span></span><span style="display:flex;"><span>cd lab/webserver/roles
@@ -442,8 +442,8 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>[chris@mgmt webserver]$ ansible-galaxy collection build
 </span></span><span style="display:flex;"><span>Created collection for lab.webserver at /home/chris/ansible/cc/lab/webserver/lab-webserver-1.0.0.tar.gz
 </span></span><span style="display:flex;"><span>[chris@mgmt webserver]$
-</span></span></code></pre></div><p>Upload custom collection to AAP
-<em>Automation Content &gt; Collections &gt; Upload Collection</em>
+</span></span></code></pre></div><h2 id="upload-a-collection-to-automation-hub">Upload a collection to automation hub</h2>
+<p><em>Automation Content &gt; Collections &gt; Upload Collection</em>
 <img src="/ansible/rh-custom-collection1.png" alt="AAP Custom Collection"></p>
 <p>Click <code>Approve and sign collection(thumb up icon)</code>
 <img src="/ansible/rh-custom-collection2.png" alt="AAP Custom Collection"></p>
@@ -590,7 +590,8 @@ My home lab currently runs on a laptop using VirtualBox, with all my VMs configu
       <nav class="toc-nav" aria-label="Table of Contents">
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#adding-custom-collection">Adding Custom Collection</a></li>
+    <li><a href="#creating-custom-collection">Creating Custom Collection</a></li>
+    <li><a href="#upload-a-collection-to-automation-hub">Upload a collection to automation hub</a></li>
     <li><a href="#redhat-repository">Redhat Repository</a></li>
     <li><a href="#ansible-galaxy-remote-repository">Ansible Galaxy Remote Repository</a></li>
   </ul>
