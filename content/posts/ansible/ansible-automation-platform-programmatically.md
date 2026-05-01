@@ -40,3 +40,34 @@ curl -X GET https://gate.lab.local/api/controller/v2/workflow_job_templates/ --u
 ```console
 curl -X POST https://gate.lab.local/api/controller/v2/workflow_job_templates/15/launch/ --user user1:<password> |jq
 ```
+
+### Launching Job with extra vars
+```console
+curl -X POST -H "Content-Type: application/json" -d '{"extra_vars": {"vm_os":"RHEL", "vm_ram":2, "vm_disk":3}}' https://gate.lab.local/api/controller/v2/job_templates/14/launch/ --user user1:password|jq 
+```
+
+## Launching Job with extra vars using Ansible
+```yaml
+- name: Trigger AAP Job Template with Extra Vars
+  hosts: localhost
+  gather_facts: false
+  vars:
+    aap_host: "https://gate.lab.local"
+    job_template_id: 14
+  tasks:
+    - name: Launch job template
+      ansible.builtin.uri:
+        url: "{{ aap_host }}/api/controller/v2/job_templates/{{ job_template_id }}/launch/"
+        user: admin
+        password: <password>
+        method: POST
+        force_basic_auth: yes
+        body_format: json
+        body:
+          extra_vars:
+            vm_os: "RHEL"
+            vm_ram: 3
+            vm_disk: 3
+        status_code: 201
+        validate_certs: false
+```

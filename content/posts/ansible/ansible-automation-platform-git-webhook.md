@@ -77,4 +77,6 @@ Settings > Webhook
 **Secret Token:** Paste `Webhook key` from AAP  
 **Trigger** Select events(eg Push)  
 **SSL Verification** Uncheck
-![AAP Webhook](/ansible/rh-aap-webhook4.png)
+![AAP Webhook](/ansible/rh-aap-webhook4.png)  
+
+AAP `Job` should be automatically triggered after making changes and push to the gitlab repo.
