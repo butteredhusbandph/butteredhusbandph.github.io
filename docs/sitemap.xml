@@ -3,13 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>//localhost:1313/</loc>
-    <lastmod>2026-04-29T05:52:30+08:00</lastmod>
+    <lastmod>2026-05-01T10:03:10+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link
                rel="alternate"
                hreflang="en"
                href="//localhost:1313/"/>
+  </url>
+  <url>
+    <loc>//localhost:1313/posts/ansible/ansible-automation-platform-git-webhook/</loc>
+    <lastmod>2026-05-01T10:03:10+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="//localhost:1313/posts/ansible/ansible-automation-platform-git-webhook/"/>
+  </url>
+  <url>
+    <loc>//localhost:1313/posts/</loc>
+    <lastmod>2026-05-01T10:03:10+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="//localhost:1313/posts/"/>
   </url>
   <url>
     <loc>//localhost:1313/tags/ansible/</loc>
@@ -50,16 +70,6 @@
                rel="alternate"
                hreflang="en"
                href="//localhost:1313/tags/linux/"/>
-  </url>
-  <url>
-    <loc>//localhost:1313/posts/</loc>
-    <lastmod>2026-04-29T05:52:30+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-               rel="alternate"
-               hreflang="en"
-               href="//localhost:1313/posts/"/>
   </url>
   <url>
     <loc>//localhost:1313/tags/redhat/</loc>

@@ -1,6 +1,6 @@
 +++
 date = '2026-05-01T10:03:10+08:00'
-draft = true
+draft = false
 title = 'Ansible Automation Platform Git Webhook'
 +++
 
