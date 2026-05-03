@@ -6,8 +6,15 @@
     <description>Recent content in Ansible on @butteredhusbandph</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Apr 2026 05:52:30 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 14:34:52 +0800</lastBuildDate>
     <atom:link href="//localhost:1313/tags/ansible/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ansible Automation Platform Fact Caching</title>
+      <link>//localhost:1313/posts/ansible/ansible-automation-platform-fact-caching/</link>
+      <pubDate>Sun, 03 May 2026 14:34:52 +0800</pubDate>
+      <guid>//localhost:1313/posts/ansible/ansible-automation-platform-fact-caching/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Disclaimer:&lt;/em&gt; These notes reflect my personal understanding and working thoughts on Ansible Automation Platform. They are not intended to serve as formal documentation or a step-by-step guide. That said, I hope they offer useful insights, spark ideas, or provide some value as you explore AAP on your own&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Settings &amp;gt; Job &amp;gt; Per Host Ansible Fact Cache Timeout&lt;/em&gt;&lt;br&gt;&#xA;&lt;img src=&#34;//localhost:1313/ansible/rh-aap-fact-caching1.png&#34; alt=&#34;Ansible Automation Platform Fact Caching&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Automation Controller &amp;gt; Templates &amp;gt; Job &amp;gt; Enable fact storage&lt;/em&gt;&#xA;&lt;img src=&#34;//localhost:1313/ansible/rh-aap-fact-caching2.png&#34; alt=&#34;Ansible Automation Platform Fact Caching&#34;&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Ansible Automation Platform Notifier</title>
       <link>//localhost:1313/posts/ansible/ansible-automation-platform-notifier/</link>
