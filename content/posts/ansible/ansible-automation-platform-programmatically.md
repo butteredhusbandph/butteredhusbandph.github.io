@@ -71,3 +71,15 @@ curl -X POST -H "Content-Type: application/json" -d '{"extra_vars": {"vm_os":"RH
         status_code: 201
         validate_certs: false
 ```
+
+## API scriplet
+```console
+#!/bin/bash
+
+echo **************************************
+echo **********   Launch Job   ************
+echo **************************************
+
+curl -X POST -k -s https://gate.lab.local/api/controller/v2/job_templates/19/launch/ --user <user>:<password>/| jq .
+
+```

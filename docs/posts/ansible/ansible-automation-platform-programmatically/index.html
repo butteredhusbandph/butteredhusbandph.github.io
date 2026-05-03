@@ -80,7 +80,7 @@
 
   
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","email":"butteredhusbandph@gmail.com","name":"@butteredhusbandph","sameAs":["https://github.com/penoycentral"]},"dateModified":"2026-04-21T16:27:01+08:00","datePublished":"2026-04-21T16:27:01+08:00","description":"Disclaimer: These notes reflect my personal understanding and working thoughts on Ansible Automation Platform. They are not intended to serve as formal …","headline":"Ansible Automation Platform Programmatically","image":"//localhost:1313/logo.png","inLanguage":"en-us","keywords":["ansible","ansibleautomationplatform","redhat","linux"],"mainEntityOfPage":{"@id":"//localhost:1313/posts/ansible/ansible-automation-platform-programmatically/","@type":"WebPage"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"//localhost:1313/logo.png"},"name":"@butteredhusbandph","url":"//localhost:1313/"},"timeRequired":"PT1M","url":"//localhost:1313/posts/ansible/ansible-automation-platform-programmatically/","wordCount":177}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","email":"butteredhusbandph@gmail.com","name":"@butteredhusbandph","sameAs":["https://github.com/penoycentral"]},"dateModified":"2026-04-21T16:27:01+08:00","datePublished":"2026-04-21T16:27:01+08:00","description":"Disclaimer: These notes reflect my personal understanding and working thoughts on Ansible Automation Platform. They are not intended to serve as formal …","headline":"Ansible Automation Platform Programmatically","image":"//localhost:1313/logo.png","inLanguage":"en-us","keywords":["ansible","ansibleautomationplatform","redhat","linux"],"mainEntityOfPage":{"@id":"//localhost:1313/posts/ansible/ansible-automation-platform-programmatically/","@type":"WebPage"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"//localhost:1313/logo.png"},"name":"@butteredhusbandph","url":"//localhost:1313/"},"timeRequired":"PT1M","url":"//localhost:1313/posts/ansible/ansible-automation-platform-programmatically/","wordCount":199}</script>
 
 
 
@@ -368,7 +368,7 @@
             stroke-width="2"
             d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
         </svg>
-        177 words
+        199 words
       </span>
     
 
@@ -443,6 +443,14 @@
 </span></span><span style="display:flex;"><span>            <span style="color:#f92672">vm_disk</span>: <span style="color:#ae81ff">3</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">status_code</span>: <span style="color:#ae81ff">201</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">validate_certs</span>: <span style="color:#66d9ef">false</span>
+</span></span></code></pre></div><h2 id="api-scriplet">API scriplet</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>#!/bin/bash
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span>echo **************************************
+</span></span><span style="display:flex;"><span>echo **********   Launch Job   ************
+</span></span><span style="display:flex;"><span>echo **************************************
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span>curl -X POST -k -s https://gate.lab.local/api/controller/v2/job_templates/19/launch/ --user &lt;user&gt;:&lt;password&gt;/| jq .
 </span></span></code></pre></div>
       </div>
 
@@ -568,6 +576,7 @@
       </ul>
     </li>
     <li><a href="#launching-job-with-extra-vars-using-ansible">Launching Job with extra vars using Ansible</a></li>
+    <li><a href="#api-scriplet">API scriplet</a></li>
   </ul>
 </nav>
       </nav>
