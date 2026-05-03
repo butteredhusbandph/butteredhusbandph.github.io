@@ -80,7 +80,7 @@
 
   
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","email":"butteredhusbandph@gmail.com","name":"@butteredhusbandph","sameAs":["https://github.com/penoycentral"]},"dateModified":"2026-04-17T18:17:45+08:00","datePublished":"2026-04-17T18:17:45+08:00","description":"Disclaimer: These notes reflect my personal understanding and working thoughts on Ansible Automation Platform. They are not intended to serve as formal …","headline":"Ansible Automation Platform Execution Environment","image":"//localhost:1313/logo.png","inLanguage":"en-us","keywords":["ansible","ansibleautomationplatform","redhat","linux"],"mainEntityOfPage":{"@id":"//localhost:1313/posts/ansible/aap-private-execution-environment/","@type":"WebPage"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"//localhost:1313/logo.png"},"name":"@butteredhusbandph","url":"//localhost:1313/"},"timeRequired":"PT3M","url":"//localhost:1313/posts/ansible/aap-private-execution-environment/","wordCount":435}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","email":"butteredhusbandph@gmail.com","name":"@butteredhusbandph","sameAs":["https://github.com/penoycentral"]},"dateModified":"2026-04-17T18:17:45+08:00","datePublished":"2026-04-17T18:17:45+08:00","description":"Disclaimer: These notes reflect my personal understanding and working thoughts on Ansible Automation Platform. They are not intended to serve as formal …","headline":"Ansible Automation Platform Execution Environment","image":"//localhost:1313/logo.png","inLanguage":"en-us","keywords":["ansible","ansibleautomationplatform","redhat","linux"],"mainEntityOfPage":{"@id":"//localhost:1313/posts/ansible/aap-private-execution-environment/","@type":"WebPage"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"//localhost:1313/logo.png"},"name":"@butteredhusbandph","url":"//localhost:1313/"},"timeRequired":"PT3M","url":"//localhost:1313/posts/ansible/aap-private-execution-environment/","wordCount":453}</script>
 
 
 
@@ -368,7 +368,7 @@
             stroke-width="2"
             d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
         </svg>
-        435 words
+        453 words
       </span>
     
 
@@ -528,6 +528,18 @@ token=&lt;ansible hub token here&gt;
 </span></span><span style="display:flex;"><span>ansible.posix     2.1.0
 </span></span><span style="display:flex;"><span>community.general 12.6.0
 </span></span><span style="display:flex;"><span>lab.webserver     1.0.0
+</span></span></code></pre></div><h2 id="using-ansible-navigator">Using ansible-navigator</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">ansible-navigator</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">execution-environment</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">gate.lab.local/ansible-automation-platform-25/ee-minimal-rhel9:latest</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">pull</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">policy</span>: <span style="color:#ae81ff">missing</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">logging</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">file</span>: <span style="color:#ae81ff">/dev/null</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">playbook-artifact</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">enable</span>: <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">mode</span>: <span style="color:#ae81ff">stdout</span>
 </span></span></code></pre></div>
       </div>
 
@@ -635,6 +647,7 @@ token=&lt;ansible hub token here&gt;
         <li><a href="#optional-execution-enviroment-image-check">Optional execution enviroment image check</a></li>
       </ul>
     </li>
+    <li><a href="#using-ansible-navigator">Using ansible-navigator</a></li>
   </ul>
 </nav>
       </nav>

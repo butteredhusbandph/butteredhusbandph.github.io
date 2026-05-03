@@ -160,3 +160,18 @@ community.general 12.6.0
 lab.webserver     1.0.0
 
 ```
+
+## Using ansible-navigator
+```yaml
+---
+ansible-navigator:
+  execution-environment:
+    image: gate.lab.local/ansible-automation-platform-25/ee-minimal-rhel9:latest
+    pull:
+      policy: missing
+  logging:
+      file: /dev/null
+  playbook-artifact:
+      enable: false
+  mode: stdout
+```

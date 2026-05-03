@@ -43,7 +43,7 @@ node2.lab.local    192.168.56.52
 `hub.lab.local` 
 ```
 vCPU: 2
-RAM: 8Gb  
+RAM: 4Gb  
 Disk: 40Gb
 ```
 
@@ -51,7 +51,7 @@ Disk: 40Gb
 `gate.lab.local`
 ```
 vCPU: 2  
-RAM: 8Gb  
+RAM: 4Gb  
 Disk: 20Gb  
 ```
 
@@ -59,7 +59,7 @@ Disk: 20Gb
 `control.lab.local`  
 ```
 vCPU: 2  
-RAM: 8Gb  
+RAM: 4Gb  
 Disk: 20Gb  
 ```
 
@@ -177,8 +177,10 @@ Install python3.11 in `hub.lab.local`. For some reason, AAP installer will insta
 Execute the setup script:
 
 ```
-./setup.sh
+./setup.sh -e ignore_preflight_errors=true
 ```
+*Note:* `ignore_preflight_errors` as my vms dont meet minimum requirements
+
 
 ## Configure SSL certificates
 
@@ -206,9 +208,6 @@ Access the AAP web interface via `gate.lab.local` and register your deployment u
 ![Redhat Ansible Automation Platform](/ansible/aap-fresh-install.png)
 
 ![Redhat Ansible Automation Platform](/ansible/rh-app-ui.png)
-
-
-*Note:* After AAP installation, i've downgraded `gate.lab.local` and `control.lab.local` memory from 8Gb to 4Gb. So far i havent got issues when doing labs on AAP. 
 
 Referrence:
 

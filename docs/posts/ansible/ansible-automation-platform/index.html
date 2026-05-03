@@ -80,7 +80,7 @@
 
   
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","email":"butteredhusbandph@gmail.com","name":"@butteredhusbandph","sameAs":["https://github.com/penoycentral"]},"dateModified":"2026-04-19T21:44:48+08:00","datePublished":"2026-04-19T21:44:48+08:00","description":"Disclaimer: These notes reflect my personal understanding and working thoughts on Ansible Automation Platform. They are not intended to serve as formal …","headline":"Ansible Automation Platform Installation in Virtualbox","image":"//localhost:1313/logo.png","inLanguage":"en-us","keywords":["ansible","ansibleautomationplatform","redhat","linux"],"mainEntityOfPage":{"@id":"//localhost:1313/posts/ansible/ansible-automation-platform/","@type":"WebPage"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"//localhost:1313/logo.png"},"name":"@butteredhusbandph","url":"//localhost:1313/"},"timeRequired":"PT3M","url":"//localhost:1313/posts/ansible/ansible-automation-platform/","wordCount":505}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","email":"butteredhusbandph@gmail.com","name":"@butteredhusbandph","sameAs":["https://github.com/penoycentral"]},"dateModified":"2026-04-19T21:44:48+08:00","datePublished":"2026-04-19T21:44:48+08:00","description":"Disclaimer: These notes reflect my personal understanding and working thoughts on Ansible Automation Platform. They are not intended to serve as formal …","headline":"Ansible Automation Platform Installation in Virtualbox","image":"//localhost:1313/logo.png","inLanguage":"en-us","keywords":["ansible","ansibleautomationplatform","redhat","linux"],"mainEntityOfPage":{"@id":"//localhost:1313/posts/ansible/ansible-automation-platform/","@type":"WebPage"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"//localhost:1313/logo.png"},"name":"@butteredhusbandph","url":"//localhost:1313/"},"timeRequired":"PT3M","url":"//localhost:1313/posts/ansible/ansible-automation-platform/","wordCount":491}</script>
 
 
 
@@ -368,7 +368,7 @@
             stroke-width="2"
             d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
         </svg>
-        505 words
+        491 words
       </span>
     
 
@@ -433,17 +433,17 @@ node2.lab.local    192.168.56.52
 <h3 id="ansible-automation-hub">Ansible Automation Hub</h3>
 <p><code>hub.lab.local</code></p>
 <pre tabindex="0"><code>vCPU: 2
-RAM: 8Gb  
+RAM: 4Gb  
 Disk: 40Gb
 </code></pre><h3 id="ansible-automation-gateway">Ansible Automation Gateway</h3>
 <p><code>gate.lab.local</code></p>
 <pre tabindex="0"><code>vCPU: 2  
-RAM: 8Gb  
+RAM: 4Gb  
 Disk: 20Gb  
 </code></pre><h3 id="ansible-automation--controller-and-database-server">Ansible Automation  Controller and Database server</h3>
 <p><code>control.lab.local</code></p>
 <pre tabindex="0"><code>vCPU: 2  
-RAM: 8Gb  
+RAM: 4Gb  
 Disk: 20Gb  
 </code></pre><h2 id="downloading-aap-25">Downloading AAP 2.5</h2>
 <p>Create a Red Hat Developer account and download the AAP 2.5 bundle:</p>
@@ -531,8 +531,9 @@ automationgateway_pg_password=&#39;******&#39;
 </span></span><span style="display:flex;"><span>fatal: [hub.lab.local]: FAILED! =&gt; {&#34;msg&#34;: &#34;The task includes an option with an undefined variable. The error was: &#39;dict object&#39; has no attribute &#39;python3.11-pulpcore&#39;. &#39;dict object&#39; has no attribute &#39;python3.11-pulpcore&#39;\n\nThe error appears to be in &#39;/home/chris/Labs/redhat/ex467/2.5/ansible-automation-platform-setup-bundle-2.5-1-x86_64/collections/ansible_collections/ansible/automation_platform_installer/roles/automationhub/tasks/install_packages.yml&#39;: line 38, column 3, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n- name: Set __pulpcore_version to the RPM that was installed\n  ^ here\n&#34;}
 </span></span></code></pre></div><p>Install python3.11 in <code>hub.lab.local</code>. For some reason, AAP installer will install python3.12 and will break the installation process.</p>
 <p>Execute the setup script:</p>
-<pre tabindex="0"><code>./setup.sh
-</code></pre><h2 id="configure-ssl-certificates">Configure SSL certificates</h2>
+<pre tabindex="0"><code>./setup.sh -e ignore_preflight_errors=true
+</code></pre><p><em>Note:</em> <code>ignore_preflight_errors</code> as my vms dont meet minimum requirements</p>
+<h2 id="configure-ssl-certificates">Configure SSL certificates</h2>
 <p>Once installation completes, copy ssl key and crt</p>
 <p><em>hub.lab.local</em></p>
 <pre tabindex="0"><code>cp /tmp/hub.lab.local.crt /etc/pulp/certs/pulp_webserver.crt
@@ -545,7 +546,6 @@ reboot
 </code></pre><p>Access the AAP web interface via <code>gate.lab.local</code> and register your deployment using your Red Hat Developer account.</p>
 <p><img src="/ansible/aap-fresh-install.png" alt="Redhat Ansible Automation Platform"></p>
 <p><img src="/ansible/rh-app-ui.png" alt="Redhat Ansible Automation Platform"></p>
-<p><em>Note:</em> After AAP installation, i&rsquo;ve downgraded <code>gate.lab.local</code> and <code>control.lab.local</code> memory from 8Gb to 4Gb. So far i havent got issues when doing labs on AAP.</p>
 <p>Referrence:</p>
 <p><a href="https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.5/html/rpm_installation/appendix-inventory-files-vars">https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.5/html/rpm_installation/appendix-inventory-files-vars</a></p>
 <p><a href="https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.6/html/rpm_installation/appendix-inventory-files-vars">https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.6/html/rpm_installation/appendix-inventory-files-vars</a></p>
