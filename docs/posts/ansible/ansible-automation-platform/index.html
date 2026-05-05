@@ -531,7 +531,7 @@ automationgateway_pg_password=&#39;******&#39;
 </span></span><span style="display:flex;"><span>fatal: [hub.lab.local]: FAILED! =&gt; {&#34;msg&#34;: &#34;The task includes an option with an undefined variable. The error was: &#39;dict object&#39; has no attribute &#39;python3.11-pulpcore&#39;. &#39;dict object&#39; has no attribute &#39;python3.11-pulpcore&#39;\n\nThe error appears to be in &#39;/home/chris/Labs/redhat/ex467/2.5/ansible-automation-platform-setup-bundle-2.5-1-x86_64/collections/ansible_collections/ansible/automation_platform_installer/roles/automationhub/tasks/install_packages.yml&#39;: line 38, column 3, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n- name: Set __pulpcore_version to the RPM that was installed\n  ^ here\n&#34;}
 </span></span></code></pre></div><p>Install python3.11 in <code>hub.lab.local</code>. For some reason, AAP installer will install python3.12 and will break the installation process.</p>
 <p>Execute the setup script:</p>
-<pre tabindex="0"><code>./setup.sh -e ignore_preflight_errors=true
+<pre tabindex="0"><code>./setup.sh -e &#39;ignore_preflight_errors=true&#39;
 </code></pre><p><em>Note:</em> <code>ignore_preflight_errors</code> as my vms dont meet minimum requirements</p>
 <h2 id="configure-ssl-certificates">Configure SSL certificates</h2>
 <p>Once installation completes, copy ssl key and crt</p>

@@ -34,7 +34,7 @@
       <link>//localhost:1313/posts/ansible/ansible-quick-notes/</link>
       <pubDate>Tue, 28 Apr 2026 07:17:58 +0800</pubDate>
       <guid>//localhost:1313/posts/ansible/ansible-quick-notes/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://docs.ansible.com/projects/builder/en/stable/definition/#builder-ee-definition&#34;&gt;Execution environment definition&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://docs.ansible.com/projects/builder/en/stable/definition/#builder-ee-definition&#34;&gt;Execution environment definition&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.5/html/rpm_installation/assembly-platform-install-scenario#proc-configure-content-signing-on-pah&#34;&gt;https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.5/html/rpm_installation/assembly-platform-install-scenario#proc-configure-content-signing-on-pah&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;[Ansible Automation Platform Backup and Restore]https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.5/html/rpm_installation/controller-backup-and-restore&lt;/p&gt;</description>
     </item>
     <item>
       <title>Podman Notes</title>

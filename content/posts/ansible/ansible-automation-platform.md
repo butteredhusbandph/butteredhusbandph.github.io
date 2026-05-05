@@ -177,7 +177,7 @@ Install python3.11 in `hub.lab.local`. For some reason, AAP installer will insta
 Execute the setup script:
 
 ```
-./setup.sh -e ignore_preflight_errors=true
+./setup.sh -e 'ignore_preflight_errors=true'
 ```
 *Note:* `ignore_preflight_errors` as my vms dont meet minimum requirements
 
