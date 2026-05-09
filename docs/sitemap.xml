@@ -182,6 +182,16 @@
                href="//localhost:1313/posts/ansible/ansible-automation-platform-programmatically/"/>
   </url>
   <url>
+    <loc>//localhost:1313/posts/ansible/ansible-automation-platform-mesh/</loc>
+    <lastmod>2026-04-20T15:26:26+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="//localhost:1313/posts/ansible/ansible-automation-platform-mesh/"/>
+  </url>
+  <url>
     <loc>//localhost:1313/posts/ansible/ansible-automation-platform-access-management/</loc>
     <lastmod>2026-04-20T05:36:28+08:00</lastmod>
     <changefreq>weekly</changefreq>

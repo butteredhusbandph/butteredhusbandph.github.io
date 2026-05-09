@@ -80,7 +80,7 @@
 
   
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","email":"butteredhusbandph@gmail.com","name":"@butteredhusbandph","sameAs":["https://github.com/penoycentral"]},"dateModified":"2026-04-20T15:26:26+08:00","datePublished":"2026-04-20T15:26:26+08:00","description":"Why Automation Mesh Challenges on automation across different platforms and location Ensuring automation executes consistently while managing centrally Automate …","headline":"Ansible Automation Platform Mesh","image":"//localhost:1313/logo.png","inLanguage":"en-us","keywords":["ansible","ansibleautomationplatform","redhat","linux"],"mainEntityOfPage":{"@id":"//localhost:1313/posts/ansible/ansible-automation-platform-mesh/","@type":"WebPage"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"//localhost:1313/logo.png"},"name":"@butteredhusbandph","url":"//localhost:1313/"},"timeRequired":"PT1M","url":"//localhost:1313/posts/ansible/ansible-automation-platform-mesh/","wordCount":36}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","email":"butteredhusbandph@gmail.com","name":"@butteredhusbandph","sameAs":["https://github.com/penoycentral"]},"dateModified":"2026-04-20T15:26:26+08:00","datePublished":"2026-04-20T15:26:26+08:00","description":"Why Automation Mesh Challenges on automation across different platforms and location Ensuring automation executes consistently while managing centrally Automate …","headline":"Ansible Automation Platform Mesh","image":"//localhost:1313/logo.png","inLanguage":"en-us","keywords":["ansible","ansibleautomationplatform","redhat","linux"],"mainEntityOfPage":{"@id":"//localhost:1313/posts/ansible/ansible-automation-platform-mesh/","@type":"WebPage"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"//localhost:1313/logo.png"},"name":"@butteredhusbandph","url":"//localhost:1313/"},"timeRequired":"PT1M","url":"//localhost:1313/posts/ansible/ansible-automation-platform-mesh/","wordCount":138}</script>
 
 
 
@@ -368,7 +368,7 @@
             stroke-width="2"
             d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
         </svg>
-        36 words
+        138 words
       </span>
     
 
@@ -411,17 +411,39 @@
 <li>Ensuring automation executes consistently while managing centrally</li>
 <li>Automate remote areas with limited connectivity</li>
 </ul>
-<pre tabindex="0"><code>[automationcontroller]
-control.lab.local
-
-[automationcontroller:vars]
-node_type=control
-peers=execution_nodes
-
-[execution_nodes]
-enode1.lab.local peers=enode2.lab.local
-enode2.lab.local
-</code></pre><p>Further reads:
+<h2 id="monitooring-autmation-mesh">Monitooring Autmation Mesh</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>awx-manage list_instances
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>[root@control ~]# receptorctl --socket /var/run/awx-receptor/receptor.sock status
+</span></span><span style="display:flex;"><span>Node ID: control.lab.local
+</span></span><span style="display:flex;"><span>Version: 1.4.8
+</span></span><span style="display:flex;"><span>System CPU Count: 2
+</span></span><span style="display:flex;"><span>System Memory MiB: 3655
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span>Connection          Cost
+</span></span><span style="display:flex;"><span>execution.lab.local 1
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span>Known Node          Known Connections
+</span></span><span style="display:flex;"><span>control.lab.local   execution.lab.local: 1
+</span></span><span style="display:flex;"><span>execution.lab.local control.lab.local: 1
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span>Route               Via
+</span></span><span style="display:flex;"><span>execution.lab.local execution.lab.local
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span>Node                Service   Type       Last Seen             Tags
+</span></span><span style="display:flex;"><span>control.lab.local   control   StreamTLS  2026-05-09 15:17:35   {&#39;type&#39;: &#39;Control Service&#39;}
+</span></span><span style="display:flex;"><span>execution.lab.local control   StreamTLS  2026-05-09 15:17:13   {&#39;type&#39;: &#39;Control Service&#39;}
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span>Node                Secure Work Types
+</span></span><span style="display:flex;"><span>control.lab.local   local, kubernetes-runtime-auth, kubernetes-incluster-auth
+</span></span><span style="display:flex;"><span>execution.lab.local ansible-runner
+</span></span><span style="display:flex;"><span>[root@control ~]# receptorctl --socket /var/run/awx-receptor/receptor.sock ping
+</span></span><span style="display:flex;"><span>ERROR: Missing parameter: node
+</span></span><span style="display:flex;"><span>[root@control ~]# receptorctl --socket /var/run/awx-receptor/receptor.sock ping execution.lab.local
+</span></span><span style="display:flex;"><span>Reply from execution.lab.local in 689.084µs
+</span></span><span style="display:flex;"><span>Reply from execution.lab.local in 1.526419ms
+</span></span><span style="display:flex;"><span>Reply from execution.lab.local in 2.391137ms
+</span></span><span style="display:flex;"><span>Reply from execution.lab.local in 4.454391ms
+</span></span></code></pre></div><p>Further reads:
 <a href="https://www.redhat.com/en/blog/whats-new-in-ansible-automation-platform-2.1-automation-mesh">https://www.redhat.com/en/blog/whats-new-in-ansible-automation-platform-2.1-automation-mesh</a></p>
 
       </div>
@@ -538,6 +560,7 @@ enode2.lab.local
         <nav id="TableOfContents">
   <ul>
     <li><a href="#why-automation-mesh">Why Automation Mesh</a></li>
+    <li><a href="#monitooring-autmation-mesh">Monitooring Autmation Mesh</a></li>
   </ul>
 </nav>
       </nav>

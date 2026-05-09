@@ -10,4 +10,6 @@ title = 'Ansible Quick Notes'
 https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.5/html/rpm_installation/assembly-platform-install-scenario#proc-configure-content-signing-on-pah
 
 
-[Ansible Automation Platform Backup and Restore]https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.5/html/rpm_installation/controller-backup-and-restore
+[Ansible Automation Platform Backup and Restore](https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.5/html/rpm_installation/controller-backup-and-restore)
+
+[Ansible Automation Platform Tested Models](https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.5/html-single/tested_deployment_models/index)
