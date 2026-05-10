@@ -83,3 +83,14 @@ echo **************************************
 curl -X POST -k -s https://gate.lab.local/api/controller/v2/job_templates/19/launch/ --user <user>:<password>/| jq .
 
 ```
+
+```
+#!/bin/bash
+
+echo "**************************"
+echo "***** Launch Workflow ****"
+echo "**************************"
+
+curl -X POST -k -s https://gate.lab.local/api/controller/v2/workflow_job_templates/13/launch/ --user <user>:<password> | jq
+
+```

@@ -80,7 +80,7 @@
 
   
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","email":"butteredhusbandph@gmail.com","name":"@butteredhusbandph","sameAs":["https://github.com/penoycentral"]},"dateModified":"2026-04-21T16:27:01+08:00","datePublished":"2026-04-21T16:27:01+08:00","description":"Disclaimer: These notes reflect my personal understanding and working thoughts on Ansible Automation Platform. They are not intended to serve as formal …","headline":"Ansible Automation Platform Programmatically","image":"//localhost:1313/logo.png","inLanguage":"en-us","keywords":["ansible","ansibleautomationplatform","redhat","linux"],"mainEntityOfPage":{"@id":"//localhost:1313/posts/ansible/ansible-automation-platform-programmatically/","@type":"WebPage"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"//localhost:1313/logo.png"},"name":"@butteredhusbandph","url":"//localhost:1313/"},"timeRequired":"PT1M","url":"//localhost:1313/posts/ansible/ansible-automation-platform-programmatically/","wordCount":199}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","email":"butteredhusbandph@gmail.com","name":"@butteredhusbandph","sameAs":["https://github.com/penoycentral"]},"dateModified":"2026-04-21T16:27:01+08:00","datePublished":"2026-04-21T16:27:01+08:00","description":"Disclaimer: These notes reflect my personal understanding and working thoughts on Ansible Automation Platform. They are not intended to serve as formal …","headline":"Ansible Automation Platform Programmatically","image":"//localhost:1313/logo.png","inLanguage":"en-us","keywords":["ansible","ansibleautomationplatform","redhat","linux"],"mainEntityOfPage":{"@id":"//localhost:1313/posts/ansible/ansible-automation-platform-programmatically/","@type":"WebPage"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"//localhost:1313/logo.png"},"name":"@butteredhusbandph","url":"//localhost:1313/"},"timeRequired":"PT2M","url":"//localhost:1313/posts/ansible/ansible-automation-platform-programmatically/","wordCount":219}</script>
 
 
 
@@ -368,7 +368,7 @@
             stroke-width="2"
             d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
         </svg>
-        199 words
+        219 words
       </span>
     
 
@@ -382,7 +382,7 @@
             stroke-width="2"
             d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
         </svg>
-        1 min
+        2 min
       </span>
     
   </div>
@@ -451,7 +451,14 @@
 </span></span><span style="display:flex;"><span>echo **************************************
 </span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
 </span></span></span><span style="display:flex;"><span>curl -X POST -k -s https://gate.lab.local/api/controller/v2/job_templates/19/launch/ --user &lt;user&gt;:&lt;password&gt;/| jq .
-</span></span></code></pre></div>
+</span></span></code></pre></div><pre tabindex="0"><code>#!/bin/bash
+
+echo &#34;**************************&#34;
+echo &#34;***** Launch Workflow ****&#34;
+echo &#34;**************************&#34;
+
+curl -X POST -k -s https://gate.lab.local/api/controller/v2/workflow_job_templates/13/launch/ --user &lt;user&gt;:&lt;password&gt; | jq
+</code></pre>
       </div>
 
       
