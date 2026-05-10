@@ -175,3 +175,30 @@ ansible-navigator:
       enable: false
   mode: stdout
 ```
+
+```console
+
+[ansible@mgmt ~]$ ansible-navigator run hello.yml --pp missing --eei gate.lab.local/lab/ee-minimal-rhel8 -m stdout
+
+PLAY [Hello World playbook] **************************************************************************************************************************
+
+TASK [Gathering Facts] *******************************************************************************************************************************
+ok: [node1.lab.local]
+
+TASK [say ehlo] **************************************************************************************************************************************
+ok: [node1.lab.local] => {
+    "msg": "Ehlo World! form node1.lab.local"
+}
+
+PLAY RECAP *******************************************************************************************************************************************
+node1.lab.local            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+```
+## Using Docker
+```console
+podman login -u <username> --password <token> docker.io
+ansible-builder build -t docker.io/penoycentral/ee-minimal-rhel8:latest
+podman push docker.io/penoycentral/ee-minimal-rhel8:latest
+```
+
+![AAP Docker](/ansible/rh-aap-docker1.png)  
+![AAP Docker](/ansible/rh-aap-docker2.png)
